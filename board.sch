@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -3031,8 +3031,8 @@ Voltmeter Entire Battery:
 <attribute name="NAME" x="-384.556" y="-61.849" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-384.556" y="-66.929" size="1.778" layer="96"/>
 </instance>
-<instance part="GND21" gate="1" x="-375.92" y="-82.55" smashed="yes">
-<attribute name="VALUE" x="-375.92" y="-82.804" size="1.778" layer="96" align="top-center"/>
+<instance part="GND21" gate="1" x="-406.4" y="-95.25" smashed="yes">
+<attribute name="VALUE" x="-406.4" y="-95.504" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="C32" gate="G$1" x="-392.43" y="-53.34" smashed="yes">
 <attribute name="NAME" x="-390.906" y="-52.959" size="1.778" layer="95"/>
@@ -3308,6 +3308,10 @@ Voltmeter Entire Battery:
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="-320.04" y1="-80.01" x2="-320.04" y2="-77.47" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="S1" gate="G$1" pin="GND@1"/>
 <wire x1="-373.38" y1="-63.5" x2="-375.92" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-375.92" y1="-63.5" x2="-375.92" y2="-68.58" width="0.1524" layer="91"/>
@@ -3317,8 +3321,6 @@ Voltmeter Entire Battery:
 <junction x="-375.92" y="-68.58"/>
 <pinref part="S1" gate="G$1" pin="GND@3"/>
 <wire x1="-375.92" y1="-73.66" x2="-373.38" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="-375.92" y1="-73.66" x2="-375.92" y2="-80.01" width="0.1524" layer="91"/>
 <junction x="-375.92" y="-73.66"/>
 <wire x1="-386.08" y1="-67.31" x2="-386.08" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-386.08" y1="-73.66" x2="-375.92" y2="-73.66" width="0.1524" layer="91"/>
@@ -3341,16 +3343,16 @@ Voltmeter Entire Battery:
 <junction x="-392.43" y="-73.66"/>
 <wire x1="-419.1" y1="-73.66" x2="-416.56" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="-416.56" y1="-73.66" x2="-392.43" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-416.56" y1="-73.66" x2="-406.4" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-406.4" y1="-73.66" x2="-392.43" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-426.72" y1="-72.39" x2="-426.72" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="-426.72" y="-73.66"/>
 <pinref part="R31" gate="G$1" pin="1"/>
 <wire x1="-416.56" y1="-72.39" x2="-416.56" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="-416.56" y="-73.66"/>
-</segment>
-<segment>
-<pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="-320.04" y1="-80.01" x2="-320.04" y2="-77.47" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="-406.4" y1="-92.71" x2="-406.4" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="-406.4" y="-73.66"/>
 </segment>
 </net>
 <net name="3.3V" class="0">

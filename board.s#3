@@ -2917,8 +2917,8 @@ to choose which interface to use.</text>
 <attribute name="NAME" x="-297.18" y="-53.34" size="1.778" layer="95"/>
 </instance>
 <instance part="R25" gate="G$1" x="-299.72" y="-68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="-302.26" y="-66.2686" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-302.26" y="-69.088" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="-297.18" y="-67.0814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-297.18" y="-70.612" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
