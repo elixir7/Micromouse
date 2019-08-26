@@ -2469,6 +2469,97 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="CASE-Switches">
+<packages>
+<package name="KMR621NGLFS" urn="urn:adsk.eagle:footprint:7911984/1">
+<description>&lt;i&gt;Links: &lt;/i&gt;
+&lt;a href="http://www.farnell.com/datasheets/2706242.pdf?_ga=2.40597409.2071720333.1546461288-1112771566.1525371275"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-2" y="-0.8" dx="1" dy="1" layer="1"/>
+<smd name="2" x="2" y="-0.8" dx="1" dy="1" layer="1"/>
+<smd name="3" x="-2" y="0.8" dx="1" dy="1" layer="1"/>
+<smd name="4" x="2" y="0.8" dx="1" dy="1" layer="1"/>
+<wire x1="-2" y1="-0.25" x2="-2" y2="0.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.25" x2="1.5" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.25" x2="2" y2="0.25" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="-1.5" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.75" x2="-1" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.75" x2="-1" y2="-1.25" width="0.127" layer="21"/>
+<text x="-2.5" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-2.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="KMR621NGLFS" urn="urn:adsk.eagle:package:7911989/1" type="box">
+<description>&lt;i&gt;Links: &lt;/i&gt;
+&lt;a href="http://www.farnell.com/datasheets/2706242.pdf?_ga=2.40597409.2071720333.1546461288-1112771566.1525371275"&gt;Datasheet&lt;/a&gt;</description>
+<packageinstances>
+<packageinstance name="KMR621NGLFS"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="SWITCH-4P" urn="urn:adsk.eagle:symbol:7893252/2">
+<wire x1="1.27" y1="1.27" x2="-1.524" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<circle x="-1.778" y="0" radius="0.3592" width="0.254" layer="94"/>
+<circle x="5.08" y="2.54" radius="0.3592" width="0.254" layer="94"/>
+<circle x="1.778" y="0" radius="0.3592" width="0.254" layer="94"/>
+<circle x="5.08" y="-2.54" radius="0.3592" width="0.254" layer="94"/>
+<circle x="-5.08" y="2.54" radius="0.3592" width="0.254" layer="94"/>
+<circle x="-5.08" y="-2.54" radius="0.3592" width="0.254" layer="94"/>
+<pin name="4" x="5.08" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="2" x="-5.08" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="3" x="5.08" y="-2.54" visible="pad" length="short" rot="R90"/>
+<pin name="1" x="-5.08" y="-2.54" visible="pad" length="short" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.27" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KMR621NGLFS" urn="urn:adsk.eagle:component:7911993/2" prefix="S">
+<description>&lt;b&gt;C&amp;K KMR621NG LFS Tactile SPST switch (SMD)&lt;/b&gt;&lt;hr /&gt;
+&lt;br /&gt;
+&lt;i&gt;Description: &lt;/i&gt;C&amp;K KMR621NG LFS Tactile SPST switch SMD package.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;i&gt;Links: &lt;/i&gt;
+&lt;a href="http://www.farnell.com/datasheets/2706242.pdf?_ga=2.40597409.2071720333.1546461288-1112771566.1525371275"&gt;KMR621NG LFS&lt;/a&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;</description>
+<gates>
+<gate name="G$1" symbol="SWITCH-4P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KMR621NGLFS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7911989/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2637,6 +2728,12 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="GND28" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND29" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
+<part name="S2" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
+<part name="C30" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="R29" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="100k"/>
+<part name="R30" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="SUPPLY21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
+<part name="GND30" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2664,9 +2761,9 @@ TB6612FND Dual</text>
 
 LED + Buzzer + Display?</text>
 <wire x1="73.66" y1="93.98" x2="73.66" y2="12.7" width="0.1524" layer="97"/>
-<wire x1="73.66" y1="12.7" x2="270.51" y2="12.7" width="0.1524" layer="97"/>
-<wire x1="270.51" y1="12.7" x2="270.51" y2="93.98" width="0.1524" layer="97"/>
-<wire x1="270.51" y1="93.98" x2="73.66" y2="93.98" width="0.1524" layer="97"/>
+<wire x1="73.66" y1="12.7" x2="325.12" y2="12.7" width="0.1524" layer="97"/>
+<wire x1="325.12" y1="12.7" x2="325.12" y2="93.98" width="0.1524" layer="97"/>
+<wire x1="325.12" y1="93.98" x2="73.66" y2="93.98" width="0.1524" layer="97"/>
 <wire x1="-132.08" y1="-71.12" x2="-132.08" y2="-243.84" width="0.1524" layer="97"/>
 <wire x1="-132.08" y1="-243.84" x2="-134.62" y2="-243.84" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-132.08" y1="-243.84" x2="76.2" y2="-243.84" width="0.1524" layer="97"/>
@@ -2843,6 +2940,8 @@ SWD + UART</text>
 <wire x1="-326.39" y1="-167.64" x2="-326.39" y2="-96.52" width="0.1524" layer="97"/>
 <text x="-261.62" y="-38.1" size="2.54" layer="97" align="center">Motor Connector
 IDC-6Pin - DIN41651</text>
+<text x="269.24" y="68.58" size="1.778" layer="97">Debounced Button
+Pull Up - Pulse Low</text>
 </plain>
 <instances>
 <instance part="U3" gate="STM32F405RG" x="-31.75" y="-156.21" smashed="yes">
@@ -3400,6 +3499,27 @@ IDC-6Pin - DIN41651</text>
 <instance part="GND29" gate="1" x="-287.02" y="-135.89" smashed="yes">
 <attribute name="VALUE" x="-287.02" y="-136.144" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="S2" gate="G$1" x="256.54" y="46.99" smashed="yes" rot="R270">
+<attribute name="NAME" x="250.19" y="50.8" size="1.27" layer="95" ratio="10"/>
+</instance>
+<instance part="C30" gate="G$1" x="280.67" y="48.26" smashed="yes">
+<attribute name="NAME" x="282.194" y="48.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="282.194" y="43.561" size="1.778" layer="96"/>
+</instance>
+<instance part="R29" gate="G$1" x="256.54" y="62.23" smashed="yes" rot="R270">
+<attribute name="NAME" x="257.81" y="63.7286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="257.81" y="60.198" size="1.778" layer="96"/>
+</instance>
+<instance part="R30" gate="G$1" x="269.24" y="54.61" smashed="yes">
+<attribute name="NAME" x="266.7" y="56.1086" size="1.778" layer="95"/>
+<attribute name="VALUE" x="266.7" y="51.308" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY21" gate="G$1" x="256.54" y="69.85" smashed="yes">
+<attribute name="VALUE" x="256.54" y="72.644" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND30" gate="1" x="256.54" y="34.29" smashed="yes">
+<attribute name="VALUE" x="256.54" y="34.036" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3623,6 +3743,21 @@ IDC-6Pin - DIN41651</text>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="-287.02" y1="-130.81" x2="-287.02" y2="-133.35" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="3"/>
+<wire x1="254" y1="41.91" x2="254" y2="39.37" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="4"/>
+<wire x1="254" y1="39.37" x2="256.54" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="39.37" x2="259.08" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="39.37" x2="259.08" y2="41.91" width="0.1524" layer="91"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="256.54" y1="36.83" x2="256.54" y2="39.37" width="0.1524" layer="91"/>
+<junction x="256.54" y="39.37"/>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="280.67" y1="43.18" x2="280.67" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="280.67" y1="39.37" x2="259.08" y2="39.37" width="0.1524" layer="91"/>
+<junction x="259.08" y="39.37"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -3679,6 +3814,11 @@ IDC-6Pin - DIN41651</text>
 <pinref part="JP2" gate="A" pin="1"/>
 <pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
 <wire x1="-287.02" y1="-128.27" x2="-287.02" y2="-124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="256.54" y1="69.85" x2="256.54" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -4925,10 +5065,6 @@ IDC-6Pin - DIN41651</text>
 <pinref part="U3" gate="STM32F405RG" pin="VDD_4"/>
 </segment>
 <segment>
-<wire x1="-72.39" y1="-189.23" x2="-100.33" y2="-189.23" width="0.1524" layer="91"/>
-<pinref part="U3" gate="STM32F405RG" pin="PB2"/>
-</segment>
-<segment>
 <wire x1="-72.39" y1="-194.31" x2="-100.33" y2="-194.31" width="0.1524" layer="91"/>
 <pinref part="U3" gate="STM32F405RG" pin="PB11"/>
 </segment>
@@ -5119,6 +5255,38 @@ IDC-6Pin - DIN41651</text>
 <segment>
 <wire x1="-72.39" y1="-163.83" x2="-100.33" y2="-163.83" width="0.1524" layer="91"/>
 <pinref part="U3" gate="STM32F405RG" pin="VSS_4"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="1"/>
+<wire x1="254" y1="52.07" x2="254" y2="54.61" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="2"/>
+<wire x1="254" y1="54.61" x2="256.54" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="54.61" x2="259.08" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="54.61" x2="259.08" y2="52.07" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="256.54" y1="57.15" x2="256.54" y2="54.61" width="0.1524" layer="91"/>
+<junction x="256.54" y="54.61"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="54.61" x2="264.16" y2="54.61" width="0.1524" layer="91"/>
+<junction x="259.08" y="54.61"/>
+</segment>
+</net>
+<net name="BUTTON_SEL" class="0">
+<segment>
+<wire x1="-72.39" y1="-189.23" x2="-100.33" y2="-189.23" width="0.1524" layer="91"/>
+<pinref part="U3" gate="STM32F405RG" pin="PB2"/>
+<label x="-92.71" y="-189.23" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="274.32" y1="54.61" x2="280.67" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="280.67" y1="54.61" x2="280.67" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="280.67" y1="54.61" x2="283.21" y2="54.61" width="0.1524" layer="91"/>
+<junction x="280.67" y="54.61"/>
+<label x="283.21" y="54.61" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

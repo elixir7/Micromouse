@@ -895,6 +895,35 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </package3d>
 </packages3d>
 </library>
+<library name="CASE-Switches">
+<packages>
+<package name="KMR621NGLFS" urn="urn:adsk.eagle:footprint:7911984/1">
+<description>&lt;i&gt;Links: &lt;/i&gt;
+&lt;a href="http://www.farnell.com/datasheets/2706242.pdf?_ga=2.40597409.2071720333.1546461288-1112771566.1525371275"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-2" y="-0.8" dx="1" dy="1" layer="1"/>
+<smd name="2" x="2" y="-0.8" dx="1" dy="1" layer="1"/>
+<smd name="3" x="-2" y="0.8" dx="1" dy="1" layer="1"/>
+<smd name="4" x="2" y="0.8" dx="1" dy="1" layer="1"/>
+<wire x1="-2" y1="-0.25" x2="-2" y2="0.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.25" x2="1.5" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.25" x2="2" y2="0.25" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="-1.5" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.75" x2="-1" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.75" x2="-1" y2="-1.25" width="0.127" layer="21"/>
+<text x="-2.5" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-2.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="KMR621NGLFS" urn="urn:adsk.eagle:package:7911989/1" type="box">
+<description>&lt;i&gt;Links: &lt;/i&gt;
+&lt;a href="http://www.farnell.com/datasheets/2706242.pdf?_ga=2.40597409.2071720333.1546461288-1112771566.1525371275"&gt;Datasheet&lt;/a&gt;</description>
+<packageinstances>
+<packageinstance name="KMR621NGLFS"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1499,6 +1528,22 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-261.62" y="-230.505" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="-261.62" y="-238.125" size="1.27" layer="27"/>
 </element>
+<element name="S2" library="CASE-Switches" package="KMR621NGLFS" package3d_urn="urn:adsk.eagle:package:7911989/1" value="KMR621NGLFS" x="-259.08" y="-240.03" smashed="yes">
+<attribute name="NAME" x="-261.58" y="-238.53" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-261.58" y="-242.78" size="1.27" layer="27"/>
+</element>
+<element name="C30" library="CASE-RCL" package="C0603" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u" x="-260.35" y="-246.38" smashed="yes">
+<attribute name="NAME" x="-260.985" y="-245.745" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-260.985" y="-248.285" size="1.27" layer="27"/>
+</element>
+<element name="R29" library="CASE-RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:5332309/1" value="100k" x="-260.35" y="-251.46" smashed="yes">
+<attribute name="NAME" x="-260.985" y="-250.825" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-260.985" y="-253.365" size="1.27" layer="27"/>
+</element>
+<element name="R30" library="CASE-RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k" x="-260.35" y="-256.54" smashed="yes">
+<attribute name="NAME" x="-260.985" y="-255.905" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-260.985" y="-258.445" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1549,6 +1594,7 @@ design rules under a new name.</description>
 <contactref element="MOTOR_RIGHT" pad="3"/>
 <contactref element="JP2" pad="4"/>
 <contactref element="JP2" pad="3"/>
+<contactref element="R29" pad="2"/>
 <wire x1="-158.33" y1="-76.2" x2="-166.79" y2="-76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="-151.55" y1="-76.2" x2="-158.33" y2="-76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="-178.8161" y1="-79.69" x2="-166.79" y2="-76.2" width="0" layer="19" extent="1-1"/>
@@ -1595,6 +1641,7 @@ design rules under a new name.</description>
 <wire x1="-245.11" y1="-226.06" x2="-245.11" y2="-217.17" width="0" layer="19" extent="1-1"/>
 <wire x1="-257.81" y1="-232.41" x2="-245.11" y2="-226.06" width="0" layer="19" extent="1-1"/>
 <wire x1="-257.81" y1="-234.95" x2="-257.81" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="-259.5" y1="-251.46" x2="-257.81" y2="-234.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="U$4" pad="+"/>
@@ -1610,6 +1657,9 @@ design rules under a new name.</description>
 <contactref element="FP1" pad="1"/>
 <contactref element="JP2" pad="2"/>
 <contactref element="JP2" pad="1"/>
+<contactref element="S2" pad="1"/>
+<contactref element="S2" pad="2"/>
+<contactref element="C30" pad="1"/>
 <wire x1="-226.29" y1="-16.51" x2="-225.74" y2="-27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-225.2726" y1="-1.27" x2="-226.29" y2="-16.51" width="0" layer="19" extent="1-1"/>
 <wire x1="-219.2274" y1="-1.27" x2="-225.2726" y2="-1.27" width="0" layer="19" extent="1-1"/>
@@ -1622,6 +1672,9 @@ design rules under a new name.</description>
 <wire x1="-30.7424" y1="7.945" x2="-30.7424" y2="8.595" width="0" layer="19" extent="1-1"/>
 <wire x1="-260.35" y1="-232.41" x2="-225.74" y2="-27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-260.35" y1="-234.95" x2="-260.35" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="-261.08" y1="-240.83" x2="-260.35" y2="-234.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-257.08" y1="-240.83" x2="-261.08" y2="-240.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-261.2" y1="-246.38" x2="-261.08" y2="-240.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R7" pad="1"/>
@@ -2303,6 +2356,20 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$30">
 <contactref element="U3" pad="18"/>
+</signal>
+<signal name="N$34">
+<contactref element="S2" pad="3"/>
+<contactref element="S2" pad="4"/>
+<contactref element="R29" pad="1"/>
+<contactref element="R30" pad="1"/>
+<wire x1="-257.08" y1="-239.23" x2="-261.08" y2="-239.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-261.2" y1="-251.46" x2="-261.08" y2="-239.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-261.2" y1="-256.54" x2="-261.2" y2="-251.46" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="BUTTON_SELECT">
+<contactref element="R30" pad="2"/>
+<contactref element="C30" pad="2"/>
+<wire x1="-259.5" y1="-256.54" x2="-259.5" y2="-246.38" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
