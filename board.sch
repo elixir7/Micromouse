@@ -3138,19 +3138,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="U$8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
-<part name="JP2" library="CASE-Pinhead" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
+<part name="DEBUG" library="CASE-Pinhead" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
 <part name="SUPPLY16" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND28" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND29" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="S2" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
+<part name="BTN_SEL" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
 <part name="C30" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
 <part name="R29" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="100k"/>
 <part name="R30" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
 <part name="SUPPLY21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND30" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="C36" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="S3" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
+<part name="BTN_RST" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
 <part name="GND31" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C42" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="10u"/>
 <part name="GND34" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -3187,10 +3187,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND32" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="GND33" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="R32" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
-<part name="R35" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
-<part name="R36" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
-<part name="R37" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="R32" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0"/>
+<part name="R35" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0"/>
+<part name="R36" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0"/>
+<part name="R37" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0"/>
 <part name="OLED" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DISPLAY-OLED-128X64-I2C" device=""/>
 <part name="HC-05" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="WIRELESS-BLUETOOTH-HC-05" device=""/>
 </parts>
@@ -3964,7 +3964,7 @@ Bluetooth module or Headers with
 <instance part="U$8" gate="G$1" x="111.76" y="-156.21" smashed="yes">
 <attribute name="VALUE" x="111.76" y="-157.734" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="JP2" gate="A" x="-264.16" y="-133.35" smashed="yes">
+<instance part="DEBUG" gate="A" x="-264.16" y="-133.35" smashed="yes">
 <attribute name="NAME" x="-270.51" y="-125.095" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-270.51" y="-140.97" size="1.778" layer="96"/>
 </instance>
@@ -3980,8 +3980,8 @@ Bluetooth module or Headers with
 <instance part="GND29" gate="1" x="-287.02" y="-135.89" smashed="yes">
 <attribute name="VALUE" x="-287.02" y="-136.144" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="S2" gate="G$1" x="256.54" y="46.99" smashed="yes" rot="R270">
-<attribute name="NAME" x="250.19" y="50.8" size="1.27" layer="95" ratio="10"/>
+<instance part="BTN_SEL" gate="G$1" x="256.54" y="46.99" smashed="yes" rot="R270">
+<attribute name="NAME" x="246.38" y="46.99" size="1.27" layer="95" ratio="10"/>
 </instance>
 <instance part="C30" gate="G$1" x="280.67" y="48.26" smashed="yes">
 <attribute name="NAME" x="282.194" y="48.641" size="1.778" layer="95"/>
@@ -4005,8 +4005,8 @@ Bluetooth module or Headers with
 <attribute name="NAME" x="-94.996" y="-251.079" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-94.996" y="-256.159" size="1.778" layer="96"/>
 </instance>
-<instance part="S3" gate="G$1" x="-109.22" y="-252.73" smashed="yes" rot="R90">
-<attribute name="NAME" x="-105.41" y="-251.46" size="1.27" layer="95" ratio="10"/>
+<instance part="BTN_RST" gate="G$1" x="-109.22" y="-252.73" smashed="yes" rot="R90">
+<attribute name="NAME" x="-119.38" y="-251.46" size="1.27" layer="95" ratio="10"/>
 </instance>
 <instance part="GND31" gate="1" x="-96.52" y="-264.16" smashed="yes">
 <attribute name="VALUE" x="-96.52" y="-264.414" size="1.778" layer="96" align="top-center"/>
@@ -4300,10 +4300,6 @@ Bluetooth module or Headers with
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="-287.02" y1="-233.68" x2="-287.02" y2="-231.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="GND@1"/>
 <wire x1="-340.36" y1="-217.17" x2="-342.9" y2="-217.17" width="0.1524" layer="91"/>
 <wire x1="-342.9" y1="-217.17" x2="-342.9" y2="-222.25" width="0.1524" layer="91"/>
@@ -4360,20 +4356,20 @@ Bluetooth module or Headers with
 </segment>
 <segment>
 <wire x1="-259.08" y1="-130.81" x2="-237.49" y2="-130.81" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="4"/>
+<pinref part="DEBUG" gate="A" pin="4"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="-237.49" y1="-130.81" x2="-237.49" y2="-133.35" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-287.02" y1="-130.81" x2="-266.7" y2="-130.81" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="DEBUG" gate="A" pin="3"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="-287.02" y1="-130.81" x2="-287.02" y2="-133.35" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="3"/>
+<pinref part="BTN_SEL" gate="G$1" pin="3"/>
 <wire x1="254" y1="41.91" x2="254" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="4"/>
+<pinref part="BTN_SEL" gate="G$1" pin="4"/>
 <wire x1="254" y1="39.37" x2="256.54" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="39.37" x2="259.08" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="39.37" x2="259.08" y2="41.91" width="0.1524" layer="91"/>
@@ -4461,6 +4457,21 @@ Bluetooth module or Headers with
 <pinref part="GND33" gate="1" pin="GND"/>
 <pinref part="OLED" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<wire x1="-266.7" y1="-231.14" x2="-279.4" y2="-231.14" width="0.1524" layer="91"/>
+<pinref part="R_FBB" gate="G$1" pin="1"/>
+<wire x1="-279.4" y1="-231.14" x2="-287.02" y2="-231.14" width="0.1524" layer="91"/>
+<wire x1="-287.02" y1="-231.14" x2="-293.37" y2="-231.14" width="0.1524" layer="91"/>
+<wire x1="-293.37" y1="-231.14" x2="-293.37" y2="-228.6" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="-266.7" y1="-227.33" x2="-266.7" y2="-231.14" width="0.1524" layer="91"/>
+<pinref part="C33" gate="G$1" pin="2"/>
+<wire x1="-279.4" y1="-212.09" x2="-279.4" y2="-231.14" width="0.1524" layer="91"/>
+<junction x="-279.4" y="-231.14"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="-287.02" y1="-233.68" x2="-287.02" y2="-231.14" width="0.1524" layer="91"/>
+<junction x="-287.02" y="-231.14"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -4508,13 +4519,13 @@ Bluetooth module or Headers with
 </segment>
 <segment>
 <wire x1="-259.08" y1="-128.27" x2="-237.49" y2="-128.27" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="DEBUG" gate="A" pin="2"/>
 <pinref part="SUPPLY16" gate="G$1" pin="3.3V"/>
 <wire x1="-237.49" y1="-128.27" x2="-237.49" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-287.02" y1="-128.27" x2="-266.7" y2="-128.27" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="DEBUG" gate="A" pin="1"/>
 <pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
 <wire x1="-287.02" y1="-128.27" x2="-287.02" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
@@ -5595,10 +5606,12 @@ Bluetooth module or Headers with
 <wire x1="-359.41" y1="-201.93" x2="-359.41" y2="-204.47" width="0.1524" layer="91"/>
 <junction x="-359.41" y="-201.93"/>
 <label x="-356.87" y="-190.5" size="1.778" layer="95" xref="yes"/>
-<pinref part="SW" gate="G$1" pin="1"/>
-<wire x1="-368.3" y1="-190.5" x2="-359.41" y2="-190.5" width="0.1524" layer="91"/>
 <wire x1="-359.41" y1="-190.5" x2="-359.41" y2="-201.93" width="0.1524" layer="91"/>
 <wire x1="-359.41" y1="-190.5" x2="-356.87" y2="-190.5" width="0.1524" layer="91"/>
+<pinref part="SW" gate="G$1" pin="3"/>
+<wire x1="-368.3" y1="-195.58" x2="-365.76" y2="-195.58" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="-195.58" x2="-365.76" y2="-190.5" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="-190.5" x2="-359.41" y2="-190.5" width="0.1524" layer="91"/>
 <junction x="-359.41" y="-190.5"/>
 </segment>
 </net>
@@ -5677,19 +5690,6 @@ Bluetooth module or Headers with
 <junction x="-293.37" y="-217.17"/>
 </segment>
 </net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="C33" gate="G$1" pin="2"/>
-<wire x1="-279.4" y1="-212.09" x2="-279.4" y2="-231.14" width="0.1524" layer="91"/>
-<wire x1="-279.4" y1="-231.14" x2="-293.37" y2="-231.14" width="0.1524" layer="91"/>
-<pinref part="R_FBB" gate="G$1" pin="1"/>
-<wire x1="-293.37" y1="-231.14" x2="-293.37" y2="-228.6" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="-266.7" y1="-227.33" x2="-266.7" y2="-231.14" width="0.1524" layer="91"/>
-<wire x1="-266.7" y1="-231.14" x2="-279.4" y2="-231.14" width="0.1524" layer="91"/>
-<junction x="-279.4" y="-231.14"/>
-</segment>
-</net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="SDA/SDI"/>
@@ -5764,20 +5764,19 @@ Bluetooth module or Headers with
 </net>
 <net name="N$38" class="0">
 <segment>
-<pinref part="SW" gate="G$1" pin="3"/>
-<wire x1="-368.3" y1="-195.58" x2="-365.76" y2="-195.58" width="0.1524" layer="91"/>
-<wire x1="-365.76" y1="-195.58" x2="-365.76" y2="-198.12" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-3" pin="S"/>
 <wire x1="-406.4" y1="-200.66" x2="-383.54" y2="-200.66" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="-383.54" y1="-200.66" x2="-383.54" y2="-203.2" width="0.1524" layer="91"/>
 <pinref part="SW" gate="G$1" pin="COM"/>
 <wire x1="-378.46" y1="-193.04" x2="-383.54" y2="-193.04" width="0.1524" layer="91"/>
-<wire x1="-383.54" y1="-193.04" x2="-383.54" y2="-198.12" width="0.1524" layer="91"/>
+<wire x1="-383.54" y1="-193.04" x2="-383.54" y2="-200.66" width="0.1524" layer="91"/>
 <junction x="-383.54" y="-200.66"/>
-<wire x1="-383.54" y1="-198.12" x2="-383.54" y2="-200.66" width="0.1524" layer="91"/>
-<wire x1="-365.76" y1="-198.12" x2="-383.54" y2="-198.12" width="0.1524" layer="91"/>
-<junction x="-383.54" y="-198.12"/>
+<pinref part="SW" gate="G$1" pin="1"/>
+<wire x1="-368.3" y1="-190.5" x2="-368.3" y2="-187.96" width="0.1524" layer="91"/>
+<wire x1="-368.3" y1="-187.96" x2="-383.54" y2="-187.96" width="0.1524" layer="91"/>
+<wire x1="-383.54" y1="-187.96" x2="-383.54" y2="-193.04" width="0.1524" layer="91"/>
+<junction x="-383.54" y="-193.04"/>
 </segment>
 </net>
 <net name="INT_ACCEL" class="0">
@@ -5956,7 +5955,7 @@ Bluetooth module or Headers with
 <net name="SWCLK" class="0">
 <segment>
 <wire x1="-259.08" y1="-133.35" x2="-243.84" y2="-133.35" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="6"/>
+<pinref part="DEBUG" gate="A" pin="6"/>
 <label x="-252.73" y="-133.35" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5968,7 +5967,7 @@ Bluetooth module or Headers with
 <net name="RX" class="0">
 <segment>
 <wire x1="-279.4" y1="-133.35" x2="-266.7" y2="-133.35" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="5"/>
+<pinref part="DEBUG" gate="A" pin="5"/>
 <label x="-278.13" y="-133.35" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5988,7 +5987,7 @@ Bluetooth module or Headers with
 <net name="SWDIO" class="0">
 <segment>
 <wire x1="-259.08" y1="-135.89" x2="-243.84" y2="-135.89" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="8"/>
+<pinref part="DEBUG" gate="A" pin="8"/>
 <label x="-252.73" y="-135.89" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -6000,7 +5999,7 @@ Bluetooth module or Headers with
 <net name="TX" class="0">
 <segment>
 <wire x1="-279.4" y1="-135.89" x2="-266.7" y2="-135.89" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="7"/>
+<pinref part="DEBUG" gate="A" pin="7"/>
 <label x="-278.13" y="-135.89" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -6019,9 +6018,9 @@ Bluetooth module or Headers with
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="S2" gate="G$1" pin="1"/>
+<pinref part="BTN_SEL" gate="G$1" pin="1"/>
 <wire x1="254" y1="52.07" x2="254" y2="54.61" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="BTN_SEL" gate="G$1" pin="2"/>
 <wire x1="254" y1="54.61" x2="256.54" y2="54.61" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="54.61" x2="259.08" y2="54.61" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="54.61" x2="259.08" y2="52.07" width="0.1524" layer="91"/>
@@ -6089,9 +6088,9 @@ Bluetooth module or Headers with
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="S3" gate="G$1" pin="4"/>
+<pinref part="BTN_RST" gate="G$1" pin="4"/>
 <wire x1="-111.76" y1="-247.65" x2="-111.76" y2="-245.11" width="0.1524" layer="91"/>
-<pinref part="S3" gate="G$1" pin="3"/>
+<pinref part="BTN_RST" gate="G$1" pin="3"/>
 <wire x1="-111.76" y1="-245.11" x2="-106.68" y2="-245.11" width="0.1524" layer="91"/>
 <wire x1="-106.68" y1="-245.11" x2="-106.68" y2="-247.65" width="0.1524" layer="91"/>
 <pinref part="C36" gate="G$1" pin="1"/>
@@ -6110,8 +6109,8 @@ Bluetooth module or Headers with
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="S3" gate="G$1" pin="1"/>
-<pinref part="S3" gate="G$1" pin="2"/>
+<pinref part="BTN_RST" gate="G$1" pin="1"/>
+<pinref part="BTN_RST" gate="G$1" pin="2"/>
 <wire x1="-111.76" y1="-257.81" x2="-111.76" y2="-260.35" width="0.1524" layer="91"/>
 <wire x1="-111.76" y1="-260.35" x2="-106.68" y2="-260.35" width="0.1524" layer="91"/>
 <wire x1="-106.68" y1="-260.35" x2="-106.68" y2="-257.81" width="0.1524" layer="91"/>
