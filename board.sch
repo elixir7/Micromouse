@@ -732,7 +732,7 @@ Variant with I2C interface</description>
 <packageinstance name="SOT95P235X110-3"/>
 </packageinstances>
 </package3d>
-<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/1" type="box" library_version="2" library_locally_modified="yes">
+<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/2" type="model" library_version="7">
 <packageinstances>
 <packageinstance name="SMT-0540-S-R"/>
 </packageinstances>
@@ -771,7 +771,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="LMZ21701"/>
 </packageinstances>
 </package3d>
-<package3d name="3MM_PHOTOTRANSISTOR" urn="urn:adsk.eagle:package:12971322/1" type="box" library_version="3" library_locally_modified="yes">
+<package3d name="3MM_PHOTOTRANSISTOR" urn="urn:adsk.eagle:package:12971322/2" type="model" library_version="6">
 <packageinstances>
 <packageinstance name="3MM_PHOTOTRANSISTOR"/>
 </packageinstances>
@@ -1320,7 +1320,7 @@ Variant with I2C interface</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/2" library_version="3" library_locally_modified="yes">
+<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/3" library_version="7">
 <description>&lt;b&gt;Magnetic buzzer&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; SMD
@@ -1337,7 +1337,7 @@ Variant with I2C interface</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12016513/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12016513/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1420,7 +1420,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEFT4300" urn="urn:adsk.eagle:component:11889743/2" prefix="D" library_version="3" library_locally_modified="yes">
+<deviceset name="TEFT4300" urn="urn:adsk.eagle:component:11889743/3" prefix="D" library_version="6">
 <description>TEFT4300 Phototransistor from Vishay</description>
 <gates>
 <gate name="TEFT4300" symbol="PHOTOTRANSISTOR" x="-2.54" y="0"/>
@@ -1432,7 +1432,7 @@ Variant with I2C interface</description>
 <connect gate="TEFT4300" pin="E_-" pad="E"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971322/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971322/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2143,13 +2143,13 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </package>
 </packages>
 <packages3d>
-<package3d name="C0603" urn="urn:adsk.eagle:package:5332305/2" type="model">
+<package3d name="C0603" urn="urn:adsk.eagle:package:5332305/5" type="model">
 <description>&lt;b&gt;Chip CAPACITOR 0603 (1608 Metric)&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="C0603"/>
 </packageinstances>
 </package3d>
-<package3d name="EIA_6032-28" urn="urn:adsk.eagle:package:5402996/1" type="box">
+<package3d name="EIA_6032-28" urn="urn:adsk.eagle:package:5402996/3" type="model">
 <description>&lt;b&gt;EIA 6032-28 Taltalum CAPACITATOR&lt;/b&gt;
 
 &lt;a href="http://www.farnell.com/datasheets/2206954.pdf?_ga=2.146371188.1951585514.1537363662-1535130828.1530438260"&gt;Datasheet1&lt;/a&gt;
@@ -2159,19 +2159,19 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <packageinstance name="EIA_6032-28"/>
 </packageinstances>
 </package3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:5332309/2" type="model">
+<package3d name="R0603" urn="urn:adsk.eagle:package:5332309/4" type="model">
 <description>&lt;b&gt;Chip RESISTOR 0603 (1608 Metric)&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="R0603"/>
 </packageinstances>
 </package3d>
-<package3d name="C0805" urn="urn:adsk.eagle:package:5332304/1" type="box">
+<package3d name="C0805" urn="urn:adsk.eagle:package:5332304/3" type="model">
 <description>&lt;b&gt;Chip CAPACITOR 0805 (2012 Metric)&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="C0805"/>
 </packageinstances>
 </package3d>
-<package3d name="R0805" urn="urn:adsk.eagle:package:5332310/1" type="box">
+<package3d name="R0805" urn="urn:adsk.eagle:package:5332310/3" type="model">
 <description>&lt;b&gt;Chip RESISTOR 0805 (2012 Metric)&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="R0805"/>
@@ -2227,7 +2227,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C0603" urn="urn:adsk.eagle:component:5332321/3" prefix="C" uservalue="yes">
+<deviceset name="C0603" urn="urn:adsk.eagle:component:5332321/3" locally_modified="yes" prefix="C" uservalue="yes">
 <description>&lt;b&gt;&lt;b&gt;Standard Chip CAPACITOR 0605 (1608 Metric)&lt;/b&gt;
 &lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
@@ -2255,7 +2255,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5332305/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5332305/5"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2263,7 +2263,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="KEMET_C" urn="urn:adsk.eagle:component:5403007/2" prefix="C" uservalue="yes">
+<deviceset name="KEMET_C" urn="urn:adsk.eagle:component:5403007/2" locally_modified="yes" prefix="C" uservalue="yes">
 <description>&lt;b&gt;KEMET C Size Taltalum Capacitator&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; Size C taltalum capacitor from KEMET. (EIA size 6032-28) 
@@ -2294,7 +2294,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="-" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5402996/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5402996/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2302,7 +2302,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="R0603" urn="urn:adsk.eagle:component:5332325/3" prefix="R" uservalue="yes">
+<deviceset name="R0603" urn="urn:adsk.eagle:component:5332325/3" locally_modified="yes" prefix="R" uservalue="yes">
 <description>&lt;b&gt;&lt;b&gt;Standard Chip RESISTOR 0603 (1608 Metric)&lt;/b&gt;
 &lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
@@ -2330,7 +2330,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5332309/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5332309/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2338,7 +2338,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="C0805" urn="urn:adsk.eagle:component:5332320/2" prefix="C" uservalue="yes">
+<deviceset name="C0805" urn="urn:adsk.eagle:component:5332320/2" locally_modified="yes" prefix="C" uservalue="yes">
 <description>&lt;b&gt;&lt;b&gt;Standard Chip CAPACITOR 0805 (2012 Metric)&lt;/b&gt;
 &lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
@@ -2366,7 +2366,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5332304/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5332304/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2374,7 +2374,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="WE-CBF_0805" urn="urn:adsk.eagle:component:5421298/2" prefix="FP" uservalue="yes">
+<deviceset name="WE-CBF_0805" urn="urn:adsk.eagle:component:5421298/2" locally_modified="yes" prefix="FP" uservalue="yes">
 <description>&lt;b&gt;Würth Electronics Size 0805 Ferrite Pearls&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; 0805 Size ferrite pearls from Würth Electronics.
@@ -2405,7 +2405,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5332310/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5332310/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2417,7 +2417,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </library>
 <library name="CASE-LED">
 <packages>
-<package name="CHIP-LED0603" urn="urn:adsk.eagle:footprint:15671/1">
+<package name="CHIP-LED0603" urn="urn:adsk.eagle:footprint:15671/1" locally_modified="yes">
 <description>&lt;b&gt;Hyper CHIPLED Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
 LB Q993&lt;br&gt;
 Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
@@ -2429,13 +2429,12 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="1.905" y="-0.635" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="-0.45" y1="0.45" x2="0.45" y2="0.85" layer="51"/>
 <rectangle x1="-0.45" y1="-0.85" x2="0.45" y2="-0.45" layer="51"/>
-<rectangle x1="-0.45" y1="0" x2="-0.3" y2="0.3" layer="21"/>
-<rectangle x1="0.3" y1="0" x2="0.45" y2="0.3" layer="21"/>
-<rectangle x1="-0.15" y1="0" x2="0.15" y2="0.3" layer="21"/>
+<wire x1="-0.41" y1="-0.36" x2="0" y2="0.24" width="0.127" layer="21"/>
+<wire x1="0" y1="0.24" x2="0.37" y2="-0.32" width="0.127" layer="21"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="CHIP-LED0603" urn="urn:adsk.eagle:package:7889637/1" type="box">
+<package3d name="CHIP-LED0603" urn="urn:adsk.eagle:package:7889637/2" type="model">
 <description>Hyper CHIPLED Hyper-Bright LED
 LB Q993
 Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
@@ -2467,7 +2466,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CHIP-LED0603" urn="urn:adsk.eagle:component:7889642/1" prefix="D">
+<deviceset name="CHIP-LED0603" urn="urn:adsk.eagle:component:7889642/1" locally_modified="yes" prefix="D">
 <description>&lt;b&gt;CHIP-LED0603 (SMD)&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; Standard 0603 SMD CHIP-LED
@@ -2494,7 +2493,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <connect gate="G$1" pin="K" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7889637/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7889637/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -3159,59 +3158,59 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </groups>
 <parts>
 <part name="U3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="STM32F405RG" device="" package3d_urn="urn:adsk.eagle:package:11478949/2"/>
-<part name="U$4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SMT-0540-S-R" device="" package3d_urn="urn:adsk.eagle:package:12016513/1"/>
+<part name="U$4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SMT-0540-S-R" device="" package3d_urn="urn:adsk.eagle:package:12016513/2"/>
 <part name="U1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TB6612FNG" device="" package3d_urn="urn:adsk.eagle:package:12461704/1"/>
-<part name="C1" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C2" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C3" library="CASE-RCL" deviceset="KEMET_C" device="" package3d_urn="urn:adsk.eagle:package:5402996/1" value="10u"/>
-<part name="LED_R" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/1" value=""/>
-<part name="LED_G" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/1" value=""/>
-<part name="LED_B" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/1" value=""/>
-<part name="R7" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
-<part name="R11" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
-<part name="R13" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
-<part name="R1" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
-<part name="R2" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
-<part name="RT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="290k"/>
-<part name="RB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="150k"/>
-<part name="C_IN" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="10u"/>
-<part name="C_OUT" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="10u"/>
-<part name="C_VC" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="470pF"/>
+<part name="C1" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C2" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C3" library="CASE-RCL" deviceset="KEMET_C" device="" package3d_urn="urn:adsk.eagle:package:5402996/3" value="10u"/>
+<part name="LED_R" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/2" value="CHIP-LED0603"/>
+<part name="LED_G" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/2" value="CHIP-LED0603"/>
+<part name="LED_B" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/2" value="CHIP-LED0603"/>
+<part name="R7" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0.75"/>
+<part name="R11" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
+<part name="R13" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
+<part name="R1" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
+<part name="R2" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
+<part name="RT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="290k"/>
+<part name="RB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="150k"/>
+<part name="C_IN" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="10u"/>
+<part name="C_OUT" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="10u"/>
+<part name="C_VC" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="470pF"/>
 <part name="Q4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="Q3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="R3" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
-<part name="D4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
-<part name="D5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
-<part name="D6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
+<part name="R3" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
+<part name="D4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/2"/>
+<part name="D5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/2"/>
+<part name="D6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/2"/>
 <part name="L_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
-<part name="R14" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
-<part name="R4" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
-<part name="R5" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
+<part name="R14" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1k"/>
+<part name="R4" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1k"/>
+<part name="R5" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1k"/>
 <part name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DIODE_1N4148WX" device="" package3d_urn="urn:adsk.eagle:package:12971321/1" value="1N4148WX"/>
-<part name="C4" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C5" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
-<part name="C6" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C7" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
-<part name="R6" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
-<part name="R8" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="C4" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C5" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
+<part name="C6" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C7" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
+<part name="R6" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0.75"/>
+<part name="R8" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="Q1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="FL_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
-<part name="C8" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C9" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
-<part name="R9" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
-<part name="R10" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="C8" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C9" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
+<part name="R9" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0.75"/>
+<part name="R10" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="Q2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="FR_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
-<part name="C10" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C11" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
-<part name="R12" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
-<part name="R15" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="C10" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C11" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
+<part name="R12" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0.75"/>
+<part name="R15" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="Q5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="R_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
-<part name="C12" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C13" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
-<part name="R16" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
-<part name="D8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
+<part name="C12" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C13" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
+<part name="R16" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
+<part name="D8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/2"/>
 <part name="SUPPLY7" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="2V" device=""/>
 <part name="GND4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="GND5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -3237,70 +3236,70 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY9" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="IC2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TPS61088RHLR" device="" package3d_urn="urn:adsk.eagle:package:12971319/1"/>
 <part name="GND13" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="R17" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="150k"/>
-<part name="C14" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C15" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
+<part name="R17" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="150k"/>
+<part name="C14" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C15" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="2.2u"/>
 <part name="L1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="XAL5030-222MEC" device="" package3d_urn="urn:adsk.eagle:package:12971318/1" value="2.2u"/>
 <part name="GND14" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="C16" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="0.1u"/>
-<part name="C17" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
-<part name="C18" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C16" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="0.1u"/>
+<part name="C17" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
+<part name="C18" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="GND15" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="GND17" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="SUPPLY10" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="12V" device=""/>
-<part name="R18" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="180k"/>
-<part name="R19" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
+<part name="R18" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="180k"/>
+<part name="R19" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
 <part name="GND18" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="R20" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="30k"/>
-<part name="C21" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="27p"/>
-<part name="C23" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="560p"/>
+<part name="R20" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="30k"/>
+<part name="C21" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="27p"/>
+<part name="C23" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="560p"/>
 <part name="GND19" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="R21" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="112k"/>
-<part name="C19" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
-<part name="C20" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
-<part name="C22" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
-<part name="C24" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="1u"/>
-<part name="C25" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
+<part name="R21" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="112k"/>
+<part name="C19" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
+<part name="C20" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
+<part name="C22" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
+<part name="C24" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="1u"/>
+<part name="C25" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
 <part name="VR1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LM1117-3.3" device="" package3d_urn="urn:adsk.eagle:package:12215314/1"/>
 <part name="C26" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SMC_A" device="" package3d_urn="urn:adsk.eagle:package:25926/3" value="10u"/>
 <part name="C27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SMC_A" device="" package3d_urn="urn:adsk.eagle:package:25926/3" value="10u"/>
 <part name="GND20" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="SUPPLY12" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="FP1" library="CASE-RCL" deviceset="WE-CBF_0805" device="" package3d_urn="urn:adsk.eagle:package:5332310/1" value="10u"/>
-<part name="C28" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C29" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
+<part name="FP1" library="CASE-RCL" deviceset="WE-CBF_0805" device="" package3d_urn="urn:adsk.eagle:package:5332310/3" value="10u"/>
+<part name="C28" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C29" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="2.2u"/>
 <part name="SUPPLY13" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3VA" device=""/>
 <part name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
 <part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/2"/>
-<part name="R_FBB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
-<part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="3300p"/>
+<part name="R_FBB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
+<part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="3300p"/>
 <part name="GND21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C32" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
-<part name="R23" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
-<part name="C33" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
+<part name="C32" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
+<part name="R23" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
+<part name="C33" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
 <part name="SUPPLY14" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
-<part name="R_FBT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="105k"/>
+<part name="R_FBT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="105k"/>
 <part name="GND22" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C34" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C34" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="SUPPLY15" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3VA" device=""/>
 <part name="U$5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
-<part name="C35" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C35" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="SUPPLY17" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="12V" device=""/>
-<part name="R22" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="47k"/>
-<part name="R24" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="R22" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="47k"/>
+<part name="R24" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="GND23" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="5V_PWR" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/1" value=""/>
-<part name="R25" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
+<part name="5V_PWR" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/2" value="CHIP-LED0603"/>
+<part name="R25" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1k"/>
 <part name="X1" library="JST XH Connectors" deviceset="JST-XH-03-PIN" device="-LONG-PAD" value="JST-XH"/>
 <part name="U$6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPLITTER" device="" package3d_urn="urn:adsk.eagle:package:12971320/1"/>
 <part name="U$7" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPLITTER" device="" package3d_urn="urn:adsk.eagle:package:12971320/1"/>
 <part name="GND24" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="GND25" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_M" device=""/>
-<part name="R26" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
-<part name="R27" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
-<part name="R28" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
-<part name="R31" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="R26" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
+<part name="R27" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
+<part name="R28" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
+<part name="R31" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="SW" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPDT-500SSP1S1M6QEA" device="" package3d_urn="urn:adsk.eagle:package:12971316/1"/>
 <part name="U4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="BMI088" device="" package3d_urn="urn:adsk.eagle:package:12971315/1"/>
 <part name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IDC-6PIN" device="" package3d_urn="urn:adsk.eagle:package:12971314/2" override_package3d_urn="urn:adsk.eagle:package:12977481/2" override_package_urn="urn:adsk.eagle:footprint:12971305/1"/>
@@ -3316,22 +3315,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY20" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND29" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="BTN_SEL" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
-<part name="C30" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="R29" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="100k"/>
-<part name="R30" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="C30" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="R29" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="100k"/>
+<part name="R30" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="SUPPLY21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND30" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C36" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C36" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="BTN_RST" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
 <part name="GND31" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C42" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
+<part name="C42" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
 <part name="GND34" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="BOOT_JUMPERS" library="CASE-Pinhead" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="SUPPLY29" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND36" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R33" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
-<part name="R34" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="R33" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
+<part name="R34" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="SUPPLY30" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND37" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="GND38" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -3340,27 +3339,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND40" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY33" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="SUPPLY35" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="C45" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
-<part name="C46" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
-<part name="C47" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C48" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C43" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
-<part name="C44" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="1u"/>
+<part name="C45" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="2.2u"/>
+<part name="C46" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="2.2u"/>
+<part name="C47" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C48" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C43" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
+<part name="C44" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="1u"/>
 <part name="SUPPLY28" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3VA" device=""/>
 <part name="U$9" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
-<part name="C49" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C49" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="GND35" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C50" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C50" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="SUPPLY31" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="C51" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C51" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="SUPPLY22" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="GND32" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="GND33" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="R32" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0"/>
-<part name="R35" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0"/>
-<part name="R36" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0"/>
-<part name="R37" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0"/>
+<part name="R32" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0"/>
+<part name="R35" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0"/>
+<part name="R36" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0"/>
+<part name="R37" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0"/>
 <part name="OLED" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DISPLAY-OLED-128X64-I2C" device="" package3d_urn="urn:adsk.eagle:package:12971312/2"/>
 <part name="HC-05" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="WIRELESS-BLUETOOTH-HC-05" device="" package3d_urn="urn:adsk.eagle:package:12971313/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>

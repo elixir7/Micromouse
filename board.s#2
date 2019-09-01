@@ -759,13 +759,13 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="LQFP-64"/>
 </packageinstances>
 </package3d>
-<package3d name="SON65P260X300X150-9N" urn="urn:adsk.eagle:package:12971324/1" type="box" library_version="3">
+<package3d name="SON65P260X300X150-9N" urn="urn:adsk.eagle:package:12971324/2" type="model" library_version="5">
 <description>&lt;b&gt;SIL0008A&lt;/b&gt;&lt;br&gt;</description>
 <packageinstances>
 <packageinstance name="SON65P260X300X150-9N"/>
 </packageinstances>
 </package3d>
-<package3d name="LMZ21701" urn="urn:adsk.eagle:package:12971317/1" type="box" library_version="3" library_locally_modified="yes">
+<package3d name="LMZ21701" urn="urn:adsk.eagle:package:12971317/2" type="model" library_version="5">
 <description>&lt;b&gt;LMZ21701SILR&lt;/b&gt;&lt;br&gt;</description>
 <packageinstances>
 <packageinstance name="LMZ21701"/>
@@ -776,7 +776,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="3MM_PHOTOTRANSISTOR"/>
 </packageinstances>
 </package3d>
-<package3d name="SFH_4545" urn="urn:adsk.eagle:package:12971323/1" type="box" library_version="3" library_locally_modified="yes">
+<package3d name="SFH_4545" urn="urn:adsk.eagle:package:12971323/2" type="model" library_version="5" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="SFH_4545"/>
 </packageinstances>
@@ -1440,7 +1440,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SFH_4545" urn="urn:adsk.eagle:component:12971343/1" prefix="D" library_version="3" library_locally_modified="yes">
+<deviceset name="SFH_4545" urn="urn:adsk.eagle:component:12971343/1" locally_modified="yes" prefix="D" library_version="5" library_locally_modified="yes">
 <description>High Power Infrared Emitter (940 nm)</description>
 <gates>
 <gate name="G$1" symbol="SFH_4545" x="0" y="0"/>
@@ -1452,7 +1452,7 @@ Variant with I2C interface</description>
 <connect gate="G$1" pin="-_CATHODE" pad="-"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971323/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971323/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1739,7 +1739,7 @@ Out: 3.3V, 800mA
 </device>
 </devices>
 </deviceset>
-<deviceset name="LMZ21701" urn="urn:adsk.eagle:component:12971329/2" prefix="S" library_version="4" library_locally_modified="yes">
+<deviceset name="LMZ21701" urn="urn:adsk.eagle:component:12971329/3" prefix="S" library_version="5">
 <description>&lt;b&gt;3V to 17V, 1A Step-Down DC/DC Power Module in 3.5mm  3.5mm Package&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1760,7 +1760,7 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 <connect gate="G$1" pin="VOUT" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971317/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971317/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -2023,7 +2023,7 @@ Variant with &lt;b&gt;I2C interface&lt;/b&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LMZ10501" urn="urn:adsk.eagle:component:12971345/1" prefix="IC" library_version="3">
+<deviceset name="LMZ10501" urn="urn:adsk.eagle:component:12971345/2" prefix="IC" library_version="5">
 <description>&lt;b&gt;Voltage Regulators - Switching Regulators 1A Nano Mod w/ 5.5V Max Inpt VTG&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -2043,7 +2043,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="VREF" pad="8"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971324/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971324/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -3183,7 +3183,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
 <part name="D5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
 <part name="D6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
-<part name="L_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/1"/>
+<part name="L_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
 <part name="R14" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
 <part name="R4" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
 <part name="R5" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
@@ -3195,19 +3195,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R6" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
 <part name="R8" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="Q1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="FL_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/1"/>
+<part name="FL_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
 <part name="C8" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="C9" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
 <part name="R9" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
 <part name="R10" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="Q2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="FR_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/1"/>
+<part name="FR_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
 <part name="C10" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="C11" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
 <part name="R12" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
 <part name="R15" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="Q5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="R_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/1"/>
+<part name="R_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
 <part name="C12" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="C13" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
 <part name="R16" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
@@ -3272,7 +3272,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C29" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
 <part name="SUPPLY13" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3VA" device=""/>
 <part name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
-<part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/1"/>
+<part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/2"/>
 <part name="R_FBB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
 <part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="3300p"/>
 <part name="GND21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -3364,7 +3364,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="OLED" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DISPLAY-OLED-128X64-I2C" device="" package3d_urn="urn:adsk.eagle:package:12971312/2"/>
 <part name="HC-05" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="WIRELESS-BLUETOOTH-HC-05" device="" package3d_urn="urn:adsk.eagle:package:12971313/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>
-<part name="IC3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ10501" device="" package3d_urn="urn:adsk.eagle:package:12971324/1"/>
+<part name="IC3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ10501" device="" package3d_urn="urn:adsk.eagle:package:12971324/2"/>
 </parts>
 <sheets>
 <sheet>
