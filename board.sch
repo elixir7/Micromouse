@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -211,7 +211,7 @@
 <text x="0" y="5.1724" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-4.7324" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SON65P260X300X150-9N" library_version="2" library_locally_modified="yes">
+<package name="SON65P260X300X150-9N" urn="urn:adsk.eagle:footprint:12971295/1" library_version="3">
 <description>&lt;b&gt;SIL0008A&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-1.15" y="0.975" dx="1.05" dy="0.35" layer="1"/>
@@ -254,7 +254,7 @@
 <text x="0" y="2.6336" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.1936" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="3MM_PHOTOTRANSISTOR" library_version="2" library_locally_modified="yes">
+<package name="3MM_PHOTOTRANSISTOR" urn="urn:adsk.eagle:footprint:12971297/1" library_version="3" library_locally_modified="yes">
 <wire x1="-1.905" y1="0.635" x2="1.905" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.905" y1="0.635" x2="1.905" y2="1.27" width="0.127" layer="21"/>
 <wire x1="1.905" y1="1.27" x2="1.75" y2="1.27" width="0.127" layer="21"/>
@@ -271,7 +271,7 @@
 <text x="1.27" y="1.905" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">C</text>
 <text x="-2.54" y="-1.9172" size="0.7112" layer="25" font="vector">TEFT 4300</text>
 </package>
-<package name="SFH_4545" library_version="2" library_locally_modified="yes">
+<package name="SFH_4545" urn="urn:adsk.eagle:footprint:12971296/1" library_version="3" library_locally_modified="yes">
 <wire x1="-2.96" y1="0.96" x2="3.04" y2="0.96" width="0.1" layer="21"/>
 <wire x1="-2.96" y1="0.96" x2="-2.96" y2="-0.04" width="0.1" layer="21"/>
 <wire x1="3.04" y1="0.96" x2="3.04" y2="-0.04" width="0.1" layer="21"/>
@@ -316,7 +316,7 @@
 <text x="2.6926" y="-1.2778" size="0.7112" layer="25" font="vector" rot="R180">SFH 4550</text>
 <text x="2.8" y="11.6" size="1.27" layer="21" rot="R85">10 degree</text>
 </package>
-<package name="1N4148WX_SOD-323-2" library_version="2" library_locally_modified="yes">
+<package name="1N4148WX_SOD-323-2" urn="urn:adsk.eagle:footprint:12971298/1" library_version="3" library_locally_modified="yes">
 <wire x1="-0.635" y1="-0.635" x2="1.065" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.065" y1="-0.635" x2="1.065" y2="0.615" width="0.127" layer="21"/>
 <wire x1="1.065" y1="0.615" x2="-0.635" y2="0.615" width="0.127" layer="21"/>
@@ -328,7 +328,7 @@
 <rectangle x1="0.565" y1="-0.635" x2="0.765" y2="0.565" layer="21"/>
 <rectangle x1="0.365" y1="-0.635" x2="0.565" y2="0.365" layer="21"/>
 </package>
-<package name="RHL(R-PVQFN-N20)_1" library_version="2" library_locally_modified="yes">
+<package name="RHL(R-PVQFN-N20)_1" urn="urn:adsk.eagle:footprint:12971300/1" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;RHL(R-PVQFN-N20)_1&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-2.2" y="-0.75" dx="0.99" dy="0.3" layer="1"/>
@@ -366,12 +366,13 @@
 <wire x1="2.25" y1="0.35" x2="2.25" y2="-0.35" width="0.2" layer="21"/>
 <circle x="-3.302" y="-0.762" radius="0.0464" width="0.254" layer="25"/>
 </package>
-<package name="XAL5030" library_version="2" library_locally_modified="yes">
+<package name="XAL5030" urn="urn:adsk.eagle:footprint:12971301/1" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;XAL5030&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-1.655" y="0" dx="4.7" dy="1.18" layer="1" rot="R90"/>
 <smd name="2" x="1.655" y="0" dx="4.7" dy="1.18" layer="1" rot="R90"/>
 <text x="-2.54" y="3.887" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-5.003" size="1.27" layer="25">&gt;VALUE</text>
 <wire x1="-2.64" y1="2.74" x2="2.64" y2="2.74" width="0.254" layer="51"/>
 <wire x1="2.64" y1="2.74" x2="2.64" y2="-2.74" width="0.254" layer="51"/>
 <wire x1="2.64" y1="-2.74" x2="-2.64" y2="-2.74" width="0.254" layer="51"/>
@@ -380,7 +381,6 @@
 <wire x1="-2.64" y1="2.74" x2="2.64" y2="2.74" width="0.254" layer="21"/>
 <wire x1="2.64" y1="2.74" x2="2.64" y2="-2.74" width="0.254" layer="21"/>
 <wire x1="2.64" y1="-2.74" x2="-2.64" y2="-2.74" width="0.254" layer="21"/>
-<text x="-2.54" y="-5.003" size="1.27" layer="25">&gt;VALUE</text>
 </package>
 <package name="SOT230P700X180-4" urn="urn:adsk.eagle:footprint:12215323/1" library_version="2" library_locally_modified="yes">
 <description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
@@ -419,7 +419,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <rectangle x1="1.4" y1="-0.6" x2="1.6" y2="0.6" layer="51" rot="R180"/>
 <rectangle x1="-1.45" y1="-0.75" x2="-0.8" y2="0.75" layer="51"/>
 </package>
-<package name="LMZ21701" library_version="2" library_locally_modified="yes">
+<package name="LMZ21701" urn="urn:adsk.eagle:footprint:12971302/1" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;LMZ21701SILR&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-1.475" y="1.2" dx="0.45" dy="0.4" layer="1"/>
@@ -442,11 +442,11 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-1.75" y1="1.75" x2="1.75" y2="1.75" width="0.254" layer="21"/>
 <circle x="-2.321" y="1.472" radius="0.094809375" width="0.254" layer="25"/>
 </package>
-<package name="SPLITTER" library_version="2" library_locally_modified="yes">
+<package name="SPLITTER" urn="urn:adsk.eagle:footprint:12971299/1" library_version="3" library_locally_modified="yes">
 <smd name="1" x="0" y="0" dx="0.1016" dy="0.1016" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
 <smd name="2" x="0" y="0" dx="0.1016" dy="0.1016" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
 </package>
-<package name="500SSP1S1M6QEA" library_version="2" library_locally_modified="yes">
+<package name="500SSP1S1M6QEA" urn="urn:adsk.eagle:footprint:12971303/1" library_version="3" library_locally_modified="yes">
 <pad name="MOUNT@1" x="-6.605" y="9.53" drill="1.85"/>
 <pad name="MOUNT@2" x="6.605" y="9.53" drill="1.85"/>
 <pad name="1" x="-4.7" y="0" drill="1.85"/>
@@ -457,7 +457,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="8.89" y1="-2.54" x2="-8.89" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="-2.54" x2="-8.89" y2="11.43" width="0.127" layer="21"/>
 </package>
-<package name="PQFN50P450X300X100-16N" library_version="2" library_locally_modified="yes">
+<package name="PQFN50P450X300X100-16N" urn="urn:adsk.eagle:footprint:12971304/1" library_version="3" library_locally_modified="yes">
 <wire x1="2.28" y1="1.53" x2="2.28" y2="-1.53" width="0.127" layer="51"/>
 <wire x1="2.28" y1="-1.53" x2="-2.28" y2="-1.53" width="0.127" layer="51"/>
 <wire x1="-2.28" y1="-1.53" x2="-2.28" y2="1.53" width="0.127" layer="51"/>
@@ -495,7 +495,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <smd name="9" x="1.5" y="-1.16" dx="0.58" dy="0.35" layer="1" roundness="50" rot="R90"/>
 <smd name="8" x="1.91" y="0" dx="0.58" dy="0.35" layer="1" roundness="50" rot="R180"/>
 </package>
-<package name="IE2-1024-ENCODER" library_version="2" library_locally_modified="yes">
+<package name="IE2-1024-ENCODER" urn="urn:adsk.eagle:footprint:12971305/1" library_version="3" library_locally_modified="yes">
 <pad name="1" x="-2.54" y="-1.27" drill="1.016" shape="square"/>
 <pad name="3" x="0" y="-1.27" drill="1.016"/>
 <pad name="5" x="2.54" y="-1.27" drill="1.016"/>
@@ -599,7 +599,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <text x="0" y="0.6909" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.6909" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="DISPLAY-OLED-128X64-I2C" library_version="2" library_locally_modified="yes">
+<package name="DISPLAY-OLED-128X64-I2C" urn="urn:adsk.eagle:footprint:12971307/1" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;128x64 Dot Matrix OLED Module&lt;/b&gt;&lt;br /&gt;
 Variant with I2C interface</description>
 <wire x1="-13.716" y1="13.97" x2="13.716" y2="13.97" width="0.127" layer="21"/>
@@ -608,10 +608,6 @@ Variant with I2C interface</description>
 <wire x1="7.62" y1="-13.97" x2="-7.62" y2="-13.97" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="-13.97" x2="-13.716" y2="-13.97" width="0.127" layer="21"/>
 <wire x1="-13.716" y1="-13.97" x2="-13.716" y2="13.97" width="0.127" layer="21"/>
-<pad name="1" x="-3.81" y="12.7" drill="1" shape="square"/>
-<pad name="2" x="-1.27" y="12.7" drill="1"/>
-<pad name="3" x="1.27" y="12.7" drill="1"/>
-<pad name="4" x="3.81" y="12.7" drill="1"/>
 <wire x1="-5.08" y1="13.335" x2="-4.445" y2="13.97" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="13.97" x2="-2.54" y2="13.335" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="13.335" x2="-1.905" y2="13.97" width="0.127" layer="21"/>
@@ -637,22 +633,29 @@ Variant with I2C interface</description>
 <wire x1="11.43" y1="8.128" x2="11.43" y2="-5.588" width="0.127" layer="21"/>
 <wire x1="11.43" y1="-5.588" x2="-11.43" y2="-5.588" width="0.127" layer="21"/>
 <wire x1="-11.43" y1="-5.588" x2="-11.43" y2="8.128" width="0.127" layer="21"/>
+<wire x1="5.08" y1="13.335" x2="5.08" y2="12.065" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-13.97" x2="-6.35" y2="-12.065" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-12.065" x2="6.35" y2="-12.065" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-12.065" x2="7.62" y2="-13.97" width="0.127" layer="21"/>
+<pad name="1" x="-3.81" y="12.7" drill="1" shape="square"/>
+<pad name="2" x="-1.27" y="12.7" drill="1"/>
+<pad name="3" x="1.27" y="12.7" drill="1"/>
+<pad name="4" x="3.81" y="12.7" drill="1"/>
 <text x="0" y="3.81" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-15.24" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-<wire x1="5.08" y1="13.335" x2="5.08" y2="12.065" width="0.127" layer="21"/>
 <text x="-3.81" y="9.652" size="0.8128" layer="21" align="bottom-center">GND</text>
 <text x="-1.27" y="9.652" size="0.8128" layer="21" align="bottom-center">VCC</text>
 <text x="1.27" y="9.652" size="0.8128" layer="21" align="bottom-center">SCL</text>
 <text x="3.81" y="9.652" size="0.8128" layer="21" align="bottom-center">SDA</text>
-<wire x1="-7.62" y1="-13.97" x2="-6.35" y2="-12.065" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-12.065" x2="6.35" y2="-12.065" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-12.065" x2="7.62" y2="-13.97" width="0.127" layer="21"/>
 </package>
-<package name="WIRELESS-BLUETOOTH-HC-05" library_version="2" library_locally_modified="yes">
+<package name="WIRELESS-BLUETOOTH-HC-05" urn="urn:adsk.eagle:footprint:12971306/1" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;Bluetooth Transceiver Module&lt;/b&gt; based on &lt;b&gt;HC-05&lt;/b&gt; board</description>
 <pad name="2" x="-3.81" y="-17.145" drill="1"/>
 <pad name="1" x="-6.35" y="-17.145" drill="1" shape="square"/>
 <pad name="3" x="-1.27" y="-17.145" drill="1"/>
+<pad name="4" x="1.27" y="-17.145" drill="1"/>
+<pad name="5" x="3.81" y="-17.145" drill="1"/>
+<pad name="6" x="6.35" y="-17.145" drill="1"/>
 <wire x1="-8.255" y1="-18.415" x2="-6.985" y2="-18.415" width="0.127" layer="21"/>
 <wire x1="-6.985" y1="-18.415" x2="-5.715" y2="-18.415" width="0.127" layer="21"/>
 <wire x1="-5.715" y1="-18.415" x2="-4.445" y2="-18.415" width="0.127" layer="21"/>
@@ -679,13 +682,8 @@ Variant with I2C interface</description>
 <wire x1="3.175" y1="-18.415" x2="2.54" y2="-17.78" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-17.78" x2="1.905" y2="-18.415" width="0.127" layer="21"/>
 <wire x1="0.635" y1="-18.415" x2="0" y2="-17.78" width="0.127" layer="21"/>
-<text x="0" y="19.685" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-19.685" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <wire x1="7.62" y1="-17.78" x2="7.62" y2="-16.51" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-16.51" x2="6.985" y2="-15.875" width="0.127" layer="21"/>
-<pad name="4" x="1.27" y="-17.145" drill="1"/>
-<pad name="5" x="3.81" y="-17.145" drill="1"/>
-<pad name="6" x="6.35" y="-17.145" drill="1"/>
 <wire x1="0" y1="-16.51" x2="-0.635" y2="-15.875" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="-15.875" x2="-1.905" y2="-15.875" width="0.127" layer="21"/>
 <wire x1="-1.905" y1="-15.875" x2="-2.54" y2="-16.51" width="0.127" layer="21"/>
@@ -706,14 +704,16 @@ Variant with I2C interface</description>
 <wire x1="-6.604" y1="14.605" x2="-6.604" y2="-8.255" width="0.127" layer="21"/>
 <wire x1="-6.604" y1="-8.255" x2="6.604" y2="-8.255" width="0.127" layer="21"/>
 <wire x1="6.604" y1="-8.255" x2="6.604" y2="14.605" width="0.127" layer="21"/>
+<wire x1="6.604" y1="14.605" x2="6.604" y2="18.415" width="0.127" layer="21"/>
+<wire x1="-6.604" y1="14.605" x2="6.604" y2="14.605" width="0.127" layer="21"/>
+<text x="0" y="19.685" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-19.685" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <text x="-6.35" y="-15.24" size="1.27" layer="21" rot="R90" align="center-left">STATE</text>
 <text x="-3.81" y="-15.24" size="1.27" layer="21" rot="R90" align="center-left">RX</text>
 <text x="-1.27" y="-15.24" size="1.27" layer="21" rot="R90" align="center-left">TX</text>
 <text x="1.27" y="-15.24" size="1.27" layer="21" rot="R90" align="center-left">GND</text>
 <text x="3.81" y="-15.24" size="1.27" layer="21" rot="R90" align="center-left">+5V</text>
 <text x="6.35" y="-15.24" size="1.27" layer="21" rot="R90" align="center-left">EN</text>
-<wire x1="6.604" y1="14.605" x2="6.604" y2="18.415" width="0.127" layer="21"/>
-<wire x1="-6.604" y1="14.605" x2="6.604" y2="14.605" width="0.127" layer="21"/>
 <text x="0" y="16.51" size="1.524" layer="21" align="center">ANTENNA</text>
 </package>
 </packages>
@@ -759,6 +759,78 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="LQFP-64"/>
 </packageinstances>
 </package3d>
+<package3d name="SON65P260X300X150-9N" urn="urn:adsk.eagle:package:12971324/2" type="model" library_version="5">
+<description>&lt;b&gt;SIL0008A&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SON65P260X300X150-9N"/>
+</packageinstances>
+</package3d>
+<package3d name="LMZ21701" urn="urn:adsk.eagle:package:12971317/2" type="model" library_version="5">
+<description>&lt;b&gt;LMZ21701SILR&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="LMZ21701"/>
+</packageinstances>
+</package3d>
+<package3d name="3MM_PHOTOTRANSISTOR" urn="urn:adsk.eagle:package:12971322/1" type="box" library_version="3" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="3MM_PHOTOTRANSISTOR"/>
+</packageinstances>
+</package3d>
+<package3d name="SFH_4545" urn="urn:adsk.eagle:package:12971323/2" type="model" library_version="5" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SFH_4545"/>
+</packageinstances>
+</package3d>
+<package3d name="1N4148WX_SOD-323-2" urn="urn:adsk.eagle:package:12971321/1" type="box" library_version="3" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="1N4148WX_SOD-323-2"/>
+</packageinstances>
+</package3d>
+<package3d name="RHL(R-PVQFN-N20)_1" urn="urn:adsk.eagle:package:12971319/1" type="box" library_version="3" library_locally_modified="yes">
+<description>&lt;b&gt;RHL(R-PVQFN-N20)_1&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="RHL(R-PVQFN-N20)_1"/>
+</packageinstances>
+</package3d>
+<package3d name="XAL5030" urn="urn:adsk.eagle:package:12971318/1" type="box" library_version="3" library_locally_modified="yes">
+<description>&lt;b&gt;XAL5030&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="XAL5030"/>
+</packageinstances>
+</package3d>
+<package3d name="SPLITTER" urn="urn:adsk.eagle:package:12971320/1" type="box" library_version="3" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SPLITTER"/>
+</packageinstances>
+</package3d>
+<package3d name="500SSP1S1M6QEA" urn="urn:adsk.eagle:package:12971316/1" type="box" library_version="3" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="500SSP1S1M6QEA"/>
+</packageinstances>
+</package3d>
+<package3d name="PQFN50P450X300X100-16N" urn="urn:adsk.eagle:package:12971315/1" type="box" library_version="3" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="PQFN50P450X300X100-16N"/>
+</packageinstances>
+</package3d>
+<package3d name="IE2-1024-ENCODER" urn="urn:adsk.eagle:package:12971314/2" type="model" library_version="4" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="IE2-1024-ENCODER"/>
+</packageinstances>
+</package3d>
+<package3d name="DISPLAY-OLED-128X64-I2C" urn="urn:adsk.eagle:package:12971312/2" type="model" library_version="4" library_locally_modified="yes">
+<description>&lt;b&gt;128x64 Dot Matrix OLED Module&lt;/b&gt;&lt;br /&gt;
+Variant with I2C interface</description>
+<packageinstances>
+<packageinstance name="DISPLAY-OLED-128X64-I2C"/>
+</packageinstances>
+</package3d>
+<package3d name="WIRELESS-BLUETOOTH-HC-05" urn="urn:adsk.eagle:package:12971313/2" type="model" library_version="4" library_locally_modified="yes">
+<description>&lt;b&gt;Bluetooth Transceiver Module&lt;/b&gt; based on &lt;b&gt;HC-05&lt;/b&gt; board</description>
+<packageinstances>
+<packageinstance name="WIRELESS-BLUETOOTH-HC-05"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="SMT-0540-S-R" urn="urn:adsk.eagle:symbol:12016511/1" library_version="2" library_locally_modified="yes">
@@ -775,25 +847,25 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pin name="+" x="-2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
 <pin name="-" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
 </symbol>
-<symbol name="TB6612FNG" library_version="2" library_locally_modified="yes">
-<pin name="M_A1@1" x="-17.78" y="10.16" length="short" direction="pwr"/>
-<pin name="M_A1@2" x="-17.78" y="6.35" length="short" direction="pwr"/>
-<pin name="M_GND1@1" x="-17.78" y="2.54" length="short" direction="pwr"/>
-<pin name="M_GND1@2" x="-17.78" y="-1.27" length="short" direction="pwr"/>
-<pin name="M_A2@1" x="-17.78" y="-5.08" length="short" direction="pwr"/>
-<pin name="M_A2@2" x="-17.78" y="-8.89" length="short" direction="pwr"/>
-<pin name="M_B2@1" x="-17.78" y="-12.7" length="short" direction="pwr"/>
-<pin name="M_B2@2" x="-17.78" y="-16.51" length="short" direction="pwr"/>
-<pin name="M_GND2@1" x="-17.78" y="-20.32" length="short" direction="pwr"/>
-<pin name="M_GND2@2" x="-17.78" y="-24.13" length="short" direction="pwr"/>
-<pin name="M_B1@1" x="-17.78" y="-27.94" length="short" direction="pwr"/>
-<pin name="M_B1@2" x="-17.78" y="-31.75" length="short" direction="pwr"/>
+<symbol name="TB6612FNG" urn="urn:adsk.eagle:symbol:12971286/2" library_version="4" library_locally_modified="yes">
+<pin name="M_A1@1" x="-17.78" y="10.16" length="short"/>
+<pin name="M_A1@2" x="-17.78" y="6.35" length="short"/>
+<pin name="M_GND1@1" x="-17.78" y="2.54" length="short" direction="sup"/>
+<pin name="M_GND1@2" x="-17.78" y="-1.27" length="short" direction="sup"/>
+<pin name="M_A2@1" x="-17.78" y="-5.08" length="short"/>
+<pin name="M_A2@2" x="-17.78" y="-8.89" length="short"/>
+<pin name="M_B2@1" x="-17.78" y="-12.7" length="short"/>
+<pin name="M_B2@2" x="-17.78" y="-16.51" length="short"/>
+<pin name="M_GND2@1" x="-17.78" y="-20.32" length="short" direction="sup"/>
+<pin name="M_GND2@2" x="-17.78" y="-24.13" length="short" direction="sup"/>
+<pin name="M_B1@1" x="-17.78" y="-27.94" length="short"/>
+<pin name="M_B1@2" x="-17.78" y="-31.75" length="short"/>
 <pin name="VM@2" x="17.78" y="-31.75" length="short" direction="pwr" rot="R180"/>
 <pin name="VM@3" x="17.78" y="-27.94" length="short" direction="pwr" rot="R180"/>
 <pin name="PWMB" x="17.78" y="-24.13" length="short" direction="in" rot="R180"/>
 <pin name="BIN2" x="17.78" y="-20.32" length="short" direction="in" rot="R180"/>
 <pin name="BIN1" x="17.78" y="-16.51" length="short" direction="in" rot="R180"/>
-<pin name="GND" x="17.78" y="-12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="17.78" y="-12.7" length="short" direction="sup" rot="R180"/>
 <pin name="STBY" x="17.78" y="-8.89" length="short" direction="in" rot="R180"/>
 <pin name="VCC" x="17.78" y="-5.08" length="short" direction="pwr" rot="R180"/>
 <pin name="AIN1" x="17.78" y="-1.27" length="short" direction="in" rot="R180"/>
@@ -807,7 +879,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <text x="-13.97" y="15.24" size="1.778" layer="95">&gt;NAME</text>
 <text x="-13.97" y="-39.37" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="MOSFET_N" library_version="2" library_locally_modified="yes">
+<symbol name="MOSFET_N" urn="urn:adsk.eagle:symbol:12971284/1" library_version="3" library_locally_modified="yes">
 <wire x1="-1.016" y1="2.54" x2="-1.016" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="2.159" width="0.1524" layer="94"/>
@@ -849,7 +921,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <vertex x="1.905" y="0.508"/>
 </polygon>
 </symbol>
-<symbol name="PHOTOTRANSISTOR" urn="urn:adsk.eagle:symbol:11889738/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
+<symbol name="PHOTOTRANSISTOR" urn="urn:adsk.eagle:symbol:11889738/2" library_version="3" library_locally_modified="yes">
 <description>TEFT 4300 Phototransistor</description>
 <pin name="C_+" x="0" y="4.877" visible="off" length="short" direction="in" rot="R270"/>
 <pin name="E_-" x="0" y="-4.701" visible="off" length="short" direction="out" rot="R90"/>
@@ -864,23 +936,20 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-2.424" y1="-0.408" x2="-2.424" y2="-1.297" width="0.254" layer="94"/>
 <wire x1="-2.424" y1="0.735" x2="0" y2="2.386" width="0.254" layer="94"/>
 <wire x1="-2.424" y1="-0.408" x2="0" y2="-2.186" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.778" y2="-1.27" width="0.254" layer="94"/>
 <text x="-5.88" y="1.4" size="1.016" layer="97">IR</text>
 <text x="2.37" y="0.97" size="1.27" layer="95">&gt;NAME</text>
 <text x="2.37" y="-1.57" size="1.27" layer="95">&gt;VALUE</text>
-<circle x="-0.9" y="0.1" radius="2.54" width="0.2" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.778" y2="-1.27" width="0.254" layer="94"/>
 <text x="-2.54" y="-5.08" size="1.27" layer="97">E</text>
 <text x="-2.54" y="5.08" size="1.27" layer="97" align="top-left">C</text>
+<circle x="-0.9" y="0.1" radius="2.54" width="0.2" layer="94"/>
 </symbol>
-<symbol name="SFH_4545" library_version="2" library_locally_modified="yes">
+<symbol name="SFH_4545" urn="urn:adsk.eagle:symbol:12971283/1" library_version="3" library_locally_modified="yes">
 <wire x1="-2.54" y1="1.524" x2="-2.54" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-1.524" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-2.54" y2="1.524" width="0.254" layer="94"/>
 <wire x1="0" y1="1.524" x2="0" y2="-1.524" width="0.254" layer="94"/>
-<text x="-3.556" y="4.826" size="1.27" layer="95">&gt;NAME</text>
-<text x="-3.556" y="-3.302" size="1.27" layer="96">&gt;VALUE</text>
-<text x="1.016" y="2.032" size="1.016" layer="94">IR</text>
 <wire x1="1.016" y1="4.064" x2="-0.762" y2="2.032" width="0.254" layer="94"/>
 <wire x1="0.6858" y1="3.0988" x2="0.127" y2="3.5814" width="0.254" layer="94"/>
 <wire x1="0.127" y1="3.5814" x2="1.016" y2="4.064" width="0.254" layer="94"/>
@@ -895,10 +964,13 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-0.5588" y1="3.2004" x2="-0.5334" y2="3.937" width="0.254" layer="94"/>
 <wire x1="-0.5334" y1="3.937" x2="-0.6604" y2="3.937" width="0.254" layer="94"/>
 <wire x1="-0.9398" y1="3.6068" x2="-0.7112" y2="3.7592" width="0.254" layer="94"/>
+<text x="-3.556" y="4.826" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.556" y="-3.302" size="1.27" layer="96">&gt;VALUE</text>
+<text x="1.016" y="2.032" size="1.016" layer="94">IR</text>
 <pin name="+_ANODE" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="-_CATHODE" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="DIODE" library_version="2" library_locally_modified="yes">
+<symbol name="DIODE" urn="urn:adsk.eagle:symbol:12971281/1" library_version="3" library_locally_modified="yes">
 <wire x1="-2.54" y1="1.524" x2="-2.54" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-1.524" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-2.54" y2="1.524" width="0.254" layer="94"/>
@@ -908,55 +980,55 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pin name="+_ANODE" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="-_CATHODE" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="2V" library_version="2" library_locally_modified="yes">
+<symbol name="2V" urn="urn:adsk.eagle:symbol:12971279/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;2V Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="2V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="GND" library_version="2" library_locally_modified="yes">
+<symbol name="GND" urn="urn:adsk.eagle:symbol:12971272/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="3.3VA" library_version="2" library_locally_modified="yes">
+<symbol name="3.3VA" urn="urn:adsk.eagle:symbol:12971276/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;3.3V Analog Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="3.3VA" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="GND_A" library_version="2" library_locally_modified="yes">
+<symbol name="GND_A" urn="urn:adsk.eagle:symbol:12971274/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Analog Ground Supply&lt;/h3&gt;</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="1.27" y2="-0.635" width="0.254" layer="94"/>
 <text x="0" y="-1.524" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 <pin name="GND_A" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-<wire x1="-1.27" y1="-0.635" x2="1.27" y2="-0.635" width="0.254" layer="94"/>
 </symbol>
-<symbol name="5V" library_version="2" library_locally_modified="yes">
+<symbol name="5V" urn="urn:adsk.eagle:symbol:12971280/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="3.3V" library_version="2" library_locally_modified="yes">
+<symbol name="3.3V" urn="urn:adsk.eagle:symbol:12971278/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;3.3v Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="12V" library_version="2" library_locally_modified="yes">
+<symbol name="12V" urn="urn:adsk.eagle:symbol:12971277/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;V Boost Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="12V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="GND_M" library_version="2" library_locally_modified="yes">
+<symbol name="GND_M" urn="urn:adsk.eagle:symbol:12971273/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Motor Ground Symbol&lt;/h3&gt;</description>
 <pin name="GND_M" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <wire x1="-2.032" y1="0" x2="2.032" y2="0" width="0.254" layer="94"/>
@@ -964,7 +1036,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <wire x1="-0.508" y1="-1.524" x2="0.508" y2="-1.524" width="0.254" layer="94"/>
 <text x="0" y="-1.778" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="TPS61088RHLR" library_version="2" library_locally_modified="yes">
+<symbol name="TPS61088RHLR" urn="urn:adsk.eagle:symbol:12971271/1" library_version="3" library_locally_modified="yes">
 <wire x1="-12.7" y1="25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-30.48" x2="12.7" y2="25.4" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-30.48" x2="-12.7" y2="-30.48" width="0.254" layer="94"/>
@@ -993,15 +1065,15 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pin name="AGND" x="15.24" y="17.78" length="short" rot="R180"/>
 <pin name="PGND" x="15.24" y="22.86" length="short" rot="R180"/>
 </symbol>
-<symbol name="GND_SW" library_version="2" library_locally_modified="yes">
+<symbol name="GND_SW" urn="urn:adsk.eagle:symbol:12971270/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Switching DC-DC Ground Supply&lt;/h3&gt;</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<pin name="GND_SW" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-<text x="0" y="-2.794" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 <wire x1="-1.905" y1="0" x2="0" y2="-1.905" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.905" x2="1.905" y2="0" width="0.254" layer="94"/>
+<pin name="GND_SW" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0" y="-2.794" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="XAL5030-222MEC" library_version="2" library_locally_modified="yes">
+<symbol name="XAL5030-222MEC" urn="urn:adsk.eagle:symbol:12971269/1" library_version="3" library_locally_modified="yes">
 <wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94" curve="-175.4"/>
 <wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94" curve="-175.4"/>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94" curve="-175.4"/>
@@ -1011,21 +1083,21 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pin name="1" x="0" y="7.62" visible="off" length="short" rot="R270"/>
 <pin name="2" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
 </symbol>
-<symbol name="LM1117" library_version="2" library_locally_modified="yes">
+<symbol name="LM1117" urn="urn:adsk.eagle:symbol:12971288/2" library_version="4" library_locally_modified="yes">
 <wire x1="10.16" y1="3.81" x2="-10.16" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="3.81" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="10.16" y2="3.81" width="0.254" layer="94"/>
 <pin name="VIN" x="-12.7" y="0" visible="off" length="short" direction="pwr"/>
-<pin name="VOUT" x="12.7" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
-<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
+<pin name="VOUT" x="12.7" y="0" visible="off" length="short" direction="sup" rot="R180"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="-8.89" y="-1.27" size="1.778" layer="97">VIN</text>
 <text x="2.54" y="-1.27" size="1.778" layer="97">VOUT</text>
 <text x="-2.54" y="-3.81" size="1.778" layer="97">GND</text>
 <text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="CPOL" library_version="2" library_locally_modified="yes">
+<symbol name="CPOL" urn="urn:adsk.eagle:symbol:12971287/1" library_version="3" library_locally_modified="yes">
 <wire x1="-1.524" y1="-0.889" x2="1.524" y2="-0.889" width="0.254" layer="94"/>
 <wire x1="1.524" y1="-0.889" x2="1.524" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.524" y1="0" x2="-1.524" y2="-0.889" width="0.254" layer="94"/>
@@ -1037,7 +1109,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
-<symbol name="LMZ21701SILR" library_version="2" library_locally_modified="yes">
+<symbol name="LMZ21701SILR" urn="urn:adsk.eagle:symbol:12971268/2" library_version="4" library_locally_modified="yes">
 <wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
@@ -1048,14 +1120,14 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pin name="FB" x="12.7" y="-10.16" length="short" rot="R180"/>
 <pin name="PG" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="VOUT" x="12.7" y="5.08" length="short" direction="sup" rot="R180"/>
-<pin name="GND@1" x="-12.7" y="-10.16" length="short"/>
+<pin name="GND@1" x="-12.7" y="-10.16" length="short" direction="sup"/>
 <pin name="VOS" x="12.7" y="-5.08" length="short" rot="R180"/>
 <pin name="EN" x="-12.7" y="0" length="short"/>
-<pin name="VIN" x="-12.7" y="5.08" length="short"/>
-<pin name="GND@2" x="-12.7" y="-15.24" length="short"/>
-<pin name="GND@3" x="-12.7" y="-20.32" length="short"/>
+<pin name="VIN" x="-12.7" y="5.08" length="short" direction="pwr"/>
+<pin name="GND@2" x="-12.7" y="-15.24" length="short" direction="sup"/>
+<pin name="GND@3" x="-12.7" y="-20.32" length="short" direction="sup"/>
 </symbol>
-<symbol name="SPLITTER" library_version="2" library_locally_modified="yes">
+<symbol name="SPLITTER" urn="urn:adsk.eagle:symbol:12971275/1" library_version="3" library_locally_modified="yes">
 <wire x1="-2.54" y1="1.27" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="-1.27" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="-1.27" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
@@ -1070,16 +1142,16 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
 <pin name="1" x="-7.62" y="0" visible="pad" length="middle"/>
 </symbol>
-<symbol name="SPDT" library_version="2" library_locally_modified="yes">
+<symbol name="SPDT" urn="urn:adsk.eagle:symbol:12971266/1" library_version="3" library_locally_modified="yes">
 <pin name="COM" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="1" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 <circle x="-2.54" y="0" radius="0.635" width="0.254" layer="94"/>
 <circle x="2.54" y="-2.54" radius="0.635" width="0.254" layer="94"/>
 <circle x="2.54" y="2.54" radius="0.635" width="0.254" layer="94"/>
-<pin name="1" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
-<pin name="3" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="3.302" y2="1.778" width="0.254" layer="94"/>
 </symbol>
-<symbol name="BMI088" library_version="2" library_locally_modified="yes">
+<symbol name="BMI088" urn="urn:adsk.eagle:symbol:12971265/1" library_version="3" library_locally_modified="yes">
 <wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
@@ -1102,7 +1174,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pin name="SDO1" x="-17.78" y="-5.08" length="middle" direction="out"/>
 <pin name="INT1" x="17.78" y="0" length="middle" rot="R180"/>
 </symbol>
-<symbol name="IDC-6PIN-DIN41651" library_version="2" library_locally_modified="yes">
+<symbol name="IDC-6PIN-DIN41651" urn="urn:adsk.eagle:symbol:12971290/1" library_version="3" library_locally_modified="yes">
 <pin name="1" x="-10.16" y="2.54" visible="pin" length="short"/>
 <pin name="2" x="-10.16" y="0" visible="pin" length="short"/>
 <pin name="3" x="-10.16" y="-2.54" visible="pin" length="short"/>
@@ -1116,7 +1188,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
-<symbol name="STM32F40XXX" urn="urn:adsk.eagle:symbol:11889736/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
+<symbol name="STM32F40XXX" urn="urn:adsk.eagle:symbol:11889736/2" library_version="3" library_locally_modified="yes">
 <pin name="VBAT" x="-40.64" y="35.56" length="middle" direction="pwr"/>
 <pin name="PC13-TAMPER-RTC" x="-40.64" y="33.02" length="middle"/>
 <pin name="PC14-OSC32_IN" x="-40.64" y="30.48" length="middle"/>
@@ -1188,67 +1260,67 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <text x="-32.6644" y="44.6786" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-33.2994" y="42.1386" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
-<symbol name="DISPLAY-OLED-128X64-I2C" library_version="2" library_locally_modified="yes">
+<symbol name="DISPLAY-OLED-128X64-I2C" urn="urn:adsk.eagle:symbol:12971292/1" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;128x64 Dot Matrix OLED Module&lt;/b&gt;&lt;br /&gt;
 Variant with I2C interface</description>
 <wire x1="-15.24" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="GND" x="-5.08" y="20.32" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC" x="-2.54" y="20.32" length="middle" direction="pwr" rot="R270"/>
-<pin name="SCL" x="0" y="20.32" length="middle" rot="R270"/>
-<pin name="SDA" x="2.54" y="20.32" length="middle" rot="R270"/>
 <wire x1="-12.7" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="-5.08" y="20.32" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC" x="-2.54" y="20.32" length="middle" direction="pwr" rot="R270"/>
+<pin name="SCL" x="0" y="20.32" length="middle" rot="R270"/>
+<pin name="SDA" x="2.54" y="20.32" length="middle" rot="R270"/>
 <rectangle x1="-11.684" y1="5.08" x2="-10.16" y2="6.604" layer="94"/>
 <rectangle x1="-9.144" y1="5.08" x2="-7.62" y2="6.604" layer="94"/>
 <rectangle x1="-11.684" y1="2.54" x2="-10.16" y2="4.064" layer="94"/>
-<text x="15.24" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="15.24" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-6.604" y1="5.08" x2="-5.08" y2="6.604" layer="94"/>
 <rectangle x1="-11.684" y1="0" x2="-10.16" y2="1.524" layer="94"/>
 <rectangle x1="-9.144" y1="2.54" x2="-7.62" y2="4.064" layer="94"/>
+<text x="15.24" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="15.24" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
 <text x="7.62" y="-5.08" size="1.778" layer="94" align="bottom-right">128x64</text>
 <text x="7.62" y="-2.54" size="1.778" layer="94" align="bottom-right">OLED</text>
 </symbol>
-<symbol name="WIRELESS-BLUETOOTH-HC-05" library_version="2" library_locally_modified="yes">
+<symbol name="WIRELESS-BLUETOOTH-HC-05" urn="urn:adsk.eagle:symbol:12971291/2" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;Bluetooth Transceiver Module&lt;/b&gt; based on &lt;b&gt;HC-05&lt;/b&gt; board</description>
 <pin name="STATE" x="-20.32" y="5.08" length="middle"/>
+<pin name="RX" x="-20.32" y="2.54" length="middle" direction="in"/>
+<pin name="TX" x="-20.32" y="0" length="middle" direction="out"/>
+<pin name="GND" x="-20.32" y="-2.54" length="middle" direction="sup"/>
+<pin name="VIN" x="-20.32" y="-5.08" length="middle" direction="sup"/>
+<pin name="EN" x="-20.32" y="-7.62" length="middle"/>
 <wire x1="15.24" y1="7.62" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-10.16" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
 <text x="-15.24" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="RX" x="-20.32" y="2.54" length="middle" direction="in"/>
-<pin name="TX" x="-20.32" y="0" length="middle" direction="out"/>
-<pin name="GND" x="-20.32" y="-2.54" length="middle" direction="sup"/>
-<pin name="VIN" x="-20.32" y="-5.08" length="middle" direction="pwr"/>
-<pin name="EN" x="-20.32" y="-7.62" length="middle"/>
 </symbol>
-<symbol name="LMZ10501SILT" library_version="2" library_locally_modified="yes">
+<symbol name="LMZ10501SILT" urn="urn:adsk.eagle:symbol:12971285/1" library_version="3">
 <wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-15.24" x2="25.4" y2="2.54" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<text x="26.67" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="26.67" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="EN" x="0" y="0" length="middle" direction="in"/>
-<pin name="VCON" x="0" y="-2.54" length="middle"/>
-<pin name="FB" x="0" y="-5.08" length="middle" direction="in"/>
-<pin name="SGND" x="0" y="-7.62" length="middle" direction="sup"/>
-<pin name="EP" x="15.24" y="-20.32" length="middle" direction="sup" rot="R90"/>
-<pin name="VREF" x="30.48" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="VIN" x="30.48" y="-2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="PGND" x="30.48" y="-5.08" length="middle" direction="sup" rot="R180"/>
-<pin name="VOUT" x="30.48" y="-7.62" length="middle" direction="sup" rot="R180"/>
+<text x="6.35" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="6.35" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="EN" x="2.54" y="0" length="short"/>
+<pin name="VCON" x="2.54" y="-2.54" length="short"/>
+<pin name="FB" x="2.54" y="-5.08" length="short" direction="in"/>
+<pin name="SGND" x="2.54" y="-7.62" length="short" direction="sup"/>
+<pin name="EP" x="15.24" y="-17.78" length="short" direction="sup" rot="R90"/>
+<pin name="VREF" x="27.94" y="0" length="short" direction="in" rot="R180"/>
+<pin name="VIN" x="27.94" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="PGND" x="27.94" y="-5.08" length="short" direction="sup" rot="R180"/>
+<pin name="VOUT" x="27.94" y="-7.62" length="short" direction="sup" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
+<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/2" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;Magnetic buzzer&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; SMD
@@ -1273,7 +1345,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TB6612FNG" prefix="U" library_version="2" library_locally_modified="yes">
+<deviceset name="TB6612FNG" urn="urn:adsk.eagle:component:12971346/2" prefix="U" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;TB6612FNG - Dual DC motor driver &lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 
@@ -1323,7 +1395,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRFML8244TRPBF" prefix="Q" library_version="2" library_locally_modified="yes">
+<deviceset name="IRFML8244TRPBF" urn="urn:adsk.eagle:component:12971344/1" prefix="Q" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;IRFML8244TRPbF - N Channel Mosfet &lt;/b&gt;&lt;hr&gt;
 &lt;br&gt;
 
@@ -1348,7 +1420,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEFT4300" urn="urn:adsk.eagle:component:11889743/1" locally_modified="yes" prefix="D" library_version="2" library_locally_modified="yes">
+<deviceset name="TEFT4300" urn="urn:adsk.eagle:component:11889743/2" prefix="D" library_version="3" library_locally_modified="yes">
 <description>TEFT4300 Phototransistor from Vishay</description>
 <gates>
 <gate name="TEFT4300" symbol="PHOTOTRANSISTOR" x="-2.54" y="0"/>
@@ -1359,13 +1431,16 @@ Variant with I2C interface</description>
 <connect gate="TEFT4300" pin="C_+" pad="C"/>
 <connect gate="TEFT4300" pin="E_-" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971322/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SFH_4545" prefix="D" library_version="2" library_locally_modified="yes">
+<deviceset name="SFH_4545" urn="urn:adsk.eagle:component:12971343/1" locally_modified="yes" prefix="D" library_version="5" library_locally_modified="yes">
 <description>High Power Infrared Emitter (940 nm)</description>
 <gates>
 <gate name="G$1" symbol="SFH_4545" x="0" y="0"/>
@@ -1376,13 +1451,16 @@ Variant with I2C interface</description>
 <connect gate="G$1" pin="+_ANODE" pad="+"/>
 <connect gate="G$1" pin="-_CATHODE" pad="-"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE_1N4148WX" library_version="2" library_locally_modified="yes">
+<deviceset name="DIODE_1N4148WX" urn="urn:adsk.eagle:component:12971342/1" library_version="3" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
@@ -1392,13 +1470,16 @@ Variant with I2C interface</description>
 <connect gate="G$1" pin="+_ANODE" pad="+"/>
 <connect gate="G$1" pin="-_CATHODE" pad="-"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971321/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2V" prefix="SUPPLY" library_version="2" library_locally_modified="yes">
+<deviceset name="2V" urn="urn:adsk.eagle:component:12971339/1" prefix="SUPPLY" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;2V Supply Symbol&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="2V" x="0" y="0"/>
@@ -1411,7 +1492,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND" prefix="GND" library_version="2" library_locally_modified="yes">
+<deviceset name="GND" urn="urn:adsk.eagle:component:12971333/1" prefix="GND" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
 <gates>
@@ -1425,7 +1506,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="3.3VA" prefix="SUPPLY" library_version="2" library_locally_modified="yes">
+<deviceset name="3.3VA" urn="urn:adsk.eagle:component:12971338/1" prefix="SUPPLY" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;3.3V Analog Supply Symbol&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3VA" x="0" y="0"/>
@@ -1438,7 +1519,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND_A" library_version="2" library_locally_modified="yes">
+<deviceset name="GND_A" urn="urn:adsk.eagle:component:12971335/1" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;Analog Ground Symbol&lt;/b&gt;
 &lt;p&gt;Generic symbol for a analog ground supply.&lt;/p&gt;</description>
 <gates>
@@ -1452,7 +1533,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V" prefix="SUPPLY" library_version="2" library_locally_modified="yes">
+<deviceset name="5V" urn="urn:adsk.eagle:component:12971341/1" prefix="SUPPLY" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
@@ -1465,7 +1546,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="3.3V" prefix="SUPPLY" library_version="2" library_locally_modified="yes">
+<deviceset name="3.3V" urn="urn:adsk.eagle:component:12971340/1" prefix="SUPPLY" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
@@ -1478,7 +1559,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="12V" prefix="SUPPLY" library_version="2" library_locally_modified="yes">
+<deviceset name="12V" urn="urn:adsk.eagle:component:12971337/1" prefix="SUPPLY" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Boost Supply Symbol&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="12V" x="0" y="0"/>
@@ -1491,7 +1572,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND_M" prefix="GND" library_version="2" library_locally_modified="yes">
+<deviceset name="GND_M" urn="urn:adsk.eagle:component:12971334/1" prefix="GND" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Motor Ground Supply&lt;/h3&gt;
 &lt;p&gt;Used for separating noise motor current from sensitive grounds like adc.&lt;/p&gt;</description>
 <gates>
@@ -1505,7 +1586,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS61088RHLR" prefix="IC" library_version="2" library_locally_modified="yes">
+<deviceset name="TPS61088RHLR" urn="urn:adsk.eagle:component:12971332/1" prefix="IC" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;DC-DC Boost Regulator &lt;/b&gt;&lt;p&gt;
 &lt;i&gt; Description:&lt;/i&gt;  
 &lt;br&gt;Input: 2.7 - 12 V 
@@ -1541,6 +1622,9 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tps61088"&gt; Datasheet &lt;/a&gt;
 <connect gate="G$1" pin="VOUT@2" pad="15"/>
 <connect gate="G$1" pin="VOUT@3" pad="16"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971319/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="10-A Fully-Integrated Synchronous Boost Converter" constant="no"/>
@@ -1554,7 +1638,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tps61088"&gt; Datasheet &lt;/a&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND_SW" prefix="GND" library_version="2" library_locally_modified="yes">
+<deviceset name="GND_SW" urn="urn:adsk.eagle:component:12971331/1" prefix="GND" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Switching DC-DC Ground Supply Symbol&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="GND_SW" x="0" y="0"/>
@@ -1567,7 +1651,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tps61088"&gt; Datasheet &lt;/a&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="XAL5030-222MEC" prefix="L" library_version="2" library_locally_modified="yes">
+<deviceset name="XAL5030-222MEC" urn="urn:adsk.eagle:component:12971330/1" prefix="L" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;COILCRAFT - XAL5030-222MEC - INDUCTOR, PWR, 2.2UH, 9.2A,20%,38MHZ&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/XAL5030-222MEC.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1579,6 +1663,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/XAL5030-222ME
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971318/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="COILCRAFT - XAL5030-222MEC - INDUCTOR, PWR, 2.2UH, 9.2A,20%,38MHZ" constant="no"/>
@@ -1592,7 +1679,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/XAL5030-222ME
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM1117-3.3" prefix="VR" library_version="2" library_locally_modified="yes">
+<deviceset name="LM1117-3.3" urn="urn:adsk.eagle:component:12971348/2" prefix="VR" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;LM1117&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt;&lt;br /&gt;
@@ -1628,7 +1715,7 @@ Out: 3.3V, 800mA
 </device>
 </devices>
 </deviceset>
-<deviceset name="SMC_A" prefix="C" library_version="2" library_locally_modified="yes">
+<deviceset name="SMC_A" urn="urn:adsk.eagle:component:12971347/1" prefix="C" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;A Size Taltalum Capacitator&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; Size A taltalum capacitor (EIA size 3216-18) 
@@ -1652,7 +1739,7 @@ Out: 3.3V, 800mA
 </device>
 </devices>
 </deviceset>
-<deviceset name="LMZ21701" prefix="S" library_version="2" library_locally_modified="yes">
+<deviceset name="LMZ21701" urn="urn:adsk.eagle:component:12971329/3" prefix="S" library_version="5">
 <description>&lt;b&gt;3V to 17V, 1A Step-Down DC/DC Power Module in 3.5mm  3.5mm Package&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1672,6 +1759,9 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 <connect gate="G$1" pin="VOS" pad="6"/>
 <connect gate="G$1" pin="VOUT" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971317/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="3V to 17V, 1A Step-Down DC/DC Power Module in 3.5mm  3.5mm Package" constant="no"/>
@@ -1685,7 +1775,7 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPLITTER" library_version="2" library_locally_modified="yes">
+<deviceset name="SPLITTER" urn="urn:adsk.eagle:component:12971336/1" library_version="3" library_locally_modified="yes">
 <description>Used for separating grounds</description>
 <gates>
 <gate name="G$1" symbol="SPLITTER" x="0" y="0"/>
@@ -1696,13 +1786,16 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971320/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPDT-500SSP1S1M6QEA" library_version="2" library_locally_modified="yes">
+<deviceset name="SPDT-500SSP1S1M6QEA" urn="urn:adsk.eagle:component:12971327/1" library_version="3" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="SPDT" x="0" y="0"/>
 </gates>
@@ -1713,13 +1806,16 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="COM" pad="2_COM"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971316/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BMI088" prefix="U" library_version="2" library_locally_modified="yes">
+<deviceset name="BMI088" urn="urn:adsk.eagle:component:12971326/1" prefix="U" library_version="3" library_locally_modified="yes">
 <description>High-performance 6-axis inertial sensor (accelerometer + gyroscope)</description>
 <gates>
 <gate name="G$1" symbol="BMI088" x="0" y="0"/>
@@ -1743,6 +1839,9 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 <connect gate="G$1" pin="VDD" pad="3"/>
 <connect gate="G$1" pin="VDDIO" pad="11"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971315/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="AVAILABILITY" value="Unavailable"/>
@@ -1756,7 +1855,7 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 </device>
 </devices>
 </deviceset>
-<deviceset name="IDC-6PIN" library_version="2" library_locally_modified="yes">
+<deviceset name="IDC-6PIN" urn="urn:adsk.eagle:component:12971325/1" locally_modified="yes" library_version="4" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="IDC-6PIN-DIN41651" x="2.54" y="0"/>
 </gates>
@@ -1770,13 +1869,16 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971314/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STM32F405RG" urn="urn:adsk.eagle:component:11889741/1" locally_modified="yes" prefix="U" library_version="2" library_locally_modified="yes">
+<deviceset name="STM32F405RG" urn="urn:adsk.eagle:component:11889741/2" prefix="U" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;STM32F405RG Microcontroller&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; Arm Cortex M4 processor, ~160MHz
@@ -1863,7 +1965,7 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 </device>
 </devices>
 </deviceset>
-<deviceset name="DISPLAY-OLED-128X64-I2C" library_version="2" library_locally_modified="yes">
+<deviceset name="DISPLAY-OLED-128X64-I2C" urn="urn:adsk.eagle:component:12971351/1" locally_modified="yes" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;128x64 Dot Matrix OLED Module&lt;/b&gt; based on &lt;b&gt;SSD1306&lt;/b&gt; chip&lt;br /&gt;
 Variant with &lt;b&gt;I2C interface&lt;/b&gt;
 &lt;p&gt;More details available here:&lt;br /&gt;
@@ -1884,13 +1986,16 @@ Variant with &lt;b&gt;I2C interface&lt;/b&gt;
 <connect gate="G$1" pin="SDA" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971312/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WIRELESS-BLUETOOTH-HC-05" library_version="2" library_locally_modified="yes">
+<deviceset name="WIRELESS-BLUETOOTH-HC-05" urn="urn:adsk.eagle:component:12971350/2" locally_modified="yes" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;Bluetooth Transceiver Module&lt;/b&gt; based on &lt;b&gt;HC-05&lt;/b&gt; board
 &lt;p&gt;Tutorial is available here:&lt;br /&gt;
 &lt;a href="https://arduino-info.wikispaces.com/BlueTooth-HC05-HC06-Modules-How-To"&gt;https://arduino-info.wikispaces.com/BlueTooth-HC05-HC06-Modules-How-To&lt;/a&gt;&lt;/p&gt;
@@ -1909,13 +2014,16 @@ Variant with &lt;b&gt;I2C interface&lt;/b&gt;
 <connect gate="G$1" pin="TX" pad="3"/>
 <connect gate="G$1" pin="VIN" pad="5"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971313/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LMZ10501" prefix="IC" library_version="2" library_locally_modified="yes">
+<deviceset name="LMZ10501" urn="urn:adsk.eagle:component:12971345/2" prefix="IC" library_version="5">
 <description>&lt;b&gt;Voltage Regulators - Switching Regulators 1A Nano Mod w/ 5.5V Max Inpt VTG&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1934,6 +2042,9 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="VOUT" pad="5"/>
 <connect gate="G$1" pin="VREF" pad="8"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971324/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="Voltage Regulators - Switching Regulators 1A Nano Mod w/ 5.5V Max Inpt VTG" constant="no"/>
@@ -2032,7 +2143,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </package>
 </packages>
 <packages3d>
-<package3d name="C0603" urn="urn:adsk.eagle:package:5332305/1" type="box">
+<package3d name="C0603" urn="urn:adsk.eagle:package:5332305/2" type="model">
 <description>&lt;b&gt;Chip CAPACITOR 0603 (1608 Metric)&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="C0603"/>
@@ -2048,7 +2159,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <packageinstance name="EIA_6032-28"/>
 </packageinstances>
 </package3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:5332309/1" type="box">
+<package3d name="R0603" urn="urn:adsk.eagle:package:5332309/2" type="model">
 <description>&lt;b&gt;Chip RESISTOR 0603 (1608 Metric)&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="R0603"/>
@@ -2116,7 +2227,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C0603" urn="urn:adsk.eagle:component:5332321/2" prefix="C" uservalue="yes">
+<deviceset name="C0603" urn="urn:adsk.eagle:component:5332321/3" prefix="C" uservalue="yes">
 <description>&lt;b&gt;&lt;b&gt;Standard Chip CAPACITOR 0605 (1608 Metric)&lt;/b&gt;
 &lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
@@ -2144,7 +2255,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5332305/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5332305/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2191,7 +2302,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="R0603" urn="urn:adsk.eagle:component:5332325/2" prefix="R" uservalue="yes">
+<deviceset name="R0603" urn="urn:adsk.eagle:component:5332325/3" prefix="R" uservalue="yes">
 <description>&lt;b&gt;&lt;b&gt;Standard Chip RESISTOR 0603 (1608 Metric)&lt;/b&gt;
 &lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
@@ -2219,7 +2330,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5332309/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5332309/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -3050,57 +3161,57 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="STM32F405RG" device="" package3d_urn="urn:adsk.eagle:package:11478949/2"/>
 <part name="U$4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SMT-0540-S-R" device="" package3d_urn="urn:adsk.eagle:package:12016513/1"/>
 <part name="U1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TB6612FNG" device="" package3d_urn="urn:adsk.eagle:package:12461704/1"/>
-<part name="C1" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C2" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="C1" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C2" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="C3" library="CASE-RCL" deviceset="KEMET_C" device="" package3d_urn="urn:adsk.eagle:package:5402996/1" value="10u"/>
 <part name="LED_R" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/1" value=""/>
 <part name="LED_G" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/1" value=""/>
 <part name="LED_B" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/1" value=""/>
-<part name="R7" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0.75"/>
-<part name="R11" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
-<part name="R13" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="1.8k"/>
-<part name="R1" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="1.8k"/>
-<part name="R2" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="1.8k"/>
-<part name="RT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="290k"/>
-<part name="RB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="150k"/>
+<part name="R7" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
+<part name="R11" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="R13" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
+<part name="R1" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
+<part name="R2" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
+<part name="RT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="290k"/>
+<part name="RB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="150k"/>
 <part name="C_IN" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="10u"/>
 <part name="C_OUT" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="10u"/>
-<part name="C_VC" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="470pF"/>
+<part name="C_VC" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="470pF"/>
 <part name="Q4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="Q3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="R3" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
-<part name="D4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device=""/>
-<part name="D5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device=""/>
-<part name="D6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device=""/>
-<part name="L_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device=""/>
-<part name="R14" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="1k"/>
-<part name="R4" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="1k"/>
-<part name="R5" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="1k"/>
-<part name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DIODE_1N4148WX" device="" value="1N4148WX"/>
-<part name="C4" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C5" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="10u"/>
-<part name="C6" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C7" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="10u"/>
-<part name="R6" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0.75"/>
-<part name="R8" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="R3" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="D4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
+<part name="D5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
+<part name="D6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
+<part name="L_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<part name="R14" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
+<part name="R4" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
+<part name="R5" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
+<part name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DIODE_1N4148WX" device="" package3d_urn="urn:adsk.eagle:package:12971321/1" value="1N4148WX"/>
+<part name="C4" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C5" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
+<part name="C6" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C7" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
+<part name="R6" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
+<part name="R8" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="Q1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="FL_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device=""/>
-<part name="C8" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C9" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="10u"/>
-<part name="R9" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0.75"/>
-<part name="R10" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="FL_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<part name="C8" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C9" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
+<part name="R9" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
+<part name="R10" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="Q2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="FR_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device=""/>
-<part name="C10" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C11" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="10u"/>
-<part name="R12" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0.75"/>
-<part name="R15" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="FR_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<part name="C10" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C11" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
+<part name="R12" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0.75"/>
+<part name="R15" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="Q5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="R_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device=""/>
-<part name="C12" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C13" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="10u"/>
-<part name="R16" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="1.8k"/>
-<part name="D8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device=""/>
+<part name="R_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<part name="C12" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C13" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
+<part name="R16" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1.8k"/>
+<part name="D8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/1"/>
 <part name="SUPPLY7" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="2V" device=""/>
 <part name="GND4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="GND5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -3124,27 +3235,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND11" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_M" device=""/>
 <part name="GND12" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="IC2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TPS61088RHLR" device=""/>
+<part name="IC2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TPS61088RHLR" device="" package3d_urn="urn:adsk.eagle:package:12971319/1"/>
 <part name="GND13" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="R17" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="150k"/>
-<part name="C14" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C15" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="2.2u"/>
-<part name="L1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="XAL5030-222MEC" device="" value="2.2u"/>
+<part name="R17" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="150k"/>
+<part name="C14" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C15" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
+<part name="L1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="XAL5030-222MEC" device="" package3d_urn="urn:adsk.eagle:package:12971318/1" value="2.2u"/>
 <part name="GND14" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="C16" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="0.1u"/>
 <part name="C17" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
-<part name="C18" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="C18" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="GND15" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="GND17" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="SUPPLY10" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="12V" device=""/>
-<part name="R18" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="180k"/>
-<part name="R19" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="20k"/>
+<part name="R18" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="180k"/>
+<part name="R19" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
 <part name="GND18" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="R20" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="30k"/>
-<part name="C21" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="27p"/>
-<part name="C23" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="560p"/>
+<part name="R20" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="30k"/>
+<part name="C21" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="27p"/>
+<part name="C23" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="560p"/>
 <part name="GND19" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="R21" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="112k"/>
+<part name="R21" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="112k"/>
 <part name="C19" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
 <part name="C20" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
 <part name="C22" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
@@ -3157,45 +3268,45 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY11" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="SUPPLY12" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="FP1" library="CASE-RCL" deviceset="WE-CBF_0805" device="" package3d_urn="urn:adsk.eagle:package:5332310/1" value="10u"/>
-<part name="C28" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C29" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="2.2u"/>
+<part name="C28" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C29" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
 <part name="SUPPLY13" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3VA" device=""/>
 <part name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
-<part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device=""/>
-<part name="R_FBB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="20k"/>
-<part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="3300p"/>
+<part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/2"/>
+<part name="R_FBB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
+<part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="3300p"/>
 <part name="GND21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="C32" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
-<part name="R23" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="R23" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="C33" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/1" value="22u"/>
 <part name="SUPPLY14" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
-<part name="R_FBT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="105k"/>
+<part name="R_FBT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="105k"/>
 <part name="GND22" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C34" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="C34" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="SUPPLY15" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3VA" device=""/>
 <part name="U$5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
-<part name="C35" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="C35" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="SUPPLY17" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="12V" device=""/>
-<part name="R22" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="47k"/>
-<part name="R24" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="R22" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="47k"/>
+<part name="R24" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="GND23" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="5V_PWR" library="CASE-LED" deviceset="CHIP-LED0603" device="" package3d_urn="urn:adsk.eagle:package:7889637/1" value=""/>
-<part name="R25" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="1k"/>
+<part name="R25" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="1k"/>
 <part name="X1" library="JST XH Connectors" deviceset="JST-XH-03-PIN" device="-LONG-PAD" value="JST-XH"/>
-<part name="U$6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPLITTER" device=""/>
-<part name="U$7" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPLITTER" device=""/>
+<part name="U$6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPLITTER" device="" package3d_urn="urn:adsk.eagle:package:12971320/1"/>
+<part name="U$7" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPLITTER" device="" package3d_urn="urn:adsk.eagle:package:12971320/1"/>
 <part name="GND24" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="GND25" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_M" device=""/>
-<part name="R26" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="20k"/>
-<part name="R27" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
-<part name="R28" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="20k"/>
-<part name="R31" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
-<part name="SW" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPDT-500SSP1S1M6QEA" device=""/>
-<part name="U4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="BMI088" device=""/>
-<part name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IDC-6PIN" device=""/>
+<part name="R26" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
+<part name="R27" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="R28" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="20k"/>
+<part name="R31" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="SW" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPDT-500SSP1S1M6QEA" device="" package3d_urn="urn:adsk.eagle:package:12971316/1"/>
+<part name="U4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="BMI088" device="" package3d_urn="urn:adsk.eagle:package:12971315/1"/>
+<part name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IDC-6PIN" device="" package3d_urn="urn:adsk.eagle:package:12971314/2" override_package3d_urn="urn:adsk.eagle:package:12977481/2" override_package_urn="urn:adsk.eagle:footprint:12971305/1"/>
 <part name="GND26" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
-<part name="MOTOR_RIGHT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IDC-6PIN" device=""/>
+<part name="MOTOR_RIGHT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IDC-6PIN" device="" package3d_urn="urn:adsk.eagle:package:12971314/2"/>
 <part name="GND27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="U$8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
@@ -3205,23 +3316,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY20" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND29" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="BTN_SEL" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
-<part name="C30" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="R29" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="100k"/>
-<part name="R30" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="C30" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="R29" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="100k"/>
+<part name="R30" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="SUPPLY21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND30" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C36" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="C36" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="BTN_RST" library="CASE-Switches" deviceset="KMR621NGLFS" device="" package3d_urn="urn:adsk.eagle:package:7911989/1"/>
 <part name="GND31" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C42" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="10u"/>
+<part name="C42" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="10u"/>
 <part name="GND34" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="SUPPLY23" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="SUPPLY27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="JP1" library="CASE-Pinhead" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
+<part name="BOOT_JUMPERS" library="CASE-Pinhead" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="SUPPLY29" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND36" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R33" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
-<part name="R34" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="10k"/>
+<part name="R33" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
+<part name="R34" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="10k"/>
 <part name="SUPPLY30" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND37" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="GND38" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -3230,31 +3340,31 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND40" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY33" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="SUPPLY35" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="C45" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="2.2u"/>
-<part name="C46" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="2.2u"/>
-<part name="C47" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C48" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C43" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
-<part name="C44" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="1u"/>
+<part name="C45" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
+<part name="C46" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="2.2u"/>
+<part name="C47" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C48" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C43" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
+<part name="C44" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="1u"/>
 <part name="SUPPLY28" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3VA" device=""/>
 <part name="U$9" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
-<part name="C49" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="C49" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="GND35" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C50" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="C50" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="SUPPLY31" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="C51" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/1" value="0.1u"/>
+<part name="C51" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/2" value="0.1u"/>
 <part name="SUPPLY22" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="GND32" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="GND33" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="R32" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0"/>
-<part name="R35" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0"/>
-<part name="R36" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0"/>
-<part name="R37" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/1" value="0"/>
-<part name="OLED" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DISPLAY-OLED-128X64-I2C" device=""/>
-<part name="HC-05" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="WIRELESS-BLUETOOTH-HC-05" device=""/>
+<part name="R32" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0"/>
+<part name="R35" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0"/>
+<part name="R36" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0"/>
+<part name="R37" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/2" value="0"/>
+<part name="OLED" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DISPLAY-OLED-128X64-I2C" device="" package3d_urn="urn:adsk.eagle:package:12971312/2"/>
+<part name="HC-05" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="WIRELESS-BLUETOOTH-HC-05" device="" package3d_urn="urn:adsk.eagle:package:12971313/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>
-<part name="IC3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ10501" device=""/>
+<part name="IC3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ10501" device="" package3d_urn="urn:adsk.eagle:package:12971324/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -4032,14 +4142,11 @@ Created by: Isak Åslund </text>
 <instance part="GND34" gate="1" x="525.78" y="294.64" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="VALUE" x="525.78" y="294.386" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY23" gate="G$1" x="71.12" y="276.86" smashed="yes" grouprefs="POWER_REGULATION">
-<attribute name="VALUE" x="71.12" y="279.654" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 <instance part="SUPPLY27" gate="G$1" x="525.78" y="320.04" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="VALUE" x="525.78" y="322.834" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="JP1" gate="A" x="449.58" y="218.44" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="443.23" y="224.155" size="1.778" layer="95"/>
+<instance part="BOOT_JUMPERS" gate="A" x="449.58" y="218.44" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="440.69" y="224.155" size="1.778" layer="95"/>
 <attribute name="VALUE" x="443.23" y="210.82" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY29" gate="G$1" x="449.58" y="231.14" smashed="yes" grouprefs="MICROCONTROLLER">
@@ -4246,15 +4353,15 @@ Created by: Isak Åslund </text>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="260.35" x2="200.66" y2="252.73" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<wire x1="185.42" y1="273.05" x2="182.88" y2="273.05" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="200.66" y1="262.89" x2="200.66" y2="252.73" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="187.96" y1="273.05" x2="182.88" y2="273.05" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="182.88" y1="273.05" x2="182.88" y2="252.73" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="182.88" y1="252.73" x2="200.66" y2="252.73" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="RB" gate="G$1" pin="1"/>
 <wire x1="176.53" y1="265.43" x2="176.53" y2="252.73" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="176.53" y1="252.73" x2="182.88" y2="252.73" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <junction x="182.88" y="252.73" grouprefs="POWER_REGULATION"/>
-<wire x1="215.9" y1="275.59" x2="220.98" y2="275.59" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="213.36" y1="275.59" x2="220.98" y2="275.59" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="220.98" y1="275.59" x2="220.98" y2="252.73" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="220.98" y1="252.73" x2="200.66" y2="252.73" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <junction x="200.66" y="252.73" grouprefs="POWER_REGULATION"/>
@@ -4408,12 +4515,12 @@ Created by: Isak Åslund </text>
 <pinref part="GND34" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="BOOT_JUMPERS" gate="A" pin="5"/>
 <wire x1="447.04" y1="215.9" x2="439.42" y2="215.9" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="439.42" y1="215.9" x2="439.42" y2="210.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="439.42" y1="210.82" x2="449.58" y2="210.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="GND36" gate="1" pin="GND"/>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="BOOT_JUMPERS" gate="A" pin="6"/>
 <wire x1="454.66" y1="215.9" x2="462.28" y2="215.9" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="462.28" y1="215.9" x2="462.28" y2="210.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="462.28" y1="210.82" x2="449.58" y2="210.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -4576,12 +4683,12 @@ Created by: Isak Åslund </text>
 <pinref part="SUPPLY27" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="BOOT_JUMPERS" gate="A" pin="1"/>
 <wire x1="447.04" y1="220.98" x2="439.42" y2="220.98" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="439.42" y1="220.98" x2="439.42" y2="228.6" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="439.42" y1="228.6" x2="449.58" y2="228.6" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="449.58" y1="228.6" x2="449.58" y2="231.14" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="BOOT_JUMPERS" gate="A" pin="2"/>
 <wire x1="454.66" y1="220.98" x2="462.28" y2="220.98" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="462.28" y1="220.98" x2="462.28" y2="228.6" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="462.28" y1="228.6" x2="449.58" y2="228.6" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -4926,7 +5033,7 @@ Created by: Isak Åslund </text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<wire x1="215.9" y1="280.67" x2="218.44" y2="280.67" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="213.36" y1="280.67" x2="218.44" y2="280.67" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="218.44" y1="280.67" x2="218.44" y2="290.83" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="218.44" y1="290.83" x2="176.53" y2="290.83" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="RT" gate="G$1" pin="2"/>
@@ -4934,22 +5041,6 @@ Created by: Isak Åslund </text>
 </segment>
 </net>
 <net name="2V" class="0">
-<segment>
-<wire x1="185.42" y1="275.59" x2="180.34" y2="275.59" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<wire x1="180.34" y1="275.59" x2="180.34" y2="257.81" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<wire x1="180.34" y1="257.81" x2="218.44" y2="257.81" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<wire x1="218.44" y1="257.81" x2="218.44" y2="273.05" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<wire x1="218.44" y1="273.05" x2="215.9" y2="273.05" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<wire x1="218.44" y1="273.05" x2="234.95" y2="273.05" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<junction x="218.44" y="273.05" grouprefs="POWER_REGULATION"/>
-<wire x1="234.95" y1="273.05" x2="234.95" y2="280.67" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<pinref part="C_OUT" gate="G$1" pin="1"/>
-<wire x1="234.95" y1="273.05" x2="234.95" y2="269.24" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<junction x="234.95" y="273.05" grouprefs="POWER_REGULATION"/>
-<pinref part="SUPPLY5" gate="G$1" pin="2V"/>
-<pinref part="IC3" gate="G$1" pin="FB"/>
-<pinref part="IC3" gate="G$1" pin="VOUT"/>
-</segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="469.9" x2="320.04" y2="472.44" width="0.1524" layer="91" grouprefs="EMITTERS"/>
@@ -5001,10 +5092,26 @@ Created by: Isak Åslund </text>
 <wire x1="382.27" y1="472.44" x2="382.27" y2="477.52" width="0.1524" layer="91"/>
 <junction x="382.27" y="477.52"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VOUT"/>
+<pinref part="C_OUT" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="273.05" x2="218.44" y2="273.05" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="273.05" x2="234.95" y2="273.05" width="0.1524" layer="91"/>
+<wire x1="234.95" y1="273.05" x2="234.95" y2="269.24" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="G$1" pin="2V"/>
+<wire x1="234.95" y1="280.67" x2="234.95" y2="273.05" width="0.1524" layer="91"/>
+<junction x="234.95" y="273.05"/>
+<wire x1="187.96" y1="275.59" x2="180.34" y2="275.59" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="180.34" y1="275.59" x2="180.34" y2="257.81" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="180.34" y1="257.81" x2="218.44" y2="257.81" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<pinref part="IC3" gate="G$1" pin="FB"/>
+<wire x1="218.44" y1="257.81" x2="218.44" y2="273.05" width="0.1524" layer="91"/>
+<junction x="218.44" y="273.05"/>
+</segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<wire x1="185.42" y1="278.13" x2="176.53" y2="278.13" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="187.96" y1="278.13" x2="176.53" y2="278.13" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="RT" gate="G$1" pin="1"/>
 <wire x1="176.53" y1="278.13" x2="176.53" y2="280.67" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="RB" gate="G$1" pin="2"/>
@@ -5278,7 +5385,7 @@ Created by: Isak Åslund </text>
 </net>
 <net name="5V" class="0">
 <segment>
-<wire x1="215.9" y1="278.13" x2="224.79" y2="278.13" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="213.36" y1="278.13" x2="224.79" y2="278.13" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="224.79" y1="278.13" x2="224.79" y2="287.02" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="C_IN" gate="G$1" pin="1"/>
 <wire x1="224.79" y1="269.24" x2="224.79" y2="278.13" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
@@ -5287,13 +5394,13 @@ Created by: Isak Åslund </text>
 <pinref part="IC3" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
-<pinref part="VR1" gate="G$1" pin="VIN"/>
-<wire x1="68.58" y1="276.86" x2="60.96" y2="276.86" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="C26" gate="G$1" pin="+"/>
-<wire x1="60.96" y1="276.86" x2="60.96" y2="274.32" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<wire x1="60.96" y1="276.86" x2="60.96" y2="279.4" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
-<junction x="60.96" y="276.86" grouprefs="POWER_REGULATION"/>
+<wire x1="60.96" y1="274.32" x2="60.96" y2="276.86" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="SUPPLY11" gate="G$1" pin="5V"/>
+<pinref part="VR1" gate="G$1" pin="VIN"/>
+<wire x1="60.96" y1="276.86" x2="60.96" y2="279.4" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="68.58" y1="276.86" x2="60.96" y2="276.86" width="0.1524" layer="91"/>
+<junction x="60.96" y="276.86"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="VOUT"/>
@@ -6029,14 +6136,14 @@ Created by: Isak Åslund </text>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="BOOT_JUMPERS" gate="A" pin="4"/>
 <wire x1="454.66" y1="218.44" x2="464.82" y2="218.44" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="R33" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="BOOT_JUMPERS" gate="A" pin="3"/>
 <wire x1="447.04" y1="218.44" x2="436.88" y2="218.44" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="R34" gate="G$1" pin="1"/>
 </segment>
@@ -6180,10 +6287,51 @@ Created by: Isak Åslund </text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="201,1,215.9,273.05,VOUT,5V\, 2V,,,,"/>
-<approved hash="201,1,161.29,361.95,VOUT,5V\, 2V,,,,"/>
+<approved hash="102,1,43.18,194.31,M_GND1,GND_M,,,,"/>
+<approved hash="102,1,43.18,190.5,M_GND1,GND_M,,,,"/>
+<approved hash="102,1,43.18,171.45,M_GND2,GND_M,,,,"/>
+<approved hash="102,1,43.18,167.64,M_GND2,GND_M,,,,"/>
+<approved hash="102,1,78.74,179.07,GND,GND_M,,,,"/>
+<approved hash="102,1,93.98,276.86,VOUT,3.3V,,,,"/>
+<approved hash="102,1,161.29,361.95,VOUT,5V,,,,"/>
+<approved hash="102,1,628.65,350.52,VIN,5V,,,,"/>
+<approved hash="102,1,187.96,273.05,SGND,GND,,,,"/>
+<approved hash="102,1,200.66,262.89,EP,GND,,,,"/>
+<approved hash="102,1,213.36,275.59,PGND,GND,,,,"/>
+<approved hash="102,1,213.36,273.05,VOUT,2V,,,,"/>
+<approved hash="201,1,78.74,179.07,GND,GND_M\, GND,,,,"/>
+<approved hash="201,1,213.36,273.05,VOUT,3.3V\, 5V\, 2V,,,,"/>
+<approved hash="201,1,161.29,361.95,VOUT,3.3V\, 5V\, 2V,,,,"/>
+<approved hash="201,1,93.98,276.86,VOUT,3.3V\, 5V\, 2V,,,,"/>
+<approved hash="104,1,392.43,339.09,U3,VBAT,3.3V,,,"/>
+<approved hash="202,1,392.43,328.93,U3,PH0_OSC_IN,,,,"/>
+<approved hash="104,1,392.43,311.15,U3,VSSA,GND_A,,,"/>
+<approved hash="104,1,392.43,308.61,U3,VDDA,3.3VA,,,"/>
+<approved hash="104,1,392.43,295.91,U3,VSS_4,GND,,,"/>
+<approved hash="104,1,392.43,293.37,U3,VDD_4,3.3V,,,"/>
+<approved hash="104,1,392.43,262.89,U3,VCAP_1,N$36,,,"/>
+<approved hash="104,1,392.43,260.35,U3,VDD_1,3.3V,,,"/>
+<approved hash="104,1,473.71,295.91,U3,VCAP_2,N$37,,,"/>
+<approved hash="104,1,473.71,298.45,U3,VDD_2,3.3V,,,"/>
+<approved hash="104,1,473.71,336.55,U3,VSS_3,GND,,,"/>
+<approved hash="104,1,473.71,339.09,U3,VDD_3,3.3V,,,"/>
+<approved hash="104,1,78.74,160.02,U1,VM,12V,,,"/>
+<approved hash="104,1,78.74,163.83,U1,VM,12V,,,"/>
+<approved hash="104,1,78.74,186.69,U1,VCC,3.3V,,,"/>
+<approved hash="104,1,78.74,201.93,U1,VM,12V,,,"/>
+<approved hash="104,1,68.58,276.86,VR1,VIN,5V,,,"/>
+<approved hash="104,1,135.89,361.95,S1,VIN,V_BAT,,,"/>
+<approved hash="104,1,674.37,285.75,U4,VDD,3.3VA,,,"/>
+<approved hash="104,1,674.37,250.19,U4,GNDA,GND_A,,,"/>
+<approved hash="104,1,674.37,252.73,U4,GNDIO,GND_A,,,"/>
+<approved hash="104,1,674.37,283.21,U4,VDDIO,3.3VA,,,"/>
+<approved hash="104,1,631.19,430.53,OLED,VCC,5V,,,"/>
+<approved hash="104,1,213.36,278.13,IC3,VIN,5V,,,"/>
 <approved hash="206,1,638.81,262.89,MISO,,,,,"/>
 <approved hash="206,1,638.81,260.35,MISO,,,,,"/>
+<approved hash="113,1,716.238,358.366,DEBUG,,,,,"/>
+<approved hash="113,1,451.084,219.936,BOOT_JUMPERS,,,,,"/>
+<approved hash="113,1,383.54,261.516,FRAME1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
@@ -6210,6 +6358,11 @@ packages will not be understood (or retained) with this version.
 <note version="9.5" severity="warning">
 Since Version 9.5, EAGLE supports persistent groups with
 schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
 will not be understood (or retained) with this version.
 </note>
 </compatibility>
