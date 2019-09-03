@@ -3116,11 +3116,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R13" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
 <part name="R1" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
 <part name="R2" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
-<part name="RT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="290k"/>
+<part name="RT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="290k">
+<attribute name="TOLERANCE" value="1%"/>
+</part>
 <part name="RB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="150k"/>
 <part name="C_IN" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="10u"/>
 <part name="C_OUT" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="10u"/>
-<part name="C_VC" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="470pF"/>
+<part name="C_VC" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="470pF">
+<attribute name="RATING" value="X5R/X7R"/>
+<attribute name="V_RATING" value="6.3V"/>
+</part>
 <part name="Q4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="Q3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="R3" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
@@ -3218,11 +3223,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
 <part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/2"/>
 <part name="R_FBB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
-<part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="3300p"/>
+<part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="3300p">
+<attribute name="RATING" value="X5R/X7R"/>
+<attribute name="V_RATING" value="10V"/>
+</part>
 <part name="GND21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C32" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
-<part name="R23" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
-<part name="C33" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
+<part name="C32" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u">
+<attribute name="RATING" value="X5R/X7R"/>
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="R23" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k">
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="C33" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u">
+<attribute name="V_RATING" value="10v"/>
+</part>
 <part name="SUPPLY14" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="R_FBT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="105k"/>
 <part name="GND22" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -3270,7 +3285,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C42" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
 <part name="GND34" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="BOOT_JUMPERS" library="CASE-Pinhead" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
+<part name="BOOT" library="CASE-Pinhead" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="SUPPLY29" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND36" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R33" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
@@ -3550,6 +3565,7 @@ Created by: Isak Åslund </text>
 <instance part="RT" gate="G$1" x="176.53" y="285.75" smashed="yes" rot="R90" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="173.99" y="288.0614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="173.99" y="285.242" size="1.778" layer="96" rot="R180"/>
+<attribute name="TOLERANCE" x="176.53" y="285.75" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="RB" gate="G$1" x="176.53" y="270.51" smashed="yes" rot="R90" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="173.99" y="272.8214" size="1.778" layer="95" rot="R180"/>
@@ -3566,6 +3582,8 @@ Created by: Isak Åslund </text>
 <instance part="C_VC" gate="G$1" x="163.83" y="271.78" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="161.036" y="273.939" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="162.306" y="268.859" size="1.778" layer="96" rot="R180"/>
+<attribute name="RATING" x="163.83" y="271.78" size="1.778" layer="96" display="off"/>
+<attribute name="V_RATING" x="163.83" y="271.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="Q4" gate="G$1" x="299.72" y="439.42" smashed="yes" grouprefs="EMITTERS">
 <attribute name="NAME" x="306.07" y="441.96" size="1.778" layer="95"/>
@@ -3909,6 +3927,8 @@ Created by: Isak Åslund </text>
 <instance part="C31" gate="G$1" x="123.19" y="347.98" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="124.714" y="348.361" size="1.778" layer="95"/>
 <attribute name="VALUE" x="124.714" y="343.281" size="1.778" layer="96"/>
+<attribute name="RATING" x="123.19" y="347.98" size="1.778" layer="96" display="off"/>
+<attribute name="V_RATING" x="123.19" y="347.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND21" gate="1" x="102.87" y="314.96" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="VALUE" x="102.87" y="314.706" size="1.778" layer="96" align="top-center"/>
@@ -3916,14 +3936,18 @@ Created by: Isak Åslund </text>
 <instance part="C32" gate="G$1" x="116.84" y="356.87" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="118.364" y="357.251" size="1.778" layer="95"/>
 <attribute name="VALUE" x="118.364" y="352.171" size="1.778" layer="96"/>
+<attribute name="RATING" x="116.84" y="356.87" size="1.778" layer="96" display="off"/>
+<attribute name="V_RATING" x="116.84" y="356.87" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R23" gate="G$1" x="167.64" y="356.87" smashed="yes" rot="R90" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="170.18" y="358.3686" size="1.778" layer="95"/>
 <attribute name="VALUE" x="170.18" y="354.838" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="167.64" y="356.87" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C33" gate="G$1" x="196.85" y="356.87" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="198.374" y="357.251" size="1.778" layer="95"/>
 <attribute name="VALUE" x="198.374" y="352.171" size="1.778" layer="96"/>
+<attribute name="V_RATING" x="196.85" y="356.87" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY14" gate="G$1" x="196.85" y="365.76" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="VALUE" x="196.85" y="368.554" size="1.778" layer="96" align="bottom-center"/>
@@ -4079,7 +4103,7 @@ Created by: Isak Åslund </text>
 <instance part="SUPPLY27" gate="G$1" x="525.78" y="320.04" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="VALUE" x="525.78" y="322.834" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="BOOT_JUMPERS" gate="A" x="449.58" y="218.44" smashed="yes" grouprefs="MICROCONTROLLER">
+<instance part="BOOT" gate="A" x="449.58" y="218.44" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="NAME" x="440.69" y="224.155" size="1.778" layer="95"/>
 <attribute name="VALUE" x="443.23" y="210.82" size="1.778" layer="96"/>
 </instance>
@@ -4454,12 +4478,12 @@ Created by: Isak Åslund </text>
 <pinref part="GND34" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="BOOT_JUMPERS" gate="A" pin="5"/>
+<pinref part="BOOT" gate="A" pin="5"/>
 <wire x1="447.04" y1="215.9" x2="439.42" y2="215.9" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="439.42" y1="215.9" x2="439.42" y2="210.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="439.42" y1="210.82" x2="449.58" y2="210.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="GND36" gate="1" pin="GND"/>
-<pinref part="BOOT_JUMPERS" gate="A" pin="6"/>
+<pinref part="BOOT" gate="A" pin="6"/>
 <wire x1="454.66" y1="215.9" x2="462.28" y2="215.9" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="462.28" y1="215.9" x2="462.28" y2="210.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="462.28" y1="210.82" x2="449.58" y2="210.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -4622,12 +4646,12 @@ Created by: Isak Åslund </text>
 <pinref part="SUPPLY27" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="BOOT_JUMPERS" gate="A" pin="1"/>
+<pinref part="BOOT" gate="A" pin="1"/>
 <wire x1="447.04" y1="220.98" x2="439.42" y2="220.98" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="439.42" y1="220.98" x2="439.42" y2="228.6" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="439.42" y1="228.6" x2="449.58" y2="228.6" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="449.58" y1="228.6" x2="449.58" y2="231.14" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<pinref part="BOOT_JUMPERS" gate="A" pin="2"/>
+<pinref part="BOOT" gate="A" pin="2"/>
 <wire x1="454.66" y1="220.98" x2="462.28" y2="220.98" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="462.28" y1="220.98" x2="462.28" y2="228.6" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="462.28" y1="228.6" x2="449.58" y2="228.6" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -6079,14 +6103,14 @@ Created by: Isak Åslund </text>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="BOOT_JUMPERS" gate="A" pin="4"/>
+<pinref part="BOOT" gate="A" pin="4"/>
 <wire x1="454.66" y1="218.44" x2="464.82" y2="218.44" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="R33" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="BOOT_JUMPERS" gate="A" pin="3"/>
+<pinref part="BOOT" gate="A" pin="3"/>
 <wire x1="447.04" y1="218.44" x2="436.88" y2="218.44" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="R34" gate="G$1" pin="1"/>
 </segment>
