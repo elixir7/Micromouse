@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -495,27 +495,6 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <smd name="9" x="1.5" y="-1.165" dx="0.675" dy="0.25" layer="1" roundness="50" rot="R90"/>
 <smd name="8" x="1.915" y="0" dx="0.675" dy="0.25" layer="1" roundness="50" rot="R180"/>
 </package>
-<package name="IE2-1024-ENCODER" urn="urn:adsk.eagle:footprint:12971305/1" library_version="3" library_locally_modified="yes">
-<pad name="1" x="-2.54" y="-1.27" drill="1.016" shape="square"/>
-<pad name="3" x="0" y="-1.27" drill="1.016"/>
-<pad name="5" x="2.54" y="-1.27" drill="1.016"/>
-<pad name="6" x="2.54" y="1.27" drill="1.016"/>
-<pad name="4" x="0" y="1.27" drill="1.016"/>
-<pad name="2" x="-2.54" y="1.27" drill="1.016"/>
-<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.127" layer="21"/>
-<wire x1="7.62" y1="3.81" x2="7.62" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-3.81" x2="-7.62" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-3.81" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="2.54" x2="6.35" y2="2.54" width="0.127" layer="21"/>
-<wire x1="6.35" y1="2.54" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
-</package>
 <package name="LQFP-64" urn="urn:adsk.eagle:footprint:11479094/2" library_version="2" library_locally_modified="yes">
 <description>64-QFP, 0.50 mm pitch, 12.00 mm span, 10.00 X 10.00 X 1.60 mm body
 &lt;p&gt;64-pin QFP package with 0.50 mm pitch, 12.00 mm lead span1 X 12.00 mm lead span2 with body size 10.00 X 10.00 X 1.60 mm&lt;/p&gt;</description>
@@ -730,6 +709,43 @@ Variant with I2C interface</description>
 <text x="-5.08" y="3.81" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-4.1675" y="-1.4875" size="1.016" layer="51" ratio="10">1</text>
 </package>
+<package name="IE2-1024-ENCODER" urn="urn:adsk.eagle:footprint:12971305/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<pad name="1" x="-2.54" y="-1.27" drill="1.016" shape="square"/>
+<pad name="3" x="0" y="-1.27" drill="1.016"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016"/>
+<pad name="6" x="2.54" y="1.27" drill="1.016"/>
+<pad name="4" x="0" y="1.27" drill="1.016"/>
+<pad name="2" x="-2.54" y="1.27" drill="1.016"/>
+<wire x1="-7.62" y1="4.5" x2="7.62" y2="4.5" width="0.127" layer="21"/>
+<wire x1="7.62" y1="4.5" x2="7.62" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-4.5" x2="-7.62" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-4.5" x2="-2.54" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-4.5" x2="2.54" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4.5" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="2.54" x2="6.35" y2="2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="2.54" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="4.5" x2="7.62" y2="4.5" width="0.127" layer="39"/>
+<wire x1="7.62" y1="4.5" x2="7.62" y2="-4.5" width="0.127" layer="39"/>
+<wire x1="7.62" y1="-4.5" x2="-7.62" y2="-4.5" width="0.127" layer="39"/>
+<wire x1="-7.62" y1="-4.5" x2="-7.62" y2="4.5" width="0.127" layer="39"/>
+</package>
+<package name="PAD.03X.05" library_version="14" library_locally_modified="yes">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+<text x="-2.413" y="0.889" size="1.016" layer="21" font="vector" ratio="15" distance="70">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P760X160-24" urn="urn:adsk.eagle:package:12461704/1" type="model" library_version="2" library_locally_modified="yes">
@@ -827,11 +843,6 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="PQFN50P450X300X100-16N"/>
 </packageinstances>
 </package3d>
-<package3d name="IE2-1024-ENCODER" urn="urn:adsk.eagle:package:12971314/2" type="model" library_version="4" library_locally_modified="yes">
-<packageinstances>
-<packageinstance name="IE2-1024-ENCODER"/>
-</packageinstances>
-</package3d>
 <package3d name="DISPLAY-OLED-128X64-I2C" urn="urn:adsk.eagle:package:12971312/2" type="model" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;128x64 Dot Matrix OLED Module&lt;/b&gt;&lt;br /&gt;
 Variant with I2C interface</description>
@@ -848,6 +859,11 @@ Variant with I2C interface</description>
 <package3d name="JST-XH-03" urn="urn:adsk.eagle:package:13005914/2" type="model" library_version="10">
 <packageinstances>
 <packageinstance name="JST-XH-03"/>
+</packageinstances>
+</package3d>
+<package3d name="IE2-1024-ENCODER" urn="urn:adsk.eagle:package:12971314/2" type="model" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="IE2-1024-ENCODER"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1347,6 +1363,12 @@ Variant with I2C interface</description>
 <pin name="1" x="-5.08" y="2.54" visible="pad" length="middle" function="dot"/>
 <pin name="2" x="-5.08" y="0" visible="pad" length="middle" function="dot"/>
 <pin name="3" x="-5.08" y="-2.54" visible="pad" length="middle" function="dot"/>
+</symbol>
+<symbol name="TEST-POINT" library_version="14" library_locally_modified="yes">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="1.27" y="1.27" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
+<circle x="3.556" y="0" radius="1" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1885,29 +1907,6 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 </device>
 </devices>
 </deviceset>
-<deviceset name="IDC-6PIN" urn="urn:adsk.eagle:component:12971325/1" locally_modified="yes" library_version="4" library_locally_modified="yes">
-<gates>
-<gate name="G$1" symbol="IDC-6PIN-DIN41651" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="IE2-1024-ENCODER">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971314/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="STM32F405RG" urn="urn:adsk.eagle:component:11889741/2" prefix="U" library_version="3" library_locally_modified="yes">
 <description>&lt;b&gt;STM32F405RG Microcontroller&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
@@ -2102,6 +2101,51 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:13005914/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IE2-1024-ENCODER" urn="urn:adsk.eagle:component:12971325/2" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="IDC-6PIN-DIN41651" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="IE2-1024-ENCODER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971314/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="TP" library_version="14" library_locally_modified="yes">
+<description>&lt;h3&gt;SparkFun Test Points&lt;/h3&gt;
+&lt;p&gt;Bare copper test points for troubleshooting or In-Circuit-Testing. These are used by our Production team for verifying production board runs using pogo-pins on test beds.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13284”&gt;SparkFun LSM9DS1 Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13714”&gt;SparkFun PSOC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13879"&gt;SparkFun Load Cell Amplifier&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3116,11 +3160,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R13" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
 <part name="R1" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
 <part name="R2" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
-<part name="RT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="290k"/>
+<part name="RT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="290k">
+<attribute name="TOLERANCE" value="1%"/>
+</part>
 <part name="RB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="150k"/>
 <part name="C_IN" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="10u"/>
 <part name="C_OUT" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="10u"/>
-<part name="C_VC" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="470pF"/>
+<part name="C_VC" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="470pF">
+<attribute name="RATING" value="X5R/X7R"/>
+<attribute name="V_RATING" value="6.3V"/>
+</part>
 <part name="Q4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="Q3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
 <part name="R3" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
@@ -3218,11 +3267,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
 <part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/2"/>
 <part name="R_FBB" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
-<part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="3300p"/>
+<part name="C31" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="3300p">
+<attribute name="RATING" value="X5R/X7R"/>
+<attribute name="V_RATING" value="10V"/>
+</part>
 <part name="GND21" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="C32" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
-<part name="R23" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
-<part name="C33" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>
+<part name="C32" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u">
+<attribute name="RATING" value="X5R/X7R"/>
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="R23" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k">
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="C33" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u">
+<attribute name="V_RATING" value="10v"/>
+</part>
 <part name="SUPPLY14" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="R_FBT" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="105k"/>
 <part name="GND22" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -3246,10 +3305,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R31" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="SW" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPDT-500SSP1S1M6QEA" device="" package3d_urn="urn:adsk.eagle:package:12971316/2"/>
 <part name="U4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="BMI088" device="" package3d_urn="urn:adsk.eagle:package:12971315/4"/>
-<part name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IDC-6PIN" device="" package3d_urn="urn:adsk.eagle:package:12971314/2" override_package3d_urn="urn:adsk.eagle:package:12977481/2" override_package_urn="urn:adsk.eagle:footprint:12971305/1"/>
 <part name="GND26" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
-<part name="MOTOR_RIGHT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IDC-6PIN" device="" package3d_urn="urn:adsk.eagle:package:12971314/2"/>
 <part name="GND27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="U$8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
@@ -3309,6 +3366,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>
 <part name="IC3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ10501" device="" package3d_urn="urn:adsk.eagle:package:12971324/2"/>
 <part name="U$10" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="JST-XH-3" device="" package3d_urn="urn:adsk.eagle:package:13005914/2"/>
+<part name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IE2-1024-ENCODER" device="" package3d_urn="urn:adsk.eagle:package:12971314/2"/>
+<part name="MOTOR_RIGHT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IE2-1024-ENCODER" device="" package3d_urn="urn:adsk.eagle:package:12971314/2"/>
+<part name="TP_2V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP_3.3V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP_5V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP_12V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
 </parts>
 <sheets>
 <sheet>
@@ -3550,6 +3613,7 @@ Created by: Isak Åslund </text>
 <instance part="RT" gate="G$1" x="176.53" y="285.75" smashed="yes" rot="R90" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="173.99" y="288.0614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="173.99" y="285.242" size="1.778" layer="96" rot="R180"/>
+<attribute name="TOLERANCE" x="176.53" y="285.75" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="RB" gate="G$1" x="176.53" y="270.51" smashed="yes" rot="R90" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="173.99" y="272.8214" size="1.778" layer="95" rot="R180"/>
@@ -3566,6 +3630,8 @@ Created by: Isak Åslund </text>
 <instance part="C_VC" gate="G$1" x="163.83" y="271.78" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="161.036" y="273.939" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="162.306" y="268.859" size="1.778" layer="96" rot="R180"/>
+<attribute name="RATING" x="163.83" y="271.78" size="1.778" layer="96" display="off"/>
+<attribute name="V_RATING" x="163.83" y="271.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="Q4" gate="G$1" x="299.72" y="439.42" smashed="yes" grouprefs="EMITTERS">
 <attribute name="NAME" x="306.07" y="441.96" size="1.778" layer="95"/>
@@ -3875,11 +3941,11 @@ Created by: Isak Åslund </text>
 <instance part="GND20" gate="1" x="81.28" y="257.81" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="VALUE" x="81.28" y="257.556" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="60.96" y="279.4" smashed="yes" grouprefs="POWER_REGULATION">
-<attribute name="VALUE" x="60.96" y="282.194" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="60.96" y="288.29" smashed="yes" grouprefs="POWER_REGULATION">
+<attribute name="VALUE" x="60.96" y="291.084" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY12" gate="G$1" x="101.6" y="281.94" smashed="yes" grouprefs="POWER_REGULATION">
-<attribute name="VALUE" x="101.6" y="284.734" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY12" gate="G$1" x="101.6" y="287.02" smashed="yes" grouprefs="POWER_REGULATION">
+<attribute name="VALUE" x="101.6" y="289.814" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="FP1" gate="G$1" x="114.3" y="276.86" smashed="yes" rot="R90" grouprefs="POWER_REGULATION">
 <attribute name="VALUE" x="113.03" y="280.67" size="1.778" layer="96" rot="R180"/>
@@ -3892,8 +3958,8 @@ Created by: Isak Åslund </text>
 <attribute name="NAME" x="128.524" y="272.161" size="1.778" layer="95"/>
 <attribute name="VALUE" x="128.524" y="267.081" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="132.08" y="279.4" smashed="yes" grouprefs="POWER_REGULATION">
-<attribute name="VALUE" x="132.08" y="282.194" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY13" gate="G$1" x="132.08" y="287.02" smashed="yes" grouprefs="POWER_REGULATION">
+<attribute name="VALUE" x="132.08" y="289.814" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="U$3" gate="G$1" x="132.08" y="259.08" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="VALUE" x="132.08" y="257.556" size="1.778" layer="96" align="top-center"/>
@@ -3909,6 +3975,8 @@ Created by: Isak Åslund </text>
 <instance part="C31" gate="G$1" x="123.19" y="347.98" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="124.714" y="348.361" size="1.778" layer="95"/>
 <attribute name="VALUE" x="124.714" y="343.281" size="1.778" layer="96"/>
+<attribute name="RATING" x="123.19" y="347.98" size="1.778" layer="96" display="off"/>
+<attribute name="V_RATING" x="123.19" y="347.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND21" gate="1" x="102.87" y="314.96" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="VALUE" x="102.87" y="314.706" size="1.778" layer="96" align="top-center"/>
@@ -3916,14 +3984,18 @@ Created by: Isak Åslund </text>
 <instance part="C32" gate="G$1" x="116.84" y="356.87" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="118.364" y="357.251" size="1.778" layer="95"/>
 <attribute name="VALUE" x="118.364" y="352.171" size="1.778" layer="96"/>
+<attribute name="RATING" x="116.84" y="356.87" size="1.778" layer="96" display="off"/>
+<attribute name="V_RATING" x="116.84" y="356.87" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R23" gate="G$1" x="167.64" y="356.87" smashed="yes" rot="R90" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="170.18" y="358.3686" size="1.778" layer="95"/>
 <attribute name="VALUE" x="170.18" y="354.838" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="167.64" y="356.87" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C33" gate="G$1" x="196.85" y="356.87" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="NAME" x="198.374" y="357.251" size="1.778" layer="95"/>
 <attribute name="VALUE" x="198.374" y="352.171" size="1.778" layer="96"/>
+<attribute name="V_RATING" x="196.85" y="356.87" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY14" gate="G$1" x="196.85" y="365.76" smashed="yes" grouprefs="POWER_REGULATION">
 <attribute name="VALUE" x="196.85" y="368.554" size="1.778" layer="96" align="bottom-center"/>
@@ -3999,19 +4071,11 @@ Created by: Isak Åslund </text>
 <attribute name="NAME" x="643.89" y="288.925" size="1.778" layer="95"/>
 <attribute name="VALUE" x="643.89" y="245.11" size="1.778" layer="96"/>
 </instance>
-<instance part="MOTOR_LEFT" gate="G$1" x="153.67" y="201.93" smashed="yes" grouprefs="MOTOR_AND_ENCODER">
-<attribute name="NAME" x="146.05" y="209.55" size="1.778" layer="95"/>
-<attribute name="VALUE" x="146.05" y="194.31" size="1.778" layer="95"/>
-</instance>
 <instance part="GND26" gate="1" x="138.43" y="194.31" smashed="yes" grouprefs="MOTOR_AND_ENCODER">
 <attribute name="VALUE" x="138.43" y="194.056" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="SUPPLY18" gate="G$1" x="168.91" y="207.01" smashed="yes" grouprefs="MOTOR_AND_ENCODER">
 <attribute name="VALUE" x="168.91" y="209.804" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="MOTOR_RIGHT" gate="G$1" x="215.9" y="201.93" smashed="yes" grouprefs="MOTOR_AND_ENCODER">
-<attribute name="NAME" x="208.28" y="209.55" size="1.778" layer="95"/>
-<attribute name="VALUE" x="208.28" y="194.31" size="1.778" layer="95"/>
 </instance>
 <instance part="GND27" gate="1" x="200.66" y="194.31" smashed="yes" grouprefs="MOTOR_AND_ENCODER">
 <attribute name="VALUE" x="200.66" y="194.056" size="1.778" layer="96" align="top-center"/>
@@ -4212,6 +4276,26 @@ Created by: Isak Åslund </text>
 <instance part="U$10" gate="G$1" x="66.04" y="360.68" smashed="yes" rot="R180">
 <attribute name="VALUE" x="62.23" y="365.76" size="1.778" layer="96"/>
 </instance>
+<instance part="MOTOR_LEFT" gate="G$1" x="153.67" y="201.93" smashed="yes">
+<attribute name="NAME" x="146.05" y="207.01" size="1.778" layer="95"/>
+<attribute name="VALUE" x="146.05" y="194.31" size="1.778" layer="95"/>
+</instance>
+<instance part="MOTOR_RIGHT" gate="G$1" x="215.9" y="201.93" smashed="yes">
+<attribute name="NAME" x="208.28" y="207.01" size="1.778" layer="95"/>
+<attribute name="VALUE" x="208.28" y="194.31" size="1.778" layer="95"/>
+</instance>
+<instance part="TP_2V" gate="G$1" x="238.76" y="273.05" smashed="yes">
+<attribute name="NAME" x="240.03" y="274.32" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP_3.3V" gate="G$1" x="104.14" y="283.21" smashed="yes">
+<attribute name="NAME" x="105.41" y="284.48" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP_5V" gate="G$1" x="217.17" y="361.95" smashed="yes">
+<attribute name="NAME" x="218.44" y="363.22" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP_12V" gate="G$1" x="218.44" y="455.93" smashed="yes">
+<attribute name="NAME" x="219.71" y="457.2" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4410,16 +4494,16 @@ Created by: Isak Åslund </text>
 <junction x="71.12" y="358.14"/>
 </segment>
 <segment>
-<pinref part="MOTOR_LEFT" gate="G$1" pin="3"/>
 <wire x1="143.51" y1="199.39" x2="138.43" y2="199.39" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="138.43" y1="199.39" x2="138.43" y2="196.85" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_LEFT" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<pinref part="MOTOR_RIGHT" gate="G$1" pin="3"/>
 <wire x1="205.74" y1="199.39" x2="200.66" y2="199.39" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="200.66" y1="199.39" x2="200.66" y2="196.85" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_RIGHT" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="720.09" y1="358.14" x2="741.68" y2="358.14" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
@@ -4597,7 +4681,11 @@ Created by: Isak Åslund </text>
 <wire x1="101.6" y1="276.86" x2="106.68" y2="276.86" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="FP1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
-<wire x1="101.6" y1="281.94" x2="101.6" y2="276.86" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="101.6" y1="287.02" x2="101.6" y2="283.21" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="101.6" y1="283.21" x2="101.6" y2="276.86" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="104.14" y1="283.21" x2="101.6" y2="283.21" width="0.1524" layer="91"/>
+<junction x="101.6" y="283.21"/>
+<pinref part="TP_3.3V" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="720.09" y1="360.68" x2="741.68" y2="360.68" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
@@ -4842,9 +4930,9 @@ Created by: Isak Åslund </text>
 <junction x="39.37" y="201.93" grouprefs="MOTOR_DRIVER"/>
 </segment>
 <segment>
-<pinref part="MOTOR_LEFT" gate="G$1" pin="2"/>
 <wire x1="143.51" y1="201.93" x2="125.73" y2="201.93" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
 <label x="127" y="201.93" size="1.778" layer="95" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_LEFT" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MOTOR_R_2" class="0">
@@ -4859,9 +4947,9 @@ Created by: Isak Åslund </text>
 <label x="26.67" y="186.69" size="1.778" layer="95" grouprefs="MOTOR_DRIVER"/>
 </segment>
 <segment>
-<pinref part="MOTOR_LEFT" gate="G$1" pin="1"/>
 <wire x1="143.51" y1="204.47" x2="125.73" y2="204.47" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
 <label x="127" y="204.47" size="1.778" layer="95" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_LEFT" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="MOTOR_L_2" class="0">
@@ -4876,9 +4964,9 @@ Created by: Isak Åslund </text>
 <label x="26.67" y="179.07" size="1.778" layer="95" grouprefs="MOTOR_DRIVER"/>
 </segment>
 <segment>
-<pinref part="MOTOR_RIGHT" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="204.47" x2="187.96" y2="204.47" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
 <label x="189.23" y="204.47" size="1.778" layer="95" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_RIGHT" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="MOTOR_L_1" class="0">
@@ -4893,9 +4981,9 @@ Created by: Isak Åslund </text>
 <label x="26.67" y="163.83" size="1.778" layer="95" grouprefs="MOTOR_DRIVER"/>
 </segment>
 <segment>
-<pinref part="MOTOR_RIGHT" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="201.93" x2="187.96" y2="201.93" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
 <label x="189.23" y="201.93" size="1.778" layer="95" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_RIGHT" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM_R" class="0">
@@ -5046,6 +5134,8 @@ Created by: Isak Åslund </text>
 <pinref part="IC3" gate="G$1" pin="FB"/>
 <wire x1="218.44" y1="257.81" x2="218.44" y2="273.05" width="0.1524" layer="91"/>
 <junction x="218.44" y="273.05"/>
+<wire x1="234.95" y1="273.05" x2="238.76" y2="273.05" width="0.1524" layer="91"/>
+<pinref part="TP_2V" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -5209,7 +5299,7 @@ Created by: Isak Åslund </text>
 <wire x1="132.08" y1="276.86" x2="137.16" y2="276.86" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="137.16" y1="276.86" x2="137.16" y2="274.32" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <junction x="127" y="276.86" grouprefs="POWER_REGULATION"/>
-<wire x1="132.08" y1="276.86" x2="132.08" y2="279.4" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="132.08" y1="276.86" x2="132.08" y2="287.02" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <junction x="132.08" y="276.86" grouprefs="POWER_REGULATION"/>
 <pinref part="SUPPLY13" gate="G$1" pin="3.3VA"/>
 </segment>
@@ -5337,7 +5427,7 @@ Created by: Isak Åslund </text>
 <wire x1="60.96" y1="274.32" x2="60.96" y2="276.86" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="SUPPLY11" gate="G$1" pin="5V"/>
 <pinref part="VR1" gate="G$1" pin="VIN"/>
-<wire x1="60.96" y1="276.86" x2="60.96" y2="279.4" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="60.96" y1="276.86" x2="60.96" y2="288.29" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="68.58" y1="276.86" x2="60.96" y2="276.86" width="0.1524" layer="91"/>
 <junction x="60.96" y="276.86"/>
 </segment>
@@ -5366,18 +5456,21 @@ Created by: Isak Åslund </text>
 <wire x1="196.85" y1="361.95" x2="209.55" y2="361.95" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="5V_PWR" gate="G$1" pin="A"/>
 <wire x1="209.55" y1="361.95" x2="209.55" y2="359.41" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="217.17" y1="361.95" x2="209.55" y2="361.95" width="0.1524" layer="91"/>
+<junction x="209.55" y="361.95"/>
+<pinref part="TP_5V" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="MOTOR_LEFT" gate="G$1" pin="4"/>
 <wire x1="163.83" y1="204.47" x2="168.91" y2="204.47" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
 <pinref part="SUPPLY18" gate="G$1" pin="5V"/>
 <wire x1="168.91" y1="204.47" x2="168.91" y2="207.01" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_LEFT" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="MOTOR_RIGHT" gate="G$1" pin="4"/>
 <wire x1="226.06" y1="204.47" x2="231.14" y2="204.47" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
 <pinref part="SUPPLY19" gate="G$1" pin="5V"/>
 <wire x1="231.14" y1="204.47" x2="231.14" y2="207.01" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_RIGHT" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <wire x1="628.65" y1="350.52" x2="607.06" y2="350.52" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
@@ -5452,6 +5545,9 @@ Created by: Isak Åslund </text>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="453.39" x2="200.66" y2="455.93" width="0.1524" layer="91" grouprefs="MOTOR_SUPPLY"/>
 <junction x="200.66" y="455.93" grouprefs="MOTOR_SUPPLY"/>
+<wire x1="218.44" y1="455.93" x2="213.36" y2="455.93" width="0.1524" layer="91"/>
+<junction x="213.36" y="455.93"/>
+<pinref part="TP_12V" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY17" gate="G$1" pin="12V"/>
@@ -5684,8 +5780,9 @@ Created by: Isak Åslund </text>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="VIN"/>
-<wire x1="135.89" y1="361.95" x2="116.84" y2="361.95" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
+<wire x1="135.89" y1="361.95" x2="133.35" y2="361.95" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="133.35" y1="361.95" x2="116.84" y2="361.95" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="116.84" y1="361.95" x2="116.84" y2="359.41" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <junction x="116.84" y="361.95" grouprefs="POWER_REGULATION"/>
 <label x="119.38" y="373.38" size="1.778" layer="95" xref="yes" grouprefs="POWER_REGULATION"/>
@@ -5696,6 +5793,10 @@ Created by: Isak Åslund </text>
 <wire x1="110.49" y1="368.3" x2="110.49" y2="373.38" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <wire x1="110.49" y1="373.38" x2="116.84" y2="373.38" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <junction x="116.84" y="373.38" grouprefs="POWER_REGULATION"/>
+<pinref part="S1" gate="G$1" pin="EN"/>
+<wire x1="135.89" y1="356.87" x2="133.35" y2="356.87" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="356.87" x2="133.35" y2="361.95" width="0.1524" layer="91"/>
+<junction x="133.35" y="361.95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -5922,8 +6023,8 @@ Created by: Isak Åslund </text>
 <net name="ENC_R_B" class="0">
 <segment>
 <wire x1="181.61" y1="201.93" x2="163.83" y2="201.93" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
-<pinref part="MOTOR_LEFT" gate="G$1" pin="5"/>
 <label x="165.1" y="201.93" size="1.778" layer="95" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_LEFT" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="487.68" y1="316.23" x2="473.71" y2="316.23" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -5934,8 +6035,8 @@ Created by: Isak Åslund </text>
 <net name="ENC_R_A" class="0">
 <segment>
 <wire x1="181.61" y1="199.39" x2="163.83" y2="199.39" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
-<pinref part="MOTOR_LEFT" gate="G$1" pin="6"/>
 <label x="165.1" y="199.39" size="1.778" layer="95" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_LEFT" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="392.43" y1="288.29" x2="370.84" y2="288.29" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -5946,8 +6047,8 @@ Created by: Isak Åslund </text>
 <net name="ENC_L_B" class="0">
 <segment>
 <wire x1="243.84" y1="201.93" x2="226.06" y2="201.93" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
-<pinref part="MOTOR_RIGHT" gate="G$1" pin="5"/>
 <label x="227.33" y="201.93" size="1.778" layer="95" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_RIGHT" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="392.43" y1="306.07" x2="370.84" y2="306.07" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -5958,8 +6059,8 @@ Created by: Isak Åslund </text>
 <net name="ENC_L_A" class="0">
 <segment>
 <wire x1="243.84" y1="199.39" x2="226.06" y2="199.39" width="0.1524" layer="91" grouprefs="MOTOR_AND_ENCODER"/>
-<pinref part="MOTOR_RIGHT" gate="G$1" pin="6"/>
 <label x="227.33" y="199.39" size="1.778" layer="95" grouprefs="MOTOR_AND_ENCODER"/>
+<pinref part="MOTOR_RIGHT" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="392.43" y1="303.53" x2="370.84" y2="303.53" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -6273,7 +6374,7 @@ Created by: Isak Åslund </text>
 <approved hash="206,1,638.81,262.89,MISO,,,,,"/>
 <approved hash="206,1,638.81,260.35,MISO,,,,,"/>
 <approved hash="113,1,716.238,358.366,DEBUG,,,,,"/>
-<approved hash="113,1,451.084,219.936,BOOT_JUMPERS,,,,,"/>
+<approved hash="113,1,449.538,219.936,BOOT,,,,,"/>
 <approved hash="113,1,383.54,261.516,FRAME1,,,,,"/>
 </errors>
 </schematic>
@@ -6301,11 +6402,6 @@ packages will not be understood (or retained) with this version.
 <note version="9.5" severity="warning">
 Since Version 9.5, EAGLE supports persistent groups with
 schematics, and board files. Those persistent groups
-will not be understood (or retained) with this version.
-</note>
-<note version="9.4" severity="warning">
-Since Version 9.4, EAGLE supports the overriding of 3D packages
-in schematics and board files. Those overridden 3d packages
 will not be understood (or retained) with this version.
 </note>
 </compatibility>
