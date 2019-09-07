@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -161,7 +161,7 @@
 <libraries>
 <library name="Isaks Bibliotek" urn="urn:adsk.eagle:library:11889733">
 <packages>
-<package name="SMT-0540-S-R" urn="urn:adsk.eagle:footprint:12016510/1" library_version="2" library_locally_modified="yes">
+<package name="SMT-0540-S-R" urn="urn:adsk.eagle:footprint:12016510/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
 <wire x1="-2.5" y1="-2.4" x2="2.5" y2="-2.4" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2.6" x2="-1.5" y2="2.6" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="1.6" x2="-2.5" y2="-2.4" width="0.127" layer="21"/>
@@ -171,8 +171,8 @@
 <smd name="DUMMY_LEAD" x="-1.6" y="-2.4" dx="0.7" dy="0.9" layer="1"/>
 <smd name="+" x="1.9" y="-2.4" dx="0.7" dy="0.9" layer="1"/>
 <smd name="-" x="1.9" y="2.6" dx="0.7" dy="0.9" layer="1"/>
-<text x="0.16" y="-2.255" size="0.5" layer="21" rot="R90">SMT-0540-S-R</text>
-<text x="1.6" y="-0.1" size="0.7" layer="21" rot="R90">PUI</text>
+<text x="0.795" y="-1.366" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SMT
+0540</text>
 </package>
 <package name="SOP65P760X160-24" urn="urn:adsk.eagle:footprint:12461860/1" library_version="2" library_locally_modified="yes">
 <description>24-SOP, 0.65 mm pitch, 7.60 mm span, 7.80 X 5.60 X 1.60 mm body
@@ -271,7 +271,22 @@
 <text x="1.27" y="1.905" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">C</text>
 <text x="-2.54" y="-1.9172" size="0.7112" layer="25" font="vector">TEFT 4300</text>
 </package>
-<package name="SFH_4545" urn="urn:adsk.eagle:footprint:12971296/1" library_version="3" library_locally_modified="yes">
+<package name="SFH_4545" urn="urn:adsk.eagle:footprint:12971296/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<wire x1="-2.96" y1="0.96" x2="3.04" y2="0.96" width="0.1" layer="51"/>
+<wire x1="-2.96" y1="0.96" x2="-2.96" y2="-0.04" width="0.1" layer="51"/>
+<wire x1="3.04" y1="0.96" x2="3.04" y2="-0.04" width="0.1" layer="51"/>
+<wire x1="-2.96" y1="-0.04" x2="3.04" y2="-0.04" width="0.1" layer="51"/>
+<wire x1="-2.5" y1="1" x2="-2.3039" y2="4.1376" width="0.127" layer="51"/>
+<wire x1="-2.3039" y1="4.1376" x2="-2.0124" y2="5.8316" width="0.127" layer="51" curve="-12.363211"/>
+<wire x1="-2.0124" y1="5.8316" x2="-1.177" y2="7.514" width="0.127" layer="51" curve="-20.926555"/>
+<wire x1="-1.177" y1="7.514" x2="-0.7361" y2="7.8819" width="0.127" layer="51" curve="-26.573043"/>
+<wire x1="-0.7361" y1="7.8819" x2="-0.2361" y2="8" width="0.127" layer="51" curve="-26.564253"/>
+<wire x1="2.5" y1="1" x2="2.3039" y2="4.1376" width="0.127" layer="51"/>
+<wire x1="2.3039" y1="4.1376" x2="2.0124" y2="5.8316" width="0.127" layer="51" curve="12.363211"/>
+<wire x1="2.0124" y1="5.8316" x2="1.177" y2="7.514" width="0.127" layer="51" curve="20.926555"/>
+<wire x1="1.177" y1="7.514" x2="0.7361" y2="7.8819" width="0.127" layer="51" curve="26.573043"/>
+<wire x1="0.7361" y1="7.8819" x2="0.2361" y2="8" width="0.127" layer="51" curve="26.564253"/>
+<wire x1="0.2361" y1="8" x2="-0.2361" y2="8" width="0.127" layer="51"/>
 <wire x1="-2.96" y1="0.96" x2="3.04" y2="0.96" width="0.1" layer="21"/>
 <wire x1="-2.96" y1="0.96" x2="-2.96" y2="-0.04" width="0.1" layer="21"/>
 <wire x1="3.04" y1="0.96" x2="3.04" y2="-0.04" width="0.1" layer="21"/>
@@ -287,34 +302,19 @@
 <wire x1="1.177" y1="7.514" x2="0.7361" y2="7.8819" width="0.127" layer="21" curve="26.573043"/>
 <wire x1="0.7361" y1="7.8819" x2="0.2361" y2="8" width="0.127" layer="21" curve="26.564253"/>
 <wire x1="0.2361" y1="8" x2="-0.2361" y2="8" width="0.127" layer="21"/>
-<wire x1="-2.96" y1="0.96" x2="3.04" y2="0.96" width="0.1" layer="121"/>
-<wire x1="-2.96" y1="0.96" x2="-2.96" y2="-0.04" width="0.1" layer="121"/>
-<wire x1="3.04" y1="0.96" x2="3.04" y2="-0.04" width="0.1" layer="121"/>
-<wire x1="-2.96" y1="-0.04" x2="3.04" y2="-0.04" width="0.1" layer="121"/>
-<wire x1="-2.5" y1="1" x2="-2.3039" y2="4.1376" width="0.127" layer="121"/>
-<wire x1="-2.3039" y1="4.1376" x2="-2.0124" y2="5.8316" width="0.127" layer="121" curve="-12.363211"/>
-<wire x1="-2.0124" y1="5.8316" x2="-1.177" y2="7.514" width="0.127" layer="121" curve="-20.926555"/>
-<wire x1="-1.177" y1="7.514" x2="-0.7361" y2="7.8819" width="0.127" layer="121" curve="-26.573043"/>
-<wire x1="-0.7361" y1="7.8819" x2="-0.2361" y2="8" width="0.127" layer="121" curve="-26.564253"/>
-<wire x1="2.5" y1="1" x2="2.3039" y2="4.1376" width="0.127" layer="121"/>
-<wire x1="2.3039" y1="4.1376" x2="2.0124" y2="5.8316" width="0.127" layer="121" curve="12.363211"/>
-<wire x1="2.0124" y1="5.8316" x2="1.177" y2="7.514" width="0.127" layer="121" curve="20.926555"/>
-<wire x1="1.177" y1="7.514" x2="0.7361" y2="7.8819" width="0.127" layer="121" curve="26.573043"/>
-<wire x1="0.7361" y1="7.8819" x2="0.2361" y2="8" width="0.127" layer="121" curve="26.564253"/>
-<wire x1="0.2361" y1="8" x2="-0.2361" y2="8" width="0.127" layer="121"/>
-<wire x1="0" y1="4" x2="0" y2="3.3" width="0.127" layer="21"/>
-<wire x1="0" y1="3.3" x2="-20.99" y2="240.3" width="0.127" layer="21" style="shortdash"/>
-<wire x1="0" y1="3.3" x2="20.99" y2="240.3" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-0.9" y1="14" x2="-0.6942" y2="14.0457" width="0.127" layer="21" style="dashdot"/>
-<wire x1="-0.6942" y1="14.0457" x2="0.6942" y2="14.0457" width="0.127" layer="21" style="dashdot" curve="-25.057615"/>
-<wire x1="0.6942" y1="14.0457" x2="0.9" y2="14" width="0.127" layer="21" style="dashdot"/>
-<wire x1="-21" y1="240.3" x2="21" y2="240.3" width="0.127" layer="21" style="dashdot" curve="-30.371682"/>
+<wire x1="0" y1="4" x2="0" y2="3.3" width="0.127" layer="51"/>
+<wire x1="0" y1="3.3" x2="-20.99" y2="240.3" width="0.127" layer="51" style="shortdash"/>
+<wire x1="0" y1="3.3" x2="20.99" y2="240.3" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-0.9" y1="14" x2="-0.6942" y2="14.0457" width="0.127" layer="51" style="dashdot"/>
+<wire x1="-0.6942" y1="14.0457" x2="0.6942" y2="14.0457" width="0.127" layer="51" style="dashdot" curve="-25.057615"/>
+<wire x1="0.6942" y1="14.0457" x2="0.9" y2="14" width="0.127" layer="51" style="dashdot"/>
+<wire x1="-21" y1="240.3" x2="21" y2="240.3" width="0.127" layer="51" style="dashdot" curve="-30.371682"/>
 <pad name="+" x="-1.27" y="-0.5" drill="0.8" diameter="1.5"/>
 <pad name="-" x="1.27" y="-0.5" drill="0.8" diameter="1.5"/>
-<text x="-1.905" y="1.27" size="1.27" layer="21" font="vector">+</text>
-<text x="0.635" y="1.27" size="1.27" layer="21" font="vector">-</text>
-<text x="2.6926" y="-1.2778" size="0.7112" layer="25" font="vector" rot="R180">SFH 4550</text>
-<text x="2.8" y="11.6" size="1.27" layer="21" rot="R85">10 degree</text>
+<text x="-1.778" y="1.651" size="1.27" layer="21" font="vector">+</text>
+<text x="0.889" y="1.651" size="1.27" layer="21" font="vector">-</text>
+<text x="2.0576" y="-1.5318" size="0.7112" layer="25" font="vector" rot="R180">SFH 4550</text>
+<text x="2.8" y="11.6" size="1.27" layer="51" rot="R85">10 degree</text>
 </package>
 <package name="1N4148WX_SOD-323-2" urn="urn:adsk.eagle:footprint:12971298/2" library_version="14">
 <wire x1="-0.635" y1="-0.635" x2="1.065" y2="-0.635" width="0.127" layer="21"/>
@@ -762,7 +762,7 @@ Used as a test point connection for pogo pins or other debugging tools.
 <packageinstance name="SOT95P235X110-3"/>
 </packageinstances>
 </package3d>
-<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/2" type="model" library_version="7">
+<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/2" type="model" library_version="14" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="SMT-0540-S-R"/>
 </packageinstances>
@@ -806,7 +806,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="3MM_PHOTOTRANSISTOR"/>
 </packageinstances>
 </package3d>
-<package3d name="SFH_4545" urn="urn:adsk.eagle:package:12971323/2" type="model" library_version="5" library_locally_modified="yes">
+<package3d name="SFH_4545" urn="urn:adsk.eagle:package:12971323/2" type="model" library_version="14" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="SFH_4545"/>
 </packageinstances>
@@ -1372,7 +1372,7 @@ Variant with I2C interface</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/3" library_version="7">
+<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/3" library_version="14" library_locally_modified="yes">
 <description>&lt;b&gt;Magnetic buzzer&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; SMD
@@ -1492,7 +1492,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SFH_4545" urn="urn:adsk.eagle:component:12971343/1" locally_modified="yes" prefix="D" library_version="5" library_locally_modified="yes">
+<deviceset name="SFH_4545" urn="urn:adsk.eagle:component:12971343/2" prefix="D" library_version="14" library_locally_modified="yes">
 <description>High Power Infrared Emitter (940 nm)</description>
 <gates>
 <gate name="G$1" symbol="SFH_4545" x="0" y="0"/>
@@ -3310,7 +3310,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="U$8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_A" device=""/>
-<part name="DEBUG" library="CASE-Pinhead" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
+<part name="DEBUG" library="CASE-Pinhead" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2" override_package3d_urn="urn:adsk.eagle:package:13090280/2" override_package_urn="urn:adsk.eagle:footprint:22351/1"/>
 <part name="SUPPLY16" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND28" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
@@ -3327,7 +3327,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C42" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
 <part name="GND34" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY27" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="BOOT" library="CASE-Pinhead" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
+<part name="BOOT" library="CASE-Pinhead" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2" override_package3d_urn="urn:adsk.eagle:package:13090277/2" override_package_urn="urn:adsk.eagle:footprint:22348/1"/>
 <part name="SUPPLY29" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND36" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R33" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
@@ -3372,6 +3372,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TP_3.3V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP_5V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP_12V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
+<part name="FP2" library="CASE-RCL" deviceset="WE-CBF_0805" device="" package3d_urn="urn:adsk.eagle:package:5332310/3" value="10u"/>
 </parts>
 <sheets>
 <sheet>
@@ -4296,6 +4297,9 @@ Created by: Isak Åslund </text>
 <instance part="TP_12V" gate="G$1" x="218.44" y="455.93" smashed="yes">
 <attribute name="NAME" x="219.71" y="457.2" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="FP2" gate="G$1" x="114.3" y="264.16" smashed="yes" rot="R90">
+<attribute name="VALUE" x="113.03" y="267.97" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4447,6 +4451,9 @@ Created by: Isak Åslund </text>
 <wire x1="101.6" y1="264.16" x2="81.28" y2="264.16" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <junction x="81.28" y="264.16" grouprefs="POWER_REGULATION"/>
 <pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="FP2" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="264.16" x2="101.6" y2="264.16" width="0.1524" layer="91"/>
+<junction x="101.6" y="264.16"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="GND@1"/>
@@ -5370,6 +5377,9 @@ Created by: Isak Åslund </text>
 <wire x1="132.08" y1="264.16" x2="132.08" y2="261.62" width="0.1524" layer="91" grouprefs="POWER_REGULATION"/>
 <junction x="132.08" y="264.16" grouprefs="POWER_REGULATION"/>
 <pinref part="U$3" gate="G$1" pin="GND_A"/>
+<pinref part="FP2" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="264.16" x2="127" y2="264.16" width="0.1524" layer="91"/>
+<junction x="127" y="264.16"/>
 </segment>
 <segment>
 <pinref part="C35" gate="G$1" pin="2"/>
@@ -6402,6 +6412,11 @@ packages will not be understood (or retained) with this version.
 <note version="9.5" severity="warning">
 Since Version 9.5, EAGLE supports persistent groups with
 schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
 will not be understood (or retained) with this version.
 </note>
 </compatibility>
