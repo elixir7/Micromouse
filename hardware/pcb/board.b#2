@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -25,11 +25,11 @@
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" f3durn="urn:adsk.wipprod:dm.lineage:PpwhQu4ISvSIX1wCbJv1-Q" pcbguid="5bd68dad-af9a-419f-be48-17dfd3969886" lastpulledtime="2019-09-04T17:12:03Z" lastsyncedchangeguid="8b4017e1-9c24-0c3e-b3cd-026798b62da2"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" f3durn="urn:adsk.wipprod:dm.lineage:PpwhQu4ISvSIX1wCbJv1-Q" pcbguid="5bd68dad-af9a-419f-be48-17dfd3969886" lastpulledtime="2019-09-04T17:12:03Z" lastsyncedchangeguid="bef7a5de-f361-2a40-4369-6057da2f1612"/>
 <fusionteam huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" folderUrn="urn:adsk.wipprod:fs.folder:co.Q9At7jQeSXmdkOBUDBdX2g" urn="urn:adsk.wipprod:dm.lineage:zasA6zXySk-hPKqmqBO7Cg"  versionUrn="urn:adsk.wipprod:fs.file:vf.zasA6zXySk-hPKqmqBO7Cg?version=1" camFileUrn="" camFileVersionUrn="" lastpublishedchangeguid="feceac10-3c31-bd3e-53e5-6e63ad4e73d9"/>
 <plain>
 <text x="54.45" y="79.68" size="1.016" layer="21" ratio="15">RX</text>
@@ -288,15 +288,10 @@
 <wire x1="37.5" y1="50.5" x2="37.5" y2="34.5" width="0.254" layer="20"/>
 <wire x1="37.5" y1="34.5" x2="16" y2="34.5" width="0.254" layer="20"/>
 <wire x1="16" y1="34.5" x2="16" y2="50.5" width="0.254" layer="20"/>
-<text x="40.24" y="9.96" size="1.27" layer="22" rot="MR0" align="center">Jerry V1.0
-Designed by Isak Åslund
-Sweden | Fall 2019
-github.com/elixir7/micromouse
-</text>
-<wire x1="25.21" y1="16.15" x2="55.21" y2="16.15" width="0.1524" layer="22"/>
-<wire x1="55.21" y1="16.15" x2="55.21" y2="5.15" width="0.1524" layer="22"/>
-<wire x1="55.21" y1="5.15" x2="25.21" y2="5.15" width="0.1524" layer="22"/>
-<wire x1="25.21" y1="5.15" x2="25.21" y2="16.15" width="0.1524" layer="22"/>
+<wire x1="25.21" y1="16.15" x2="55.21" y2="16.15" width="0.2032" layer="22"/>
+<wire x1="55.21" y1="16.15" x2="55.21" y2="5.15" width="0.2032" layer="22"/>
+<wire x1="55.21" y1="5.15" x2="25.21" y2="5.15" width="0.2032" layer="22"/>
+<wire x1="25.21" y1="5.15" x2="25.21" y2="16.15" width="0.2032" layer="22"/>
 <wire x1="66.74" y1="22.54" x2="66.74" y2="62.54" width="0.001" layer="201" style="shortdash"/>
 <wire x1="66.74" y1="62.54" x2="58.74" y2="62.54" width="0.001" layer="201" style="shortdash"/>
 <wire x1="58.74" y1="62.54" x2="58.74" y2="22.54" width="0.001" layer="201" style="shortdash"/>
@@ -1684,11 +1679,16 @@ github.com/elixir7/micromouse
 <rectangle x1="42.91" y1="97.625" x2="45.55" y2="97.645" layer="208"/>
 <rectangle x1="46.37" y1="97.625" x2="47.55" y2="97.645" layer="208"/>
 <rectangle x1="48.89" y1="97.625" x2="50.05" y2="97.645" layer="208"/>
-<text x="62.9158" y="72.4662" size="1.016" layer="21" font="vector" ratio="15">SELECT</text>
-<wire x1="62.2808" y1="72.1106" x2="62.2808" y2="73.7616" width="0.1524" layer="21"/>
-<wire x1="62.2808" y1="73.7616" x2="68.1228" y2="73.7616" width="0.1524" layer="21"/>
-<wire x1="68.1228" y1="73.7616" x2="68.1228" y2="72.1106" width="0.1524" layer="21"/>
-<wire x1="68.1228" y1="72.1106" x2="62.3062" y2="72.1106" width="0.1524" layer="21"/>
+<text x="62.992" y="72.4408" size="1.016" layer="21" font="vector" ratio="15">SELECT</text>
+<wire x1="62.2808" y1="72.1106" x2="62.2808" y2="73.7616" width="0.2032" layer="21"/>
+<wire x1="62.2808" y1="73.7616" x2="68.1228" y2="73.7616" width="0.2032" layer="21"/>
+<wire x1="68.1228" y1="73.7616" x2="68.1228" y2="72.1106" width="0.2032" layer="21"/>
+<wire x1="68.1228" y1="72.1106" x2="62.3062" y2="72.1106" width="0.2032" layer="21"/>
+<text x="40.1066" y="10.2362" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center">Jerry V1.0
+Designed by Isak Åslund
+Sweden | Fall 2019
+github.com/elixir7/micromouse
+</text>
 </plain>
 <libraries>
 <library name="CASE-RCL">
@@ -3391,7 +3391,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="75.2178" y="9.1168" size="1.016" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="TP_12V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" value="TEST-POINT3X5" x="27.15" y="18.8" smashed="yes">
-<attribute name="NAME" x="25.0672" y="19.6636" size="1.016" layer="21" font="vector" ratio="15"/>
+<attribute name="NAME" x="25.118" y="19.7398" size="1.016" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="FP2" library="CASE-RCL" package="R0805" package3d_urn="urn:adsk.eagle:package:5332310/3" value="10u" x="61.4934" y="4.8006" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.2234" y="4.1656" size="1.27" layer="25" rot="R90"/>
@@ -6213,7 +6213,7 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC85500FF"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xFA000000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFFFFFF"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>

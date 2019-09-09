@@ -311,8 +311,8 @@
 <wire x1="-21" y1="240.3" x2="21" y2="240.3" width="0.127" layer="51" style="dashdot" curve="-30.371682"/>
 <pad name="+" x="-1.27" y="-0.5" drill="0.8" diameter="1.5"/>
 <pad name="-" x="1.27" y="-0.5" drill="0.8" diameter="1.5"/>
-<text x="-1.778" y="0.381" size="1.27" layer="21" font="vector">+</text>
-<text x="0.889" y="0.762" size="1.27" layer="21" font="vector">-</text>
+<text x="-1.778" y="1.651" size="1.27" layer="21" font="vector">+</text>
+<text x="0.889" y="1.651" size="1.27" layer="21" font="vector">-</text>
 <text x="2.0576" y="-1.5318" size="0.7112" layer="25" font="vector" rot="R180">SFH 4550</text>
 <text x="2.8" y="11.6" size="1.27" layer="51" rot="R85">10 degree</text>
 </package>
