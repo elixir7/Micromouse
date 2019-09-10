@@ -161,7 +161,7 @@
 <libraries>
 <library name="Isaks Bibliotek" urn="urn:adsk.eagle:library:11889733">
 <packages>
-<package name="SMT-0540-S-R" urn="urn:adsk.eagle:footprint:12016510/1" library_version="2" library_locally_modified="yes">
+<package name="SMT-0540-S-R" urn="urn:adsk.eagle:footprint:12016510/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
 <wire x1="-2.5" y1="-2.4" x2="2.5" y2="-2.4" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2.6" x2="-1.5" y2="2.6" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="1.6" x2="-2.5" y2="-2.4" width="0.127" layer="21"/>
@@ -171,8 +171,8 @@
 <smd name="DUMMY_LEAD" x="-1.6" y="-2.4" dx="0.7" dy="0.9" layer="1"/>
 <smd name="+" x="1.9" y="-2.4" dx="0.7" dy="0.9" layer="1"/>
 <smd name="-" x="1.9" y="2.6" dx="0.7" dy="0.9" layer="1"/>
-<text x="0.16" y="-2.255" size="0.5" layer="21" rot="R90">SMT-0540-S-R</text>
-<text x="1.6" y="-0.1" size="0.7" layer="21" rot="R90">PUI</text>
+<text x="0.795" y="-1.366" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SMT
+0540</text>
 </package>
 <package name="SOP65P760X160-24" urn="urn:adsk.eagle:footprint:12461860/1" library_version="2" library_locally_modified="yes">
 <description>24-SOP, 0.65 mm pitch, 7.60 mm span, 7.80 X 5.60 X 1.60 mm body
@@ -762,7 +762,7 @@ Used as a test point connection for pogo pins or other debugging tools.
 <packageinstance name="SOT95P235X110-3"/>
 </packageinstances>
 </package3d>
-<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/2" type="model" library_version="7">
+<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/2" type="model" library_version="14" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="SMT-0540-S-R"/>
 </packageinstances>
@@ -1372,7 +1372,7 @@ Variant with I2C interface</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/3" library_version="7">
+<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/3" library_version="14" library_locally_modified="yes">
 <description>&lt;b&gt;Magnetic buzzer&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; SMD
