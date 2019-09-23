@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" f3durn="urn:adsk.wipprod:dm.lineage:PpwhQu4ISvSIX1wCbJv1-Q" pcbguid="5bd68dad-af9a-419f-be48-17dfd3969886" lastpulledtime="2019-09-04T17:12:03Z" lastsyncedchangeguid="432a42e5-b089-d620-e363-877fbbfb8094"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" f3durn="urn:adsk.wipprod:dm.lineage:PpwhQu4ISvSIX1wCbJv1-Q" pcbguid="5bd68dad-af9a-419f-be48-17dfd3969886" lastpulledtime="2019-09-04T17:12:03Z" lastsyncedchangeguid="97200617-95ce-12dc-85ad-bc44fbde9d59"/>
 <fusionteam huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" folderUrn="urn:adsk.wipprod:fs.folder:co.Q9At7jQeSXmdkOBUDBdX2g" urn="urn:adsk.wipprod:dm.lineage:zasA6zXySk-hPKqmqBO7Cg"  versionUrn="urn:adsk.wipprod:fs.file:vf.zasA6zXySk-hPKqmqBO7Cg?version=1" camFileUrn="" camFileVersionUrn="" lastpublishedchangeguid="feceac10-3c31-bd3e-53e5-6e63ad4e73d9"/>
 <plain>
 <text x="54.45" y="79.68" size="1.016" layer="21" ratio="15">RX</text>
@@ -6210,9 +6210,6 @@ design rules under a new name.</description>
 <wire x1="50.55" y1="88.1674" x2="50.55" y2="86.94" width="0.2032" layer="1"/>
 <wire x1="54.0004" y1="81.6196" x2="54.0004" y2="88.5698" width="0.2032" layer="1"/>
 <wire x1="51.3334" y1="88.9508" x2="50.55" y2="88.1674" width="0.2032" layer="1"/>
-</signal>
-<signal name="N$26">
-<contactref element="U3" pad="4"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
