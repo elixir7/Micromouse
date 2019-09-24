@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -3244,9 +3244,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R18" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="180k"/>
 <part name="R19" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
 <part name="GND18" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
-<part name="R20" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="30k"/>
-<part name="C21" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="27p"/>
-<part name="C23" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="560p"/>
+<part name="R20" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="56k"/>
+<part name="C21" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="15p"/>
+<part name="C23" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="330p"/>
 <part name="GND19" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND_SW" device=""/>
 <part name="R21" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="112k"/>
 <part name="C19" library="CASE-RCL" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="22u"/>

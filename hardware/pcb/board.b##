@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" f3durn="urn:adsk.wipprod:dm.lineage:PpwhQu4ISvSIX1wCbJv1-Q" pcbguid="5bd68dad-af9a-419f-be48-17dfd3969886" lastpulledtime="2019-09-04T17:12:03Z" lastsyncedchangeguid="37924289-db4a-5963-7a8d-ca830585a297"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" f3durn="urn:adsk.wipprod:dm.lineage:PpwhQu4ISvSIX1wCbJv1-Q" pcbguid="5bd68dad-af9a-419f-be48-17dfd3969886" lastpulledtime="2019-09-04T17:12:03Z" lastsyncedchangeguid="97200617-95ce-12dc-85ad-bc44fbde9d59"/>
 <fusionteam huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODMwMjExNjYwNzU2" folderUrn="urn:adsk.wipprod:fs.folder:co.Q9At7jQeSXmdkOBUDBdX2g" urn="urn:adsk.wipprod:dm.lineage:zasA6zXySk-hPKqmqBO7Cg"  versionUrn="urn:adsk.wipprod:fs.file:vf.zasA6zXySk-hPKqmqBO7Cg?version=1" camFileUrn="" camFileVersionUrn="" lastpublishedchangeguid="feceac10-3c31-bd3e-53e5-6e63ad4e73d9"/>
 <plain>
 <text x="54.45" y="79.68" size="1.016" layer="21" ratio="15">RX</text>
