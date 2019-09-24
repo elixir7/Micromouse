@@ -1,0 +1,57 @@
+Cart;Qty;Value;Device;Package;Parts;TOLERANCE;V_RATING;Vendor;Link;Description
+x;1;;PINHD-2X3;2X03;BOOT;;;case/crf;;PIN HEADER
+x;1;;PINHD-2X4;2X04;DEBUG;;;case/crf;;PIN HEADER
+x;4;0;R0603;R0603;R32, R35, R36, R37;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;20;0.1u;C0603;C0603;C1, C2, C4, C6, C8, C10, C12, C14, C18, C28, C30, C34, C35, C36, C43, C47, C48, C49, C50, C51;;;mouser;;Standard Chip CAPACITOR 0605 (1608 Metric)
+x;1;0.1u;C0805;C0805;C16;;;mouser;;Standard Chip CAPACITOR 0805 (2012 Metric)
+x;4;0.75;R0603;R0603;R6, R7, R9, R12;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;4;1.8k;R0603;R0603;R1, R2, R13, R16;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;100k;R0603;R0603;R29;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;105k;R0603;R0603;R_FBT;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;10k;R0603;R0603;R23;1%;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;11;10k;R0603;R0603;R3, R8, R10, R11, R15, R24, R27, R30, R31, R33, R34;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;6;10u;C0603;C0603;C5, C7, C9, C11, C13, C42;;;mouser;;Standard Chip CAPACITOR 0605 (1608 Metric)
+x;2;10u;C0805;C0805;C_IN, C_OUT;;;mouser;;Standard Chip CAPACITOR 0805 (2012 Metric)
+x;1;10u;KEMET_C;EIA_6032-28;C3;;;mouser;;KEMET C Size Taltalum Capacitator
+x;2;10u;SMC_A;SMC_A;C26, C27;;;mouser;;A Size Taltalum Capacitator
+x;2;10u;WE-CBF_0805;R0805;FP1, FP2;;;mouser;;Würth Electronics Size 0805 Ferrite Pearls
+x;1;112k;R0603;R0603;R21;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;2;150k;R0603;R0603;R17, RB;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;180k;R0603;R0603;R18;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;1N4148WX;DIODE_1N4148WX;1N4148WX_SOD-323-2;U$1;;;mouser;;
+x;4;1k;R0603;R0603;R4, R5, R14, R25;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;1u;C0603;C0603;C44;;;mouser;;Standard Chip CAPACITOR 0605 (1608 Metric)
+x;1;1u;C0805;C0805;C24;;;mouser;;Standard Chip CAPACITOR 0805 (2012 Metric)
+x;4;2.2u;C0603;C0603;C15, C29, C45, C46;;;mouser;;Standard Chip CAPACITOR 0605 (1608 Metric)
+x;1;2.2u;XAL5030-222MEC;XAL5030;L1;;;mouser;;COILCRAFT - XAL5030-222MEC - INDUCTOR, PWR, 2.2UH, 9.2A,20%,38MHZ
+x;4;20k;R0603;R0603;R19, R26, R28, R_FBB;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;5;22u;C0805;C0805;C17, C19, C20, C22, C25;;;mouser;;Standard Chip CAPACITOR 0805 (2012 Metric)
+x;1;22u;C0805;C0805;C33;;10v;mouser;;Standard Chip CAPACITOR 0805 (2012 Metric)
+x;1;22u;C0805;C0805;C32;;25V;mouser;;Standard Chip CAPACITOR 0805 (2012 Metric)
+x;1;27p;C0603;C0603;C21;;;mouser;;Standard Chip CAPACITOR 0605 (1608 Metric)
+x;1;290k;R0603;R0603;RT;1%;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;30k;R0603;R0603;R20;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;3300p;C0603;C0603;C31;;10V;mouser;;Standard Chip CAPACITOR 0605 (1608 Metric)
+x;1;470pF;C0603;C0603;C_VC;;6.3V;mouser;;Standard Chip CAPACITOR 0605 (1608 Metric)
+x;1;47k;R0603;R0603;R22;;;mouser;;Standard Chip RESISTOR 0603 (1608 Metric)
+x;1;560p;C0603;C0603;C23;;;mouser;;Standard Chip CAPACITOR 0605 (1608 Metric)
+x;1;BMI088;BMI088;PQFN50P450X300X100-16N;U4;;;mouser;;High-performance 6-axis inertial sensor (accelerometer + gyroscope)
+x;4;CHIP-LED0603;CHIP-LED0603;CHIP-LED0603;5V_PWR, LED_B, LED_G, LED_R;;;mouser;;CHIP-LED0603 (SMD)
+x;1;DISPLAY-OLED-128X64-I2C;DISPLAY-OLED-128X64-I2C;DISPLAY-OLED-128X64-I2C;OLED;;;mouser;;128x64 Dot Matrix OLED Module based on SSD1306 chip
+x;2;IE2-1024-ENCODER;IE2-1024-ENCODER;IE2-1024-ENCODER;MOTOR_LEFT, MOTOR_RIGHT;;;mouser;;
+x;5;IRFML8244TRPBF;IRFML8244TRPBF;SOT95P235X110-3;Q1, Q2, Q3, Q4, Q5;;;mouser;;IRFML8244TRPbF - N Channel Mosfet
+x;1;JST-XH-3;JST-XH-3;JST-XH-03;U$10;;;mouser;;
+x;2;KMR621NGLFS;KMR621NGLFS;KMR621NGLFS;BTN_RST, BTN_SEL;;;mouser;;C&K KMR621NG LFS Tactile SPST switch (SMD)
+x;1;LM1117-3.3;LM1117-3.3;SOT230P700X180-4;VR1;;;mouser;;LM1117
+x;1;LMZ10501;LMZ10501;SON65P260X300X150-9N;IC3;;;mouser;;Voltage Regulators - Switching Regulators 1A Nano Mod w/ 5.5V Max Inpt VTG
+x;1;LMZ21701;LMZ21701;LMZ21701;S1;;;mouser;;3V to 17V, 1A Step-Down DC/DC Power Module in 3.5mm  3.5mm Package
+x;4;SFH_4545;SFH_4545;SFH_4545;FL_EMITTER, FR_EMITTER, L_EMITTER, R_EMITTER;;;mouser;;High Power Infrared Emitter (940 nm)
+x;1;SMT-0540-S-R;SMT-0540-S-R;SMT-0540-S-R;U$4;;;mouser;;Magnetic buzzer
+x;1;SPDT-500SSP1S1M6QEA;SPDT-500SSP1S1M6QEA;500SSP1S1M6QEA;SW;;;mouser;;
+NA;2;SPLITTER;SPLITTER;SPLITTER;U$6, U$7;;;NA;;Used for separating grounds
+x;1;STM32F405RG;STM32F405RG;LQFP-64;U3;;;mouser;;STM32F405RG Microcontroller
+x;1;TB6612FNG;TB6612FNG;SOP65P760X160-24;U1;;;mouser;;TB6612FNG - Dual DC motor driver
+x;4;TEFT4300;TEFT4300;3MM_PHOTOTRANSISTOR;D4, D5, D6, D8;;;mouser;;TEFT4300 Phototransistor from Vishay
+NA;4;TEST-POINT3X5;TEST-POINT3X5;PAD.03X.05;TP_2V, TP_3.3V, TP_5V, TP_12V;;;NA;;SparkFun Test Points
+x;1;TPS61088RHLR;TPS61088RHLR;RHL(R-PVQFN-N20)_1;IC2;;;mouser;;DC-DC Boost Regulator
+x;1;WIRELESS-BLUETOOTH-HC-05;WIRELESS-BLUETOOTH-HC-05;WIRELESS-BLUETOOTH-HC-05;HC-05;;;mouser;;Bluetooth Transceiver Module based on HC-05 board
