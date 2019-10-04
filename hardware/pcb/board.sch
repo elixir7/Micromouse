@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -271,7 +271,7 @@
 <text x="1.27" y="1.905" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">C</text>
 <text x="-2.54" y="-1.9172" size="0.7112" layer="25" font="vector">TEFT 4300</text>
 </package>
-<package name="SFH_4545" urn="urn:adsk.eagle:footprint:12971296/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<package name="SFH_4545" urn="urn:adsk.eagle:footprint:12971296/3" library_version="24">
 <wire x1="-2.96" y1="0.96" x2="3.04" y2="0.96" width="0.1" layer="51"/>
 <wire x1="-2.96" y1="0.96" x2="-2.96" y2="-0.04" width="0.1" layer="51"/>
 <wire x1="3.04" y1="0.96" x2="3.04" y2="-0.04" width="0.1" layer="51"/>
@@ -303,12 +303,12 @@
 <wire x1="0.7361" y1="7.8819" x2="0.2361" y2="8" width="0.127" layer="21" curve="26.564253"/>
 <wire x1="0.2361" y1="8" x2="-0.2361" y2="8" width="0.127" layer="21"/>
 <wire x1="0" y1="4" x2="0" y2="3.3" width="0.127" layer="51"/>
-<wire x1="0" y1="3.3" x2="-20.99" y2="240.3" width="0.127" layer="51" style="shortdash"/>
-<wire x1="0" y1="3.3" x2="20.99" y2="240.3" width="0.127" layer="51" style="shortdash"/>
-<wire x1="-0.9" y1="14" x2="-0.6942" y2="14.0457" width="0.127" layer="51" style="dashdot"/>
-<wire x1="-0.6942" y1="14.0457" x2="0.6942" y2="14.0457" width="0.127" layer="51" style="dashdot" curve="-25.057615"/>
-<wire x1="0.6942" y1="14.0457" x2="0.9" y2="14" width="0.127" layer="51" style="dashdot"/>
-<wire x1="-21" y1="240.3" x2="21" y2="240.3" width="0.127" layer="51" style="dashdot" curve="-30.371682"/>
+<wire x1="0" y1="3.3" x2="-20.99" y2="240.3" width="0.127" layer="201" style="shortdash"/>
+<wire x1="0" y1="3.3" x2="20.99" y2="240.3" width="0.127" layer="201" style="shortdash"/>
+<wire x1="-0.9" y1="14" x2="-0.6942" y2="14.0457" width="0.127" layer="201" style="dashdot"/>
+<wire x1="-0.6942" y1="14.0457" x2="0.6942" y2="14.0457" width="0.127" layer="201" style="dashdot" curve="-25.057615"/>
+<wire x1="0.6942" y1="14.0457" x2="0.9" y2="14" width="0.127" layer="201" style="dashdot"/>
+<wire x1="-21" y1="240.3" x2="21" y2="240.3" width="0.127" layer="201" style="dashdot" curve="-30.371682"/>
 <pad name="+" x="-1.27" y="-0.5" drill="0.8" diameter="1.5"/>
 <pad name="-" x="1.27" y="-0.5" drill="0.8" diameter="1.5"/>
 <text x="-1.778" y="1.651" size="1.27" layer="21" font="vector">+</text>
@@ -806,7 +806,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="3MM_PHOTOTRANSISTOR"/>
 </packageinstances>
 </package3d>
-<package3d name="SFH_4545" urn="urn:adsk.eagle:package:12971323/2" type="model" library_version="14" library_locally_modified="yes">
+<package3d name="SFH_4545" urn="urn:adsk.eagle:package:12971323/4" type="model" library_version="24">
 <packageinstances>
 <packageinstance name="SFH_4545"/>
 </packageinstances>
@@ -1492,7 +1492,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SFH_4545" urn="urn:adsk.eagle:component:12971343/2" prefix="D" library_version="14" library_locally_modified="yes">
+<deviceset name="SFH_4545" urn="urn:adsk.eagle:component:12971343/4" prefix="D" library_version="24">
 <description>High Power Infrared Emitter (940 nm)</description>
 <gates>
 <gate name="G$1" symbol="SFH_4545" x="0" y="0"/>
@@ -1504,7 +1504,7 @@ Variant with I2C interface</description>
 <connect gate="G$1" pin="-_CATHODE" pad="-"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971323/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -3176,7 +3176,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/2"/>
 <part name="D5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/2"/>
 <part name="D6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEFT4300" device="" package3d_urn="urn:adsk.eagle:package:12971322/2"/>
-<part name="L_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<part name="L_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/4"/>
 <part name="R14" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1k"/>
 <part name="R4" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1k"/>
 <part name="R5" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1k"/>
@@ -3188,19 +3188,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R6" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0.75"/>
 <part name="R8" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="Q1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="FL_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<part name="FL_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/4"/>
 <part name="C8" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="C9" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
 <part name="R9" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0.75"/>
 <part name="R10" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="Q2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="FR_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<part name="FR_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/4"/>
 <part name="C10" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="C11" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
 <part name="R12" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="0.75"/>
 <part name="R15" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="Q5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IRFML8244TRPBF" device="" package3d_urn="urn:adsk.eagle:package:12478112/1"/>
-<part name="R_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/2"/>
+<part name="R_EMITTER" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SFH_4545" device="" package3d_urn="urn:adsk.eagle:package:12971323/4"/>
 <part name="C12" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="C13" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="10u"/>
 <part name="R16" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.8k"/>
