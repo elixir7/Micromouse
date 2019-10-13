@@ -29,6 +29,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -102,12 +103,20 @@ void Error_Handler(void);
 #define MISO_GPIO_Port GPIOB
 #define MOSI_Pin GPIO_PIN_15
 #define MOSI_GPIO_Port GPIOB
+#define SDA_Pin GPIO_PIN_9
+#define SDA_GPIO_Port GPIOC
+#define SCL_Pin GPIO_PIN_8
+#define SCL_GPIO_Port GPIOA
+#define TX_Pin GPIO_PIN_9
+#define TX_GPIO_Port GPIOA
+#define RX_Pin GPIO_PIN_10
+#define RX_GPIO_Port GPIOA
 #define BUZZER_Pin GPIO_PIN_11
 #define BUZZER_GPIO_Port GPIOA
-#define SWDIO_Pin GPIO_PIN_13
-#define SWDIO_GPIO_Port GPIOA
-#define SWCLK_Pin GPIO_PIN_14
-#define SWCLK_GPIO_Port GPIOA
+#define SW_DIO_Pin GPIO_PIN_13
+#define SW_DIO_GPIO_Port GPIOA
+#define SW_CLK_Pin GPIO_PIN_14
+#define SW_CLK_GPIO_Port GPIOA
 #define LED_B_Pin GPIO_PIN_15
 #define LED_B_GPIO_Port GPIOA
 #define LED_G_Pin GPIO_PIN_10

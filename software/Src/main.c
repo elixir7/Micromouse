@@ -33,11 +33,10 @@
 #include <math.h>
 #include <string.h>
 
-//#include "madgwick.h"
-//#include "bmi08x.h"
-//#include "bmi088.h"
+#include "madgwick.h"
+#include "bmi08x.h"
+#include "bmi088.h"
 #include "ssd1306.h"
-
 
 /* USER CODE END Includes */
 
@@ -74,24 +73,25 @@ PUTCHAR_PROTOTYPE{
 	HAL_UART_Transmit(&huart1, (uint8_t *) &ch, 1, 0xFFFF);
 	return ch;
 }
-
-
-void showInitScreen(){
-	ssd1306_Fill(Black);
-	ssd1306_SetCursor((128-16*5)/2, (64-26)/2);
-	ssd1306_WriteString("JERRY", Font_16x26, White);
-	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
-}
-
-//uint32_t adcVal = 0;
-//float voltage = 0;
-
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void showInitScreen(){
+	ssd1306_Fill(White);
+	ssd1306_SetCursor((128-11*7)/2, (64-18)/2);
+	ssd1306_WriteString("Loading", Font_11x18, Black);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+	
+	ssd1306_Fill(Black);
+	ssd1306_SetCursor((128-16*5)/2, (64-26)/2);
+	ssd1306_WriteString("JERRY", Font_16x26, White);
+	ssd1306_UpdateScreen();
+}
 
+uint32_t adcVal = 0;
+float voltage = 1;
 /* USER CODE END 0 */
 
 /**
@@ -123,20 +123,26 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_TIM5_Init();
-  MX_USART1_UART_Init();
   MX_ADC1_Init();
-  MX_TIM3_Init();
-  MX_TIM2_Init();
+  MX_I2C3_Init();
   MX_SPI2_Init();
   MX_TIM1_Init();
+  MX_TIM2_Init();
+  MX_TIM3_Init();
   MX_TIM4_Init();
-  MX_I2C3_Init();
+  MX_TIM5_Init();
+  //MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	
+	// USART UART is causing core to lock up.......
 	printf("---------- RESET -----------\r\n");
   showInitScreen();
 	
+	HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
+	HAL_TIM_Encoder_Start(&htim5, TIM_CHANNEL_ALL);
+	
+	
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -146,16 +152,16 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		/*
+		
 		HAL_ADC_Start(&hadc1);
 		if(HAL_ADC_PollForConversion(&hadc1, 5) == HAL_OK){
 			adcVal = HAL_ADC_GetValue(&hadc1);
-			voltage = (adcVal / 256) * 3.3
-			INPUT VOLTAGE = (ADC Value / ADC Resolution) * Reference Voltage
+			voltage = (adcVal / 256.0) * 3.3 * (20000 + 10000) / 10000.0;
+			
 		}
-		*/
 		
-		HAL_Delay(500);
+		
+		HAL_Delay(50);
 	  HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
   }
   /* USER CODE END 3 */
