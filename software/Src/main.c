@@ -89,6 +89,7 @@ float v_batt;
 float v_cell_1;
 float v_cell_2;
 float v_boost;
+volatile int speed = 0;
 
 /* USER CODE END 0 */
 
@@ -142,6 +143,14 @@ int main(void)
 	HAL_TIM_Encoder_Start(&htim5, TIM_CHANNEL_ALL);
 	
 	
+	HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4); // Motor right
+	HAL_GPIO_WritePin(MOTOR_R_IN1_GPIO_Port, MOTOR_R_IN1_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(MOTOR_R_IN2_GPIO_Port, MOTOR_R_IN2_Pin, GPIO_PIN_SET);
+	
+	HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);// Motor left
+	HAL_GPIO_WritePin(MOTOR_L_IN1_GPIO_Port, MOTOR_L_IN1_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(MOTOR_L_IN2_GPIO_Port, MOTOR_L_IN2_Pin, GPIO_PIN_RESET);
+	
 	HAL_ADC_Start_DMA(&hadc1, (uint32_t *) adcVals, sizeof(adcVals) / sizeof(adcVals[0]));
 	
   /* USER CODE END 2 */
@@ -173,6 +182,16 @@ int main(void)
 		v_boost = (adcVals[2] / 256.0f) * 3.3f * (47000 + 10000) / 10000.0f;
 		oled_update();
 		
+		/*
+		if(speed > 300){
+			speed = 300;
+		}else if(speed < 0){
+			speed = 0;
+		}
+		
+		TIM4->CCR4 = speed;
+		TIM4->CCR3 = speed;
+		*/
 		HAL_Delay(5);
 	  HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
   }
