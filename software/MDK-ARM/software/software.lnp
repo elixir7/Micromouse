@@ -32,6 +32,7 @@
 "software\main_1.o"
 "software\gpio_1.o"
 "software\adc_1.o"
+"software\dma.o"
 "software\i2c_1.o"
 "software\spi_1.o"
 "software\tim_1.o"

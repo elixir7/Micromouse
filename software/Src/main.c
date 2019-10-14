@@ -21,6 +21,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "dma.h"
 #include "i2c.h"
 #include "spi.h"
 #include "tim.h"
@@ -73,25 +74,22 @@ PUTCHAR_PROTOTYPE{
 	HAL_UART_Transmit(&huart1, (uint8_t *) &ch, 1, 0xFFFF);
 	return ch;
 }
+
+void oled_init(void);
+void oled_update(void);
+void oled_jerry(void);
+
+	
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void showInitScreen(){
-	ssd1306_Fill(White);
-	ssd1306_SetCursor((128-11*7)/2, (64-18)/2);
-	ssd1306_WriteString("Loading", Font_11x18, Black);
-	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
-	
-	ssd1306_Fill(Black);
-	ssd1306_SetCursor((128-16*5)/2, (64-26)/2);
-	ssd1306_WriteString("JERRY", Font_16x26, White);
-	ssd1306_UpdateScreen();
-}
+uint8_t adcVals[3];
+float v_batt;
+float v_cell_1;
+float v_cell_2;
+float v_boost;
 
-uint32_t adcVal = 0;
-float voltage = 1;
 /* USER CODE END 0 */
 
 /**
@@ -123,6 +121,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   MX_I2C3_Init();
   MX_SPI2_Init();
@@ -131,18 +130,20 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM4_Init();
   MX_TIM5_Init();
-  //MX_USART1_UART_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	
 	// USART UART is causing core to lock up.......
-	printf("---------- RESET -----------\r\n");
-  showInitScreen();
+	printf("---------- Loading -----------\r\n");
+	oled_init();
+  oled_jerry();
 	
 	HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
 	HAL_TIM_Encoder_Start(&htim5, TIM_CHANNEL_ALL);
 	
 	
-
+	HAL_ADC_Start_DMA(&hadc1, (uint32_t *) adcVals, sizeof(adcVals) / sizeof(adcVals[0]));
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -152,16 +153,27 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		
-		HAL_ADC_Start(&hadc1);
+		/*
 		if(HAL_ADC_PollForConversion(&hadc1, 5) == HAL_OK){
-			adcVal = HAL_ADC_GetValue(&hadc1);
-			voltage = (adcVal / 256.0) * 3.3 * (20000 + 10000) / 10000.0;
+			adcVals[i % (sizeof(adcVals) / sizeof(adcVals[0]))] = HAL_ADC_GetValue(&hadc1);
 			
+			adc_sum = 0;
+			for(int k = 0; k < (sizeof(adcVals) / sizeof(adcVals[0])); k++){
+				adc_sum = adc_sum + adcVals[k];
+			}
+			adc_mean = adc_sum / (sizeof(adcVals) / sizeof(adcVals[0]));
+			
+			voltage = (adc_mean / 256.0f) * 3.3f * (20000 + 10000) / 10000.0f;
+			i++;
 		}
+		*/
+		v_batt = (adcVals[0] / 256.0f) * 3.3f * (20000 + 10000) / 10000.0f;
+		v_cell_2 = (adcVals[1] / 256.0f) * 3.3f * (20000 + 10000) / 10000.0f;
+		v_cell_1 = v_batt - v_cell_2;
+		v_boost = (adcVals[2] / 256.0f) * 3.3f * (47000 + 10000) / 10000.0f;
+		oled_update();
 		
-		
-		HAL_Delay(50);
+		HAL_Delay(5);
 	  HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
   }
   /* USER CODE END 3 */
@@ -206,6 +218,57 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void oled_init(void){
+	ssd1306_Init();
+	
+	ssd1306_Fill(White);
+	ssd1306_SetCursor((128-7*16)/2, (64-26)/2);
+	ssd1306_WriteString("Loading", Font_16x26, Black);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+}
+
+void oled_jerry(void){
+	ssd1306_Fill(Black);
+	
+	ssd1306_SetCursor((128-5*16)/2, (64-26)/2);
+	ssd1306_WriteString("JERRY", Font_16x26, White);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+}
+
+void oled_update(){
+	ssd1306_Fill(Black);
+	char buff[60];
+	
+	snprintf(buff, sizeof(buff), "Battery: %.2f V", v_batt);
+	ssd1306_SetCursor(0,0);
+	ssd1306_WriteString(buff, Font_7x10, White);
+	
+	snprintf(buff, sizeof(buff), "Cell 1: %.2f V", v_cell_1);
+	ssd1306_SetCursor(0,10);
+	ssd1306_WriteString(buff, Font_7x10, White);
+	
+	snprintf(buff, sizeof(buff), "Cell 2: %.2f V", v_cell_2);
+	ssd1306_SetCursor(0,20);
+	ssd1306_WriteString(buff, Font_7x10, White);
+	
+	snprintf(buff, sizeof(buff), "Boost: %.2f V", v_boost);
+	ssd1306_SetCursor(0,30);
+	ssd1306_WriteString(buff, Font_7x10, White);
+	
+	snprintf(buff, sizeof(buff), "Encoder L: %d", TIM5->CNT);
+	ssd1306_SetCursor(0,40);
+	ssd1306_WriteString(buff, Font_7x10, White);
+	
+	snprintf(buff, sizeof(buff), "Encoder R: %d", TIM2->CNT);
+	ssd1306_SetCursor(0,50);
+	ssd1306_WriteString(buff, Font_7x10, White);
+	
+	ssd1306_UpdateScreen();
+}
+
+
 
 /* USER CODE END 4 */
 

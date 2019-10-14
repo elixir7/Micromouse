@@ -37,6 +37,7 @@ software\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 software\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 software\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 software\main_1.o: ../Inc/adc.h
+software\main_1.o: ../Inc/dma.h
 software\main_1.o: ../Inc/i2c.h
 software\main_1.o: ../Inc/spi.h
 software\main_1.o: ../Inc/tim.h
