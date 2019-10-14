@@ -125,6 +125,7 @@ void Error_Handler(void);
 #define LED_R_GPIO_Port GPIOC
 #define BUTTON_SELECT_Pin GPIO_PIN_2
 #define BUTTON_SELECT_GPIO_Port GPIOD
+#define BUTTON_SELECT_EXTI_IRQn EXTI2_IRQn
 #define ENC_R_B_Pin GPIO_PIN_3
 #define ENC_R_B_GPIO_Port GPIOB
 #define MOTOR_L_IN2_Pin GPIO_PIN_4
