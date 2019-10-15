@@ -39,6 +39,7 @@
 "software\usart_1.o"
 "software\stm32f4xx_it_1.o"
 "software\stm32f4xx_hal_msp_1.o"
+"software\battery.o"
 --library_type=microlib --strict --scatter "software\software.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

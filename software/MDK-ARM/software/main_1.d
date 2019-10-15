@@ -53,3 +53,4 @@ software\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 software\main_1.o: ../Inc/bmi088.h
 software\main_1.o: ../Inc/ssd1306.h
 software\main_1.o: ../Inc/ssd1306_fonts.h
+software\main_1.o: ../Inc/battery.h

@@ -39,6 +39,8 @@
 #include "bmi088.h"
 #include "ssd1306.h"
 
+#include "battery.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -84,11 +86,6 @@ void oled_jerry(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t adcVals[3];
-float v_batt;
-float v_cell_1;
-float v_cell_2;
-float v_boost;
 volatile int speed = 0;
 
 /* USER CODE END 0 */
@@ -139,6 +136,8 @@ int main(void)
 	oled_init();
   oled_jerry();
 	
+	init_voltmeter(&hadc1);
+	
 	HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
 	HAL_TIM_Encoder_Start(&htim5, TIM_CHANNEL_ALL);
 	
@@ -151,7 +150,6 @@ int main(void)
 	HAL_GPIO_WritePin(MOTOR_L_IN1_GPIO_Port, MOTOR_L_IN1_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(MOTOR_L_IN2_GPIO_Port, MOTOR_L_IN2_Pin, GPIO_PIN_RESET);
 	
-	HAL_ADC_Start_DMA(&hadc1, (uint32_t *) adcVals, sizeof(adcVals) / sizeof(adcVals[0]));
 	
   /* USER CODE END 2 */
 
@@ -176,10 +174,7 @@ int main(void)
 			i++;
 		}
 		*/
-		v_batt = (adcVals[0] / 256.0f) * 3.3f * (20000 + 10000) / 10000.0f;
-		v_cell_2 = (adcVals[1] / 256.0f) * 3.3f * (20000 + 10000) / 10000.0f;
-		v_cell_1 = v_batt - v_cell_2;
-		v_boost = (adcVals[2] / 256.0f) * 3.3f * (47000 + 10000) / 10000.0f;
+		
 		oled_update();
 		
 		/*
@@ -260,19 +255,19 @@ void oled_update(){
 	ssd1306_Fill(Black);
 	char buff[60];
 	
-	snprintf(buff, sizeof(buff), "Battery: %.2f V", v_batt);
+	snprintf(buff, sizeof(buff), "Battery: %.2f V", GET_voltage_battery());
 	ssd1306_SetCursor(0,0);
 	ssd1306_WriteString(buff, Font_7x10, White);
 	
-	snprintf(buff, sizeof(buff), "Cell 1: %.2f V", v_cell_1);
+	snprintf(buff, sizeof(buff), "Cell 1: %.2f V", GET_voltage_cell_1());
 	ssd1306_SetCursor(0,10);
 	ssd1306_WriteString(buff, Font_7x10, White);
 	
-	snprintf(buff, sizeof(buff), "Cell 2: %.2f V", v_cell_2);
+	snprintf(buff, sizeof(buff), "Cell 2: %.2f V", GET_voltage_cell_2());
 	ssd1306_SetCursor(0,20);
 	ssd1306_WriteString(buff, Font_7x10, White);
 	
-	snprintf(buff, sizeof(buff), "Boost: %.2f V", v_boost);
+	snprintf(buff, sizeof(buff), "Boost: %.2f V", GET_voltage_boost());
 	ssd1306_SetCursor(0,30);
 	ssd1306_WriteString(buff, Font_7x10, White);
 	

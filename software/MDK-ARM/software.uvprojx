@@ -592,6 +592,11 @@
               <FileType>5</FileType>
               <FilePath>..\Inc\usart.h</FilePath>
             </File>
+            <File>
+              <FileName>battery.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\battery.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -681,6 +686,11 @@
               <FileName>stm32f4xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/stm32f4xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>battery.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\battery.c</FilePath>
             </File>
           </Files>
         </Group>
