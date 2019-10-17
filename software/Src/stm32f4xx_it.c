@@ -24,6 +24,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "motor.h"
+#include "oled.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -209,6 +210,8 @@ void EXTI2_IRQHandler(void)
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_2);
   /* USER CODE BEGIN EXTI2_IRQn 1 */
 	
+	menu_index = (menu_index + 1) % 3;
+	/*
 	if(TIM4->CCR3 == 0 || TIM4->CCR4 == 0){
 		SET_PWM_L(50);
 		SET_PWM_R(50);
@@ -216,7 +219,7 @@ void EXTI2_IRQHandler(void)
 		SET_PWM_L(0);
 		SET_PWM_R(0);
 	}
-	
+	*/
 
   /* USER CODE END EXTI2_IRQn 1 */
 }

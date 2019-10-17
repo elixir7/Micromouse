@@ -135,7 +135,7 @@ int main(void)
 	voltmeter_init();
 
 	// Show a welcome screen
-	oled_jerry();
+	//oled_jerry();
 	
   /* USER CODE END 2 */
 
@@ -146,7 +146,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		oled_update();
+		//oled_update();
+		oled_menu();
 		
 		HAL_Delay(5);
 	  HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);

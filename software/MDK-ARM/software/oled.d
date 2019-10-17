@@ -1,7 +1,6 @@
 software\oled.o: ..\Src\oled.c
 software\oled.o: ../Inc/oled.h
-software\oled.o: ../Inc/ssd1306.h
-software\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+software\oled.o: ../Inc/main.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 software\oled.o: ../Inc/stm32f4xx_hal_conf.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
@@ -17,6 +16,7 @@ software\oled.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 software\oled.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+software\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
@@ -37,7 +37,7 @@ software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+software\oled.o: ../Inc/ssd1306.h
 software\oled.o: ../Inc/ssd1306_fonts.h
 software\oled.o: ../Inc/battery.h
-software\oled.o: ../Inc/main.h
 software\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
