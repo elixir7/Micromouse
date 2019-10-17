@@ -68,6 +68,7 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+
 #ifdef __GNUC__
 	#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #else
@@ -77,9 +78,6 @@ PUTCHAR_PROTOTYPE{
 	HAL_UART_Transmit(&huart1, (uint8_t *) &ch, 1, 0xFFFF);
 	return ch;
 }
-
-
-
 	
 /* USER CODE END PFP */
 
@@ -135,9 +133,9 @@ int main(void)
 	oled_init();
 	motors_init();
 	voltmeter_init();
-	
+
+	// Show a welcome screen
 	oled_jerry();
-	
 	
   /* USER CODE END 2 */
 
@@ -150,10 +148,14 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		oled_update();
 		
-		
-		
 		HAL_Delay(5);
 	  HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
+		
+		if(HAL_GetTick() > 3500 && HAL_GetTick() < 6000){
+			oled_error("TEST_ERROR_CODE");
+		}else if(HAL_GetTick() > 6000){
+			oled_clear_error();
+		}
   }
   /* USER CODE END 3 */
 }

@@ -3,11 +3,11 @@
 <title>Static Call Graph - [software\software.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image software\software.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Oct 17 12:02:21 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Oct 17 18:15:39 2019
 <BR><P>
-<H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        256 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main &rArr; oled_update &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
+main &rArr; oled_clear_error &rArr; oled_update &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 <P>
 <H3>
 Mutually Recursive functions
@@ -125,7 +125,7 @@ Global Symbols
 <P><STRONG><a name="[5a]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f405xx.o(.text)
 </UL>
-<P><STRONG><a name="[e5]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[e7]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[60]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -135,15 +135,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[e6]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[e8]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[e7]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[e9]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[e8]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[ea]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[e9]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[eb]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[ea]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[ec]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f405xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f405xx.o(RESET)
@@ -386,9 +386,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
 </UL>
 
 <P><STRONG><a name="[66]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
@@ -396,9 +396,9 @@ Global Symbols
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[eb]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[ed]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[ec]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[ee]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[65]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -420,7 +420,7 @@ Global Symbols
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[ed]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[ef]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[67]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -432,11 +432,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[df]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
+<P><STRONG><a name="[e1]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_update
 </UL>
 
-<P><STRONG><a name="[ee]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<P><STRONG><a name="[f0]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 
 <P><STRONG><a name="[d2]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
@@ -449,7 +449,7 @@ Global Symbols
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[ef]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[f1]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[63]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
@@ -457,9 +457,9 @@ Global Symbols
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[f0]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[f2]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
-<P><STRONG><a name="[f1]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, iusefp.o(.text), UNUSED)
+<P><STRONG><a name="[f3]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, iusefp.o(.text), UNUSED)
 
 <P><STRONG><a name="[69]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
@@ -518,13 +518,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[f2]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[f4]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[6c]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[f3]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+<P><STRONG><a name="[f5]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
 
 <P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it_1.o(i.BusFault_Handler))
 <BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
@@ -634,9 +634,9 @@ Global Symbols
 <P><STRONG><a name="[80]"></a>HAL_ADC_MspInit</STRONG> (Thumb, 156 bytes, Stack size 40 bytes, adc_1.o(i.HAL_ADC_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_ADC_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_Init
@@ -681,7 +681,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_jerry
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
 </UL>
 
 <P><STRONG><a name="[8d]"></a>HAL_GPIO_EXTI_Callback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_EXTI_Callback))
@@ -715,6 +715,8 @@ Global Symbols
 <P><STRONG><a name="[bc]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
 <BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SET_PWM_R
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SET_PWM_L
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_error
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_clear_error
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motors_init
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 </UL>
@@ -731,6 +733,7 @@ Global Symbols
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[8e]"></a>HAL_I2C_Init</STRONG> (Thumb, 356 bytes, Stack size 16 bytes, stm32f4xx_hal_i2c.o(i.HAL_I2C_Init))
@@ -751,15 +754,15 @@ Global Symbols
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_RequestMemoryWrite
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteData
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteCommand
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteData
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteCommand
 </UL>
 
 <P><STRONG><a name="[8f]"></a>HAL_I2C_MspInit</STRONG> (Thumb, 118 bytes, Stack size 48 bytes, i2c_1.o(i.HAL_I2C_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = HAL_I2C_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Init
 </UL>
@@ -859,8 +862,8 @@ Global Symbols
 <P><STRONG><a name="[a1]"></a>HAL_SPI_MspInit</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, spi_1.o(i.HAL_SPI_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = HAL_SPI_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Init
 </UL>
@@ -902,8 +905,8 @@ Global Symbols
 <P><STRONG><a name="[a3]"></a>HAL_TIM_Encoder_MspInit</STRONG> (Thumb, 182 bytes, Stack size 40 bytes, tim_1.o(i.HAL_TIM_Encoder_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_TIM_Encoder_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_Init
 </UL>
@@ -919,8 +922,8 @@ Global Symbols
 <P><STRONG><a name="[a7]"></a>HAL_TIM_MspPostInit</STRONG> (Thumb, 176 bytes, Stack size 40 bytes, tim_1.o(i.HAL_TIM_MspPostInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_TIM_MspPostInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
@@ -977,8 +980,8 @@ Global Symbols
 <P><STRONG><a name="[b1]"></a>HAL_UART_MspInit</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, usart_1.o(i.HAL_UART_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = HAL_UART_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
@@ -1021,9 +1024,9 @@ Global Symbols
 <P><STRONG><a name="[bb]"></a>MX_GPIO_Init</STRONG> (Thumb, 258 bytes, Stack size 64 bytes, gpio_1.o(i.MX_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = MX_GPIO_Init &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
 </UL>
@@ -1161,9 +1164,9 @@ Global Symbols
 <P><STRONG><a name="[c9]"></a>SystemClock_Config</STRONG> (Thumb, 102 bytes, Stack size 80 bytes, main_1.o(i.SystemClock_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = SystemClock_Config &rArr; HAL_RCC_ClockConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uldivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1202,7 +1205,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[f4]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[f6]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
 <P><STRONG><a name="[d3]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
@@ -1210,31 +1213,31 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f5]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[f7]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
-<P><STRONG><a name="[f6]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[f8]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
 <P><STRONG><a name="[cd]"></a>__0snprintf</STRONG> (Thumb, 44 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[f7]"></a>__1snprintf</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf), UNUSED)
+<P><STRONG><a name="[f9]"></a>__1snprintf</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf), UNUSED)
 
-<P><STRONG><a name="[e0]"></a>__2snprintf</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf))
+<P><STRONG><a name="[e2]"></a>__2snprintf</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __2snprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_update
 </UL>
 
-<P><STRONG><a name="[f8]"></a>__c89snprintf</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf), UNUSED)
+<P><STRONG><a name="[fa]"></a>__c89snprintf</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf), UNUSED)
 
-<P><STRONG><a name="[f9]"></a>snprintf</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf), UNUSED)
+<P><STRONG><a name="[fb]"></a>snprintf</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, printfa.o(i.__0snprintf), UNUSED)
 
-<P><STRONG><a name="[fa]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[fc]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[fb]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[fd]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[fc]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[fe]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
 <P><STRONG><a name="[7a]"></a>adc_average</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, battery.o(i.adc_average))
 <BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GET_voltage_cell_1
@@ -1260,17 +1263,20 @@ Global Symbols
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SET_PWM_L
 </UL>
 
-<P><STRONG><a name="[58]"></a>main</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, main_1.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = main &rArr; oled_update &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
+<P><STRONG><a name="[58]"></a>main</STRONG> (Thumb, 144 bytes, Stack size 0 bytes, main_1.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = main &rArr; oled_clear_error &rArr; oled_update &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;voltmeter_init
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_update
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_jerry
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_init
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_error
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_clear_error
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motors_init
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
@@ -1297,14 +1303,35 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
+<P><STRONG><a name="[db]"></a>oled_clear_error</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, oled.o(i.oled_clear_error))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = oled_clear_error &rArr; oled_update &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_update
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[da]"></a>oled_error</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, oled.o(i.oled_error))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = oled_error &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_SetCursor
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
 <P><STRONG><a name="[d4]"></a>oled_init</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, oled.o(i.oled_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = oled_init &rArr; ssd1306_Init &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_SetCursor
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_SetCursor
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
 </UL>
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1313,108 +1340,113 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = oled_jerry &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_SetCursor
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_SetCursor
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
 </UL>
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[d8]"></a>oled_update</STRONG> (Thumb, 274 bytes, Stack size 80 bytes, oled.o(i.oled_update))
+<P><STRONG><a name="[d8]"></a>oled_update</STRONG> (Thumb, 284 bytes, Stack size 80 bytes, oled.o(i.oled_update))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = oled_update &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2snprintf
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2snprintf
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GET_voltage_cell_2
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GET_voltage_cell_1
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GET_voltage_boost
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GET_voltage_battery
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_SetCursor
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_SetCursor
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
 </UL>
-<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_clear_error
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[e4]"></a>ssd1306_DrawPixel</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, ssd1306.o(i.ssd1306_DrawPixel))
+<P><STRONG><a name="[e6]"></a>ssd1306_DrawPixel</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, ssd1306.o(i.ssd1306_DrawPixel))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ssd1306_DrawPixel
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteChar
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteChar
 </UL>
 
-<P><STRONG><a name="[db]"></a>ssd1306_Fill</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, ssd1306.o(i.ssd1306_Fill))
+<P><STRONG><a name="[dc]"></a>ssd1306_Fill</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, ssd1306.o(i.ssd1306_Fill))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ssd1306_Fill
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_update
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_jerry
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_init
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_error
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
 </UL>
 
-<P><STRONG><a name="[da]"></a>ssd1306_Init</STRONG> (Thumb, 200 bytes, Stack size 8 bytes, ssd1306.o(i.ssd1306_Init))
+<P><STRONG><a name="[e0]"></a>ssd1306_Init</STRONG> (Thumb, 200 bytes, Stack size 8 bytes, ssd1306.o(i.ssd1306_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = ssd1306_Init &rArr; ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteCommand
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteCommand
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Fill
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_init
 </UL>
 
-<P><STRONG><a name="[dc]"></a>ssd1306_SetCursor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ssd1306.o(i.ssd1306_SetCursor))
+<P><STRONG><a name="[dd]"></a>ssd1306_SetCursor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ssd1306.o(i.ssd1306_SetCursor))
 <BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_update
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_jerry
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_init
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_error
 </UL>
 
-<P><STRONG><a name="[de]"></a>ssd1306_UpdateScreen</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, ssd1306.o(i.ssd1306_UpdateScreen))
+<P><STRONG><a name="[df]"></a>ssd1306_UpdateScreen</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, ssd1306.o(i.ssd1306_UpdateScreen))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = ssd1306_UpdateScreen &rArr; ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteData
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteCommand
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteData
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteCommand
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_update
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_jerry
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_init
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_error
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
 </UL>
 
-<P><STRONG><a name="[e3]"></a>ssd1306_WriteChar</STRONG> (Thumb, 150 bytes, Stack size 52 bytes, ssd1306.o(i.ssd1306_WriteChar))
+<P><STRONG><a name="[e5]"></a>ssd1306_WriteChar</STRONG> (Thumb, 150 bytes, Stack size 52 bytes, ssd1306.o(i.ssd1306_WriteChar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = ssd1306_WriteChar &rArr; ssd1306_DrawPixel
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_DrawPixel
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_DrawPixel
 </UL>
-<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
+<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteString
 </UL>
 
-<P><STRONG><a name="[e1]"></a>ssd1306_WriteCommand</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, ssd1306.o(i.ssd1306_WriteCommand))
+<P><STRONG><a name="[e3]"></a>ssd1306_WriteCommand</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, ssd1306.o(i.ssd1306_WriteCommand))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = ssd1306_WriteCommand &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Mem_Write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_Init
 </UL>
 
-<P><STRONG><a name="[e2]"></a>ssd1306_WriteData</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, ssd1306.o(i.ssd1306_WriteData))
+<P><STRONG><a name="[e4]"></a>ssd1306_WriteData</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, ssd1306.o(i.ssd1306_WriteData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = ssd1306_WriteData &rArr; HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Mem_Write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_UpdateScreen
 </UL>
 
-<P><STRONG><a name="[dd]"></a>ssd1306_WriteString</STRONG> (Thumb, 44 bytes, Stack size 20 bytes, ssd1306.o(i.ssd1306_WriteString))
+<P><STRONG><a name="[de]"></a>ssd1306_WriteString</STRONG> (Thumb, 44 bytes, Stack size 20 bytes, ssd1306.o(i.ssd1306_WriteString))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = ssd1306_WriteString &rArr; ssd1306_WriteChar &rArr; ssd1306_DrawPixel
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteChar
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_WriteChar
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_update
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_jerry
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_init
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_error
 </UL>
 
 <P><STRONG><a name="[d6]"></a>voltmeter_init</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, battery.o(i.voltmeter_init))

@@ -4,6 +4,7 @@
 
 
 #include <stdio.h>
+uint8_t error_occurd = 0;
 
 
 void oled_init(void){
@@ -25,8 +26,13 @@ void oled_jerry(void){
 }
 
 void oled_update(){
-	ssd1306_Fill(Black);
+	if(error_occurd){
+		return;
+	}
+	
 	char buff[60];
+	
+	ssd1306_Fill(Black);
 	
 	snprintf(buff, sizeof(buff), "Battery: %.2f V", GET_voltage_battery());
 	ssd1306_SetCursor(0,0);
@@ -53,5 +59,27 @@ void oled_update(){
 	ssd1306_WriteString(buff, Font_7x10, White);
 	
 	ssd1306_UpdateScreen();
+}
+
+void oled_error(char *pMessage){
+	error_occurd = 1;
+	
+	HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, GPIO_PIN_SET);
+	
+	ssd1306_Fill(White);
+	ssd1306_SetCursor((128-5*16)/2, 0);
+	ssd1306_WriteString("ERROR", Font_16x26, Black);
+	
+	ssd1306_SetCursor(0, 30);
+	ssd1306_WriteString(pMessage, Font_7x10, Black);
+
+	ssd1306_UpdateScreen();
+}
+
+void oled_clear_error(void){
+	error_occurd = 0;
+	HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, GPIO_PIN_RESET);
+	
+	oled_update();
 }
 
