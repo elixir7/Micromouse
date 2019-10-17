@@ -18,10 +18,10 @@ void motors_init(void){
 }
 
 int limit_speed(int speed){
-	if(speed > 999){
-		speed = 999;
-	}else if(speed < -999){
-		speed = -999;
+	if(speed > 255){
+		speed = 255;
+	}else if(speed < -255){
+		speed = -255;
 	}
 	return speed;
 }

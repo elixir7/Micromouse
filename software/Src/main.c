@@ -150,12 +150,6 @@ int main(void)
 		
 		HAL_Delay(5);
 	  HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
-		
-		if(HAL_GetTick() > 3500 && HAL_GetTick() < 6000){
-			oled_error("TEST_ERROR_CODE");
-		}else if(HAL_GetTick() > 6000){
-			oled_clear_error();
-		}
   }
   /* USER CODE END 3 */
 }

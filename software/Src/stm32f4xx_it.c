@@ -210,8 +210,8 @@ void EXTI2_IRQHandler(void)
   /* USER CODE BEGIN EXTI2_IRQn 1 */
 	
 	if(TIM4->CCR3 == 0 || TIM4->CCR4 == 0){
-		SET_PWM_L(80);
-		SET_PWM_R(80);
+		SET_PWM_L(50);
+		SET_PWM_R(50);
 	}else{
 		SET_PWM_L(0);
 		SET_PWM_R(0);

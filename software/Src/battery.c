@@ -1,6 +1,7 @@
 #include "battery.h"
 #include "main.h"
 #include "adc.h"
+#include "oled.h"
 
 // Private array for the DMA to fill with values
 #define SAMPLES 64
@@ -50,8 +51,10 @@ float GET_voltage_boost(void){
 battery_status_t voltage_check(void){
 	battery_status_t status = BATTERY_OK;
 	if(GET_voltage_cell_1() > 4.2f || GET_voltage_cell_2() > 4.2f){
+		oled_error("OVER VOLTAGE");
 		status = BATTERY_OVER_VOLTAGE;
 	}else if(GET_voltage_cell_1() < 3.3f || GET_voltage_cell_2() > 3.3f ){
+		oled_error("LOW VOLTAGE");
 		status = BATTERY_LOW_VOLTAGE;
 	}
 	return status;

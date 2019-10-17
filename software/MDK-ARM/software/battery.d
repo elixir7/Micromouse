@@ -38,3 +38,4 @@ software\battery.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 software\battery.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 software\battery.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 software\battery.o: ../Inc/adc.h
+software\battery.o: ../Inc/oled.h
