@@ -54,7 +54,8 @@
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+unsigned long press_time;
+uint32_t checking = 0;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -210,7 +211,18 @@ void EXTI2_IRQHandler(void)
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_2);
   /* USER CODE BEGIN EXTI2_IRQn 1 */
 	
-	menu_index = (menu_index + 1) % 3;
+	if(!checking){
+		checking = 1;
+		press_time = HAL_GetTick();
+	}else{
+		if(HAL_GetTick() - press_time > 250){
+			menu_index = (menu_index + 1) % 3;
+			checking = 0;
+		} 
+	}
+	
+	
+	
 	/*
 	if(TIM4->CCR3 == 0 || TIM4->CCR4 == 0){
 		SET_PWM_L(50);
