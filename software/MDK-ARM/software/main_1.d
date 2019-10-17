@@ -46,11 +46,6 @@ software\main_1.o: ../Inc/gpio.h
 software\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 software\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 software\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-software\main_1.o: ../Inc/madgwick.h
-software\main_1.o: ../Inc/bmi08x.h
-software\main_1.o: ../Inc/bmi08x_defs.h
-software\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-software\main_1.o: ../Inc/bmi088.h
-software\main_1.o: ../Inc/ssd1306.h
-software\main_1.o: ../Inc/ssd1306_fonts.h
 software\main_1.o: ../Inc/battery.h
+software\main_1.o: ../Inc/motor.h
+software\main_1.o: ../Inc/oled.h

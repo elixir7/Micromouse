@@ -37,3 +37,4 @@ software\stm32f4xx_it_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim
 software\stm32f4xx_it_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 software\stm32f4xx_it_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 software\stm32f4xx_it_1.o: ../Inc/stm32f4xx_it.h
+software\stm32f4xx_it_1.o: ../Inc/motor.h

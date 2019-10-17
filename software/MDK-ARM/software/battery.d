@@ -1,4 +1,5 @@
 software\battery.o: ..\Src\battery.c
+software\battery.o: ../Inc/battery.h
 software\battery.o: ../Inc/main.h
 software\battery.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 software\battery.o: ../Inc/stm32f4xx_hal_conf.h
@@ -36,4 +37,4 @@ software\battery.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 software\battery.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 software\battery.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 software\battery.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-software\battery.o: ../Inc/battery.h
+software\battery.o: ../Inc/adc.h

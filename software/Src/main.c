@@ -34,12 +34,13 @@
 #include <math.h>
 #include <string.h>
 
-#include "madgwick.h"
-#include "bmi08x.h"
-#include "bmi088.h"
-#include "ssd1306.h"
+//#include "madgwick.h"
+//#include "bmi08x.h"
+//#include "bmi088.h"
 
 #include "battery.h"
+#include "motor.h"
+#include "oled.h"
 
 /* USER CODE END Includes */
 
@@ -77,16 +78,13 @@ PUTCHAR_PROTOTYPE{
 	return ch;
 }
 
-void oled_init(void);
-void oled_update(void);
-void oled_jerry(void);
+
 
 	
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-volatile int speed = 0;
 
 /* USER CODE END 0 */
 
@@ -132,23 +130,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	
 	// USART UART is causing core to lock up.......
-	printf("---------- Loading -----------\r\n");
+	printf("---------- Starting JERRY -----------\r\n");
+	
 	oled_init();
-  oled_jerry();
+	motors_init();
+	voltmeter_init();
 	
-	init_voltmeter(&hadc1);
-	
-	HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
-	HAL_TIM_Encoder_Start(&htim5, TIM_CHANNEL_ALL);
-	
-	
-	HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4); // Motor right
-	HAL_GPIO_WritePin(MOTOR_R_IN1_GPIO_Port, MOTOR_R_IN1_Pin, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(MOTOR_R_IN2_GPIO_Port, MOTOR_R_IN2_Pin, GPIO_PIN_SET);
-	
-	HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);// Motor left
-	HAL_GPIO_WritePin(MOTOR_L_IN1_GPIO_Port, MOTOR_L_IN1_Pin, GPIO_PIN_SET);
-	HAL_GPIO_WritePin(MOTOR_L_IN2_GPIO_Port, MOTOR_L_IN2_Pin, GPIO_PIN_RESET);
+	oled_jerry();
 	
 	
   /* USER CODE END 2 */
@@ -160,33 +148,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		/*
-		if(HAL_ADC_PollForConversion(&hadc1, 5) == HAL_OK){
-			adcVals[i % (sizeof(adcVals) / sizeof(adcVals[0]))] = HAL_ADC_GetValue(&hadc1);
-			
-			adc_sum = 0;
-			for(int k = 0; k < (sizeof(adcVals) / sizeof(adcVals[0])); k++){
-				adc_sum = adc_sum + adcVals[k];
-			}
-			adc_mean = adc_sum / (sizeof(adcVals) / sizeof(adcVals[0]));
-			
-			voltage = (adc_mean / 256.0f) * 3.3f * (20000 + 10000) / 10000.0f;
-			i++;
-		}
-		*/
-		
 		oled_update();
 		
-		/*
-		if(speed > 300){
-			speed = 300;
-		}else if(speed < 0){
-			speed = 0;
-		}
 		
-		TIM4->CCR4 = speed;
-		TIM4->CCR3 = speed;
-		*/
+		
 		HAL_Delay(5);
 	  HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
   }
@@ -232,56 +197,6 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void oled_init(void){
-	ssd1306_Init();
-	
-	ssd1306_Fill(White);
-	ssd1306_SetCursor((128-7*16)/2, (64-26)/2);
-	ssd1306_WriteString("Loading", Font_16x26, Black);
-	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
-}
-
-void oled_jerry(void){
-	ssd1306_Fill(Black);
-	
-	ssd1306_SetCursor((128-5*16)/2, (64-26)/2);
-	ssd1306_WriteString("JERRY", Font_16x26, White);
-	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
-}
-
-void oled_update(){
-	ssd1306_Fill(Black);
-	char buff[60];
-	
-	snprintf(buff, sizeof(buff), "Battery: %.2f V", GET_voltage_battery());
-	ssd1306_SetCursor(0,0);
-	ssd1306_WriteString(buff, Font_7x10, White);
-	
-	snprintf(buff, sizeof(buff), "Cell 1: %.2f V", GET_voltage_cell_1());
-	ssd1306_SetCursor(0,10);
-	ssd1306_WriteString(buff, Font_7x10, White);
-	
-	snprintf(buff, sizeof(buff), "Cell 2: %.2f V", GET_voltage_cell_2());
-	ssd1306_SetCursor(0,20);
-	ssd1306_WriteString(buff, Font_7x10, White);
-	
-	snprintf(buff, sizeof(buff), "Boost: %.2f V", GET_voltage_boost());
-	ssd1306_SetCursor(0,30);
-	ssd1306_WriteString(buff, Font_7x10, White);
-	
-	snprintf(buff, sizeof(buff), "Encoder L: %d", TIM5->CNT);
-	ssd1306_SetCursor(0,40);
-	ssd1306_WriteString(buff, Font_7x10, White);
-	
-	snprintf(buff, sizeof(buff), "Encoder R: %d", TIM2->CNT);
-	ssd1306_SetCursor(0,50);
-	ssd1306_WriteString(buff, Font_7x10, White);
-	
-	ssd1306_UpdateScreen();
-}
-
 
 
 /* USER CODE END 4 */

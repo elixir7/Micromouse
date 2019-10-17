@@ -1,5 +1,6 @@
-#include "main.h"
 #include "battery.h"
+#include "main.h"
+#include "adc.h"
 
 // Private array for the DMA to fill with values
 #define SAMPLES 64
@@ -21,8 +22,8 @@ uint8_t adc_average(uint8_t index){
 	return average;
 }
 
-void init_voltmeter(ADC_HandleTypeDef* hadc){
-	HAL_ADC_Start_DMA(hadc, (uint32_t *) adc_averaged, nr_indices);
+void voltmeter_init(void){
+	HAL_ADC_Start_DMA(&hadc1, (uint32_t *) adc_averaged, nr_indices);
 }
 
 float adc_to_voltage(uint8_t adc_value, uint32_t R1, uint32_t R2){
@@ -44,4 +45,14 @@ float GET_voltage_cell_2(void){
 
 float GET_voltage_boost(void){
 	return adc_to_voltage(adc_average(2), 47000, 10000);
+}
+
+battery_status_t voltage_check(void){
+	battery_status_t status = BATTERY_OK;
+	if(GET_voltage_cell_1() > 4.2f || GET_voltage_cell_2() > 4.2f){
+		status = BATTERY_OVER_VOLTAGE;
+	}else if(GET_voltage_cell_1() < 3.3f || GET_voltage_cell_2() > 3.3f ){
+		status = BATTERY_LOW_VOLTAGE;
+	}
+	return status;
 }

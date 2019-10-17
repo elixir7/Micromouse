@@ -23,6 +23,7 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "motor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -209,11 +210,11 @@ void EXTI2_IRQHandler(void)
   /* USER CODE BEGIN EXTI2_IRQn 1 */
 	
 	if(TIM4->CCR3 == 0 || TIM4->CCR4 == 0){
-		TIM4->CCR3 = 80;
-		TIM4->CCR4 = 80;
+		SET_PWM_L(80);
+		SET_PWM_R(80);
 	}else{
-		TIM4->CCR3 = 0;
-		TIM4->CCR4 = 0;
+		SET_PWM_L(0);
+		SET_PWM_R(0);
 	}
 	
 

@@ -597,6 +597,16 @@
               <FileType>5</FileType>
               <FilePath>..\Inc\battery.h</FilePath>
             </File>
+            <File>
+              <FileName>motor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\motor.h</FilePath>
+            </File>
+            <File>
+              <FileName>oled.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\oled.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -691,6 +701,16 @@
               <FileName>battery.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\battery.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>oled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\oled.c</FilePath>
             </File>
           </Files>
         </Group>
