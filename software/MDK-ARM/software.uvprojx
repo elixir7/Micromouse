@@ -612,6 +612,11 @@
               <FileType>5</FileType>
               <FilePath>..\Inc\control.h</FilePath>
             </File>
+            <File>
+              <FileName>bitmaps.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\bitmaps.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -721,6 +726,11 @@
               <FileName>control.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\control.c</FilePath>
+            </File>
+            <File>
+              <FileName>bitmaps.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\bitmaps.c</FilePath>
             </File>
           </Files>
         </Group>

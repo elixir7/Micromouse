@@ -219,9 +219,9 @@ void EXTI2_IRQHandler(void)
 		checking = 1;
 		press_time = HAL_GetTick();
 	}else{
-		if(HAL_GetTick() - press_time > 100){
+		if(HAL_GetTick() - press_time > 50){
 			if(!running){
-				running = 1;
+				//running = 1; // Comment out to not run control on button press.
 				//SET_PWM_L(50);
 				//SET_PWM_R(50);
 			}else{

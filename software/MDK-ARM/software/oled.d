@@ -39,6 +39,7 @@ software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 software\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 software\oled.o: ../Inc/ssd1306.h
 software\oled.o: ../Inc/ssd1306_fonts.h
+software\oled.o: ../Inc/bitmaps.h
 software\oled.o: ../Inc/battery.h
 software\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 software\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

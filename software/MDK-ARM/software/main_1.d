@@ -52,3 +52,4 @@ software\main_1.o: ../Inc/oled.h
 software\main_1.o: ../Inc/control.h
 software\main_1.o: ../Inc/ssd1306.h
 software\main_1.o: ../Inc/ssd1306_fonts.h
+software\main_1.o: ../Inc/bitmaps.h
