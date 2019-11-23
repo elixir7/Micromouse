@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,9 +23,9 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -1854,7 +1854,7 @@ github.com/elixir7/micromouse
 <wire x1="-1.3" y1="0.85" x2="-0.65" y2="1.5" width="0.1" layer="51"/>
 <circle x="-1.675" y="1.65" radius="0.125" width="0.25" layer="25"/>
 </package>
-<package name="SOT95P235X110-3" urn="urn:adsk.eagle:footprint:12478120/1" library_version="2" library_locally_modified="yes">
+<package name="SOT95P235X110-3" urn="urn:adsk.eagle:footprint:12478120/1" library_version="24">
 <description>3-SOT23, 0.95 mm pitch, 2.35 mm span, 2.90 X 1.30 X 1.10 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.35 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <circle x="-1.204" y="1.7486" radius="0.25" width="0" layer="21"/>
@@ -1872,7 +1872,7 @@ github.com/elixir7/micromouse
 <text x="0" y="2.6336" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.1936" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SMT-0540-S-R" urn="urn:adsk.eagle:footprint:12016510/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<package name="SMT-0540-S-R" urn="urn:adsk.eagle:footprint:12016510/2" library_version="24">
 <wire x1="-2.5" y1="-2.4" x2="2.5" y2="-2.4" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2.6" x2="-1.5" y2="2.6" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="1.6" x2="-2.5" y2="-2.4" width="0.127" layer="21"/>
@@ -1885,7 +1885,7 @@ github.com/elixir7/micromouse
 <text x="0.795" y="-1.366" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SMT
 0540</text>
 </package>
-<package name="SOP65P760X160-24" urn="urn:adsk.eagle:footprint:12461860/1" library_version="2" library_locally_modified="yes">
+<package name="SOP65P760X160-24" urn="urn:adsk.eagle:footprint:12461860/1" library_version="24">
 <description>24-SOP, 0.65 mm pitch, 7.60 mm span, 7.80 X 5.60 X 1.60 mm body
 &lt;p&gt;24-pin SOP package with 0.65 mm pitch, 7.60 mm span with body size 7.80 X 5.60 X 1.60 mm&lt;/p&gt;</description>
 <circle x="-3.6026" y="4.2874" radius="0.25" width="0" layer="21"/>
@@ -2033,7 +2033,7 @@ github.com/elixir7/micromouse
 <wire x1="2.64" y1="2.74" x2="2.64" y2="-2.74" width="0.254" layer="21"/>
 <wire x1="2.64" y1="-2.74" x2="-2.64" y2="-2.74" width="0.254" layer="21"/>
 </package>
-<package name="SOT230P700X180-4" urn="urn:adsk.eagle:footprint:12215323/1" library_version="2" library_locally_modified="yes">
+<package name="SOT230P700X180-4" urn="urn:adsk.eagle:footprint:12215323/1" library_version="24">
 <description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
 &lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
 <circle x="-2.9276" y="3.2486" radius="0.25" width="0" layer="21"/>
@@ -2097,7 +2097,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <smd name="1" x="0" y="0" dx="0.1016" dy="0.1016" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
 <smd name="2" x="0" y="0" dx="0.1016" dy="0.1016" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
 </package>
-<package name="500SSP1S1M6QEA" urn="urn:adsk.eagle:footprint:12971303/1" locally_modified="yes" library_version="7" library_locally_modified="yes">
+<package name="500SSP1S1M6QEA" urn="urn:adsk.eagle:footprint:12971303/2" library_version="24">
 <pad name="MOUNT@1" x="-6.605" y="9.53" drill="1.85"/>
 <pad name="MOUNT@2" x="6.605" y="9.53" drill="1.85"/>
 <pad name="1" x="-4.7" y="0" drill="1.85"/>
@@ -2360,7 +2360,7 @@ Variant with I2C interface</description>
 <text x="-5.08" y="3.81" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-4.1675" y="-1.4875" size="1.016" layer="51" ratio="10">1</text>
 </package>
-<package name="IE2-1024-ENCODER" urn="urn:adsk.eagle:footprint:12971305/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<package name="IE2-1024-ENCODER" urn="urn:adsk.eagle:footprint:12971305/2" library_version="24">
 <pad name="1" x="-2.54" y="-1.27" drill="1.016" shape="square"/>
 <pad name="3" x="0" y="-1.27" drill="1.016"/>
 <pad name="5" x="2.54" y="-1.27" drill="1.016"/>
@@ -2385,7 +2385,7 @@ Variant with I2C interface</description>
 <wire x1="7.62" y1="-4.5" x2="-7.62" y2="-4.5" width="0.127" layer="39"/>
 <wire x1="-7.62" y1="-4.5" x2="-7.62" y2="4.5" width="0.127" layer="39"/>
 </package>
-<package name="PAD.03X.05" library_version="14" library_locally_modified="yes">
+<package name="PAD.03X.05" urn="urn:adsk.eagle:footprint:13270951/1" library_version="24">
 <description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
 Used as a test point connection for pogo pins or other debugging tools. 
 &lt;p&gt;Specifications:
@@ -2399,26 +2399,26 @@ Used as a test point connection for pogo pins or other debugging tools.
 </package>
 </packages>
 <packages3d>
-<package3d name="SOT95P235X110-3" urn="urn:adsk.eagle:package:12478112/1" type="model" library_version="2" library_locally_modified="yes">
+<package3d name="SOT95P235X110-3" urn="urn:adsk.eagle:package:12478112/1" type="model" library_version="24">
 <description>3-SOT23, 0.95 mm pitch, 2.35 mm span, 2.90 X 1.30 X 1.10 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.35 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOT95P235X110-3"/>
 </packageinstances>
 </package3d>
-<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/2" type="model" library_version="14" library_locally_modified="yes">
+<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/3" type="model" library_version="24">
 <packageinstances>
 <packageinstance name="SMT-0540-S-R"/>
 </packageinstances>
 </package3d>
-<package3d name="SOP65P760X160-24" urn="urn:adsk.eagle:package:12461704/1" type="model" library_version="2" library_locally_modified="yes">
+<package3d name="SOP65P760X160-24" urn="urn:adsk.eagle:package:12461704/1" type="model" library_version="24">
 <description>24-SOP, 0.65 mm pitch, 7.60 mm span, 7.80 X 5.60 X 1.60 mm body
 &lt;p&gt;24-pin SOP package with 0.65 mm pitch, 7.60 mm span with body size 7.80 X 5.60 X 1.60 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOP65P760X160-24"/>
 </packageinstances>
 </package3d>
-<package3d name="SOT230P700X180-4" urn="urn:adsk.eagle:package:12215314/1" type="model" library_version="2" library_locally_modified="yes">
+<package3d name="SOT230P700X180-4" urn="urn:adsk.eagle:package:12215314/1" type="model" library_version="24">
 <description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
 &lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -2484,7 +2484,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="SPLITTER"/>
 </packageinstances>
 </package3d>
-<package3d name="500SSP1S1M6QEA" urn="urn:adsk.eagle:package:12971316/2" type="model" library_version="7" library_locally_modified="yes">
+<package3d name="500SSP1S1M6QEA" urn="urn:adsk.eagle:package:12971316/3" type="model" library_version="24">
 <packageinstances>
 <packageinstance name="500SSP1S1M6QEA"/>
 </packageinstances>
@@ -2512,9 +2512,22 @@ Variant with I2C interface</description>
 <packageinstance name="JST-XH-03"/>
 </packageinstances>
 </package3d>
-<package3d name="IE2-1024-ENCODER" urn="urn:adsk.eagle:package:12971314/2" type="model" library_version="14" library_locally_modified="yes">
+<package3d name="IE2-1024-ENCODER" urn="urn:adsk.eagle:package:12971314/3" type="model" library_version="24">
 <packageinstances>
 <packageinstance name="IE2-1024-ENCODER"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD.03X.05" urn="urn:adsk.eagle:package:13270955/1" type="box" library_version="24">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="PAD.03X.05"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2954,7 +2967,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANCE" value="1%" x="28.04" y="88.21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="28.935" y="87.785" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="U$4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SMT-0540-S-R" package3d_urn="urn:adsk.eagle:package:12016513/2" value="SMT-0540-S-R" x="18.65" y="65.83" smashed="yes" rot="R270"/>
+<element name="U$4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SMT-0540-S-R" package3d_urn="urn:adsk.eagle:package:12016513/3" value="SMT-0540-S-R" x="18.65" y="65.83" smashed="yes" rot="R270"/>
 <element name="U1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOP65P760X160-24" package3d_urn="urn:adsk.eagle:package:12461704/1" value="TB6612FNG" x="41.07" y="18.41" smashed="yes" rot="R270">
 <attribute name="I_BURST" value="3.2 A" x="33.45" y="-15.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="I_CONT" value="1.2 A" x="33.45" y="-15.88" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3257,7 +3270,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="22.165" y="12.235" size="0.4064" layer="25" rot="R90"/>
 <attribute name="VALUE" x="23.495" y="12.195" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="SW" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="500SSP1S1M6QEA" package3d_urn="urn:adsk.eagle:package:12971316/2" value="SPDT-500SSP1S1M6QEA" x="9.32" y="12.065" smashed="yes" rot="R180"/>
+<element name="SW" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="500SSP1S1M6QEA" package3d_urn="urn:adsk.eagle:package:12971316/3" value="SPDT-500SSP1S1M6QEA" x="9.32" y="12.065" smashed="yes" rot="R180"/>
 <element name="U4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PQFN50P450X300X100-16N" package3d_urn="urn:adsk.eagle:package:12971315/4" value="BMI088" x="59.53" y="68.04" smashed="yes">
 <attribute name="AVAILABILITY" value="Unavailable" x="59.53" y="68.04" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" High-performance 6-axis inertial sensor _accelerometer + gyroscope_ " x="59.53" y="68.04" size="1.778" layer="27" display="off"/>
@@ -3379,18 +3392,18 @@ design rules under a new name.</description>
 <element name="U$10" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="JST-XH-03" package3d_urn="urn:adsk.eagle:package:13005914/2" value="JST-XH-3" x="5.49" y="16.17" smashed="yes">
 <attribute name="VALUE" x="2.47" y="18.12" size="1.016" layer="27" ratio="10"/>
 </element>
-<element name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="IE2-1024-ENCODER" package3d_urn="urn:adsk.eagle:package:12971314/2" value="IE2-1024-ENCODER" x="50" y="28.5" smashed="yes"/>
-<element name="MOTOR_RIGHT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="IE2-1024-ENCODER" package3d_urn="urn:adsk.eagle:package:12971314/2" value="IE2-1024-ENCODER" x="30" y="28.5" smashed="yes"/>
-<element name="TP_2V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" value="TEST-POINT3X5" x="10.79" y="95.82" smashed="yes">
+<element name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="IE2-1024-ENCODER" package3d_urn="urn:adsk.eagle:package:12971314/3" value="IE2-1024-ENCODER" x="50" y="28.5" smashed="yes"/>
+<element name="MOTOR_RIGHT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="IE2-1024-ENCODER" package3d_urn="urn:adsk.eagle:package:12971314/3" value="IE2-1024-ENCODER" x="30" y="28.5" smashed="yes"/>
+<element name="TP_2V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" package3d_urn="urn:adsk.eagle:package:13270955/1" value="TEST-POINT3X5" x="10.79" y="95.82" smashed="yes">
 <attribute name="NAME" x="8.377" y="96.709" size="1.016" layer="21" font="vector" ratio="15"/>
 </element>
-<element name="TP_3.3V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" value="TEST-POINT3X5" x="68.85" y="7.09" smashed="yes">
+<element name="TP_3.3V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" package3d_urn="urn:adsk.eagle:package:13270955/1" value="TEST-POINT3X5" x="68.85" y="7.09" smashed="yes">
 <attribute name="NAME" x="67.3514" y="8.1568" size="1.016" layer="21" font="vector" ratio="15"/>
 </element>
-<element name="TP_5V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" value="TEST-POINT3X5" x="77.46" y="8.76" smashed="yes">
+<element name="TP_5V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" package3d_urn="urn:adsk.eagle:package:13270955/1" value="TEST-POINT3X5" x="77.46" y="8.76" smashed="yes">
 <attribute name="NAME" x="75.2178" y="9.1168" size="1.016" layer="21" font="vector" ratio="15"/>
 </element>
-<element name="TP_12V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" value="TEST-POINT3X5" x="27.15" y="18.8" smashed="yes">
+<element name="TP_12V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="PAD.03X.05" package3d_urn="urn:adsk.eagle:package:13270955/1" value="TEST-POINT3X5" x="27.15" y="18.8" smashed="yes">
 <attribute name="NAME" x="25.118" y="19.7398" size="1.016" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="FP2" library="CASE-RCL" package="R0805" package3d_urn="urn:adsk.eagle:package:5332310/3" value="10u" x="61.4934" y="4.8006" smashed="yes" rot="R90">
@@ -4524,7 +4537,6 @@ design rules under a new name.</description>
 <via x="26.2382" y="83.312" extent="1-16" drill="0.35"/>
 <wire x1="26.2382" y1="83.312" x2="25.285490625" y2="82.359290625" width="0.3048" layer="1"/>
 <wire x1="25.285490625" y1="82.359290625" x2="25.285490625" y2="82.156090625" width="0.3048" layer="1"/>
-<wire x1="30.18" y1="86.505" x2="32.48" y2="85.855" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="RT" pad="1"/>

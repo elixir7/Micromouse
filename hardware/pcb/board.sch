@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -161,7 +161,7 @@
 <libraries>
 <library name="Isaks Bibliotek" urn="urn:adsk.eagle:library:11889733">
 <packages>
-<package name="SMT-0540-S-R" urn="urn:adsk.eagle:footprint:12016510/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<package name="SMT-0540-S-R" urn="urn:adsk.eagle:footprint:12016510/2" library_version="24">
 <wire x1="-2.5" y1="-2.4" x2="2.5" y2="-2.4" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2.6" x2="-1.5" y2="2.6" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="1.6" x2="-2.5" y2="-2.4" width="0.127" layer="21"/>
@@ -174,7 +174,7 @@
 <text x="0.795" y="-1.366" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SMT
 0540</text>
 </package>
-<package name="SOP65P760X160-24" urn="urn:adsk.eagle:footprint:12461860/1" library_version="2" library_locally_modified="yes">
+<package name="SOP65P760X160-24" urn="urn:adsk.eagle:footprint:12461860/1" library_version="24">
 <description>24-SOP, 0.65 mm pitch, 7.60 mm span, 7.80 X 5.60 X 1.60 mm body
 &lt;p&gt;24-pin SOP package with 0.65 mm pitch, 7.60 mm span with body size 7.80 X 5.60 X 1.60 mm&lt;/p&gt;</description>
 <circle x="-3.6026" y="4.2874" radius="0.25" width="0" layer="21"/>
@@ -236,7 +236,7 @@
 <wire x1="-1.3" y1="0.85" x2="-0.65" y2="1.5" width="0.1" layer="51"/>
 <circle x="-1.675" y="1.65" radius="0.125" width="0.25" layer="25"/>
 </package>
-<package name="SOT95P235X110-3" urn="urn:adsk.eagle:footprint:12478120/1" library_version="2" library_locally_modified="yes">
+<package name="SOT95P235X110-3" urn="urn:adsk.eagle:footprint:12478120/1" library_version="24">
 <description>3-SOT23, 0.95 mm pitch, 2.35 mm span, 2.90 X 1.30 X 1.10 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.35 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <circle x="-1.204" y="1.7486" radius="0.25" width="0" layer="21"/>
@@ -382,7 +382,7 @@
 <wire x1="2.64" y1="2.74" x2="2.64" y2="-2.74" width="0.254" layer="21"/>
 <wire x1="2.64" y1="-2.74" x2="-2.64" y2="-2.74" width="0.254" layer="21"/>
 </package>
-<package name="SOT230P700X180-4" urn="urn:adsk.eagle:footprint:12215323/1" library_version="2" library_locally_modified="yes">
+<package name="SOT230P700X180-4" urn="urn:adsk.eagle:footprint:12215323/1" library_version="24">
 <description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
 &lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
 <circle x="-2.9276" y="3.2486" radius="0.25" width="0" layer="21"/>
@@ -446,7 +446,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <smd name="1" x="0" y="0" dx="0.1016" dy="0.1016" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
 <smd name="2" x="0" y="0" dx="0.1016" dy="0.1016" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
 </package>
-<package name="500SSP1S1M6QEA" urn="urn:adsk.eagle:footprint:12971303/1" locally_modified="yes" library_version="7" library_locally_modified="yes">
+<package name="500SSP1S1M6QEA" urn="urn:adsk.eagle:footprint:12971303/2" library_version="24">
 <pad name="MOUNT@1" x="-6.605" y="9.53" drill="1.85"/>
 <pad name="MOUNT@2" x="6.605" y="9.53" drill="1.85"/>
 <pad name="1" x="-4.7" y="0" drill="1.85"/>
@@ -709,7 +709,7 @@ Variant with I2C interface</description>
 <text x="-5.08" y="3.81" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-4.1675" y="-1.4875" size="1.016" layer="51" ratio="10">1</text>
 </package>
-<package name="IE2-1024-ENCODER" urn="urn:adsk.eagle:footprint:12971305/1" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<package name="IE2-1024-ENCODER" urn="urn:adsk.eagle:footprint:12971305/2" library_version="24">
 <pad name="1" x="-2.54" y="-1.27" drill="1.016" shape="square"/>
 <pad name="3" x="0" y="-1.27" drill="1.016"/>
 <pad name="5" x="2.54" y="-1.27" drill="1.016"/>
@@ -734,7 +734,7 @@ Variant with I2C interface</description>
 <wire x1="7.62" y1="-4.5" x2="-7.62" y2="-4.5" width="0.127" layer="39"/>
 <wire x1="-7.62" y1="-4.5" x2="-7.62" y2="4.5" width="0.127" layer="39"/>
 </package>
-<package name="PAD.03X.05" library_version="14" library_locally_modified="yes">
+<package name="PAD.03X.05" urn="urn:adsk.eagle:footprint:13270951/1" library_version="24">
 <description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
 Used as a test point connection for pogo pins or other debugging tools. 
 &lt;p&gt;Specifications:
@@ -748,26 +748,26 @@ Used as a test point connection for pogo pins or other debugging tools.
 </package>
 </packages>
 <packages3d>
-<package3d name="SOP65P760X160-24" urn="urn:adsk.eagle:package:12461704/1" type="model" library_version="2" library_locally_modified="yes">
+<package3d name="SOP65P760X160-24" urn="urn:adsk.eagle:package:12461704/1" type="model" library_version="24">
 <description>24-SOP, 0.65 mm pitch, 7.60 mm span, 7.80 X 5.60 X 1.60 mm body
 &lt;p&gt;24-pin SOP package with 0.65 mm pitch, 7.60 mm span with body size 7.80 X 5.60 X 1.60 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOP65P760X160-24"/>
 </packageinstances>
 </package3d>
-<package3d name="SOT95P235X110-3" urn="urn:adsk.eagle:package:12478112/1" type="model" library_version="2" library_locally_modified="yes">
+<package3d name="SOT95P235X110-3" urn="urn:adsk.eagle:package:12478112/1" type="model" library_version="24">
 <description>3-SOT23, 0.95 mm pitch, 2.35 mm span, 2.90 X 1.30 X 1.10 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.35 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOT95P235X110-3"/>
 </packageinstances>
 </package3d>
-<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/2" type="model" library_version="14" library_locally_modified="yes">
+<package3d name="SMT-0540-S-R" urn="urn:adsk.eagle:package:12016513/3" type="model" library_version="24">
 <packageinstances>
 <packageinstance name="SMT-0540-S-R"/>
 </packageinstances>
 </package3d>
-<package3d name="SOT230P700X180-4" urn="urn:adsk.eagle:package:12215314/1" type="model" library_version="2" library_locally_modified="yes">
+<package3d name="SOT230P700X180-4" urn="urn:adsk.eagle:package:12215314/1" type="model" library_version="24">
 <description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
 &lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -833,7 +833,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="SPLITTER"/>
 </packageinstances>
 </package3d>
-<package3d name="500SSP1S1M6QEA" urn="urn:adsk.eagle:package:12971316/2" type="model" library_version="7" library_locally_modified="yes">
+<package3d name="500SSP1S1M6QEA" urn="urn:adsk.eagle:package:12971316/3" type="model" library_version="24">
 <packageinstances>
 <packageinstance name="500SSP1S1M6QEA"/>
 </packageinstances>
@@ -861,9 +861,22 @@ Variant with I2C interface</description>
 <packageinstance name="JST-XH-03"/>
 </packageinstances>
 </package3d>
-<package3d name="IE2-1024-ENCODER" urn="urn:adsk.eagle:package:12971314/2" type="model" library_version="14" library_locally_modified="yes">
+<package3d name="IE2-1024-ENCODER" urn="urn:adsk.eagle:package:12971314/3" type="model" library_version="24">
 <packageinstances>
 <packageinstance name="IE2-1024-ENCODER"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD.03X.05" urn="urn:adsk.eagle:package:13270955/1" type="box" library_version="24">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="PAD.03X.05"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1364,7 +1377,7 @@ Variant with I2C interface</description>
 <pin name="2" x="-5.08" y="0" visible="pad" length="middle" function="dot"/>
 <pin name="3" x="-5.08" y="-2.54" visible="pad" length="middle" function="dot"/>
 </symbol>
-<symbol name="TEST-POINT" library_version="14" library_locally_modified="yes">
+<symbol name="TEST-POINT" urn="urn:adsk.eagle:symbol:13270948/1" library_version="24">
 <wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 <text x="1.27" y="1.27" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
@@ -1372,7 +1385,7 @@ Variant with I2C interface</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/3" library_version="14" library_locally_modified="yes">
+<deviceset name="SMT-0540-S-R" urn="urn:adsk.eagle:component:12016514/4" library_version="24">
 <description>&lt;b&gt;Magnetic buzzer&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt; SMD
@@ -1389,7 +1402,7 @@ Variant with I2C interface</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12016513/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12016513/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1397,7 +1410,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TB6612FNG" urn="urn:adsk.eagle:component:12971346/2" prefix="U" library_version="4" library_locally_modified="yes">
+<deviceset name="TB6612FNG" urn="urn:adsk.eagle:component:12971346/2" prefix="U" library_version="24">
 <description>&lt;b&gt;TB6612FNG - Dual DC motor driver &lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 
@@ -1447,7 +1460,7 @@ Variant with I2C interface</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRFML8244TRPBF" urn="urn:adsk.eagle:component:12971344/1" prefix="Q" library_version="3" library_locally_modified="yes">
+<deviceset name="IRFML8244TRPBF" urn="urn:adsk.eagle:component:12971344/1" prefix="Q" library_version="24">
 <description>&lt;b&gt;IRFML8244TRPbF - N Channel Mosfet &lt;/b&gt;&lt;hr&gt;
 &lt;br&gt;
 
@@ -1731,7 +1744,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/XAL5030-222ME
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM1117-3.3" urn="urn:adsk.eagle:component:12971348/2" prefix="VR" library_version="4" library_locally_modified="yes">
+<deviceset name="LM1117-3.3" urn="urn:adsk.eagle:component:12971348/2" prefix="VR" library_version="24">
 <description>&lt;b&gt;LM1117&lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
 &lt;i&gt;Description: &lt;/i&gt;&lt;br /&gt;
@@ -1847,7 +1860,7 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPDT-500SSP1S1M6QEA" urn="urn:adsk.eagle:component:12971327/1" locally_modified="yes" library_version="7" library_locally_modified="yes">
+<deviceset name="SPDT-500SSP1S1M6QEA" urn="urn:adsk.eagle:component:12971327/2" library_version="24">
 <gates>
 <gate name="G$1" symbol="SPDT" x="0" y="0"/>
 </gates>
@@ -1859,7 +1872,7 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 <connect gate="G$1" pin="COM" pad="2_COM"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971316/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971316/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1994,7 +2007,7 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 </device>
 </devices>
 </deviceset>
-<deviceset name="DISPLAY-OLED-128X64-I2C" urn="urn:adsk.eagle:component:12971351/1" locally_modified="yes" library_version="4" library_locally_modified="yes">
+<deviceset name="DISPLAY-OLED-128X64-I2C" urn="urn:adsk.eagle:component:12971351/2" library_version="24">
 <description>&lt;b&gt;128x64 Dot Matrix OLED Module&lt;/b&gt; based on &lt;b&gt;SSD1306&lt;/b&gt; chip&lt;br /&gt;
 Variant with &lt;b&gt;I2C interface&lt;/b&gt;
 &lt;p&gt;More details available here:&lt;br /&gt;
@@ -2024,7 +2037,7 @@ Variant with &lt;b&gt;I2C interface&lt;/b&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="WIRELESS-BLUETOOTH-HC-05" urn="urn:adsk.eagle:component:12971350/2" locally_modified="yes" library_version="4" library_locally_modified="yes">
+<deviceset name="WIRELESS-BLUETOOTH-HC-05" urn="urn:adsk.eagle:component:12971350/3" library_version="24">
 <description>&lt;b&gt;Bluetooth Transceiver Module&lt;/b&gt; based on &lt;b&gt;HC-05&lt;/b&gt; board
 &lt;p&gt;Tutorial is available here:&lt;br /&gt;
 &lt;a href="https://arduino-info.wikispaces.com/BlueTooth-HC05-HC06-Modules-How-To"&gt;https://arduino-info.wikispaces.com/BlueTooth-HC05-HC06-Modules-How-To&lt;/a&gt;&lt;/p&gt;
@@ -2107,7 +2120,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="IE2-1024-ENCODER" urn="urn:adsk.eagle:component:12971325/2" locally_modified="yes" library_version="14" library_locally_modified="yes">
+<deviceset name="IE2-1024-ENCODER" urn="urn:adsk.eagle:component:12971325/3" library_version="24">
 <gates>
 <gate name="G$1" symbol="IDC-6PIN-DIN41651" x="2.54" y="0"/>
 </gates>
@@ -2122,7 +2135,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971314/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12971314/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2130,14 +2143,9 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEST-POINT" prefix="TP" library_version="14" library_locally_modified="yes">
-<description>&lt;h3&gt;SparkFun Test Points&lt;/h3&gt;
-&lt;p&gt;Bare copper test points for troubleshooting or In-Circuit-Testing. These are used by our Production team for verifying production board runs using pogo-pins on test beds.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13284”&gt;SparkFun LSM9DS1 Breakout&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13714”&gt;SparkFun PSOC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13879"&gt;SparkFun Load Cell Amplifier&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
+<deviceset name="TEST-POINT" urn="urn:adsk.eagle:component:13270961/1" prefix="TP" library_version="24">
+<description>&lt;h3&gt;Test Points&lt;/h3&gt;
+&lt;p&gt;Bare copper test points for troubleshooting or In-Circuit-Testing.</description>
 <gates>
 <gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
 </gates>
@@ -2146,6 +2154,9 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lmz10501.pdf"&gt; Datasheet
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3147,7 +3158,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </groups>
 <parts>
 <part name="U3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="STM32F405RG" device="" package3d_urn="urn:adsk.eagle:package:11478949/2"/>
-<part name="U$4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SMT-0540-S-R" device="" package3d_urn="urn:adsk.eagle:package:12016513/2"/>
+<part name="U$4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SMT-0540-S-R" device="" package3d_urn="urn:adsk.eagle:package:12016513/3"/>
 <part name="U1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TB6612FNG" device="" package3d_urn="urn:adsk.eagle:package:12461704/1"/>
 <part name="C1" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
 <part name="C2" library="CASE-RCL" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="0.1u"/>
@@ -3303,7 +3314,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R27" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
 <part name="R28" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
 <part name="R31" library="CASE-RCL" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
-<part name="SW" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPDT-500SSP1S1M6QEA" device="" package3d_urn="urn:adsk.eagle:package:12971316/2"/>
+<part name="SW" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="SPDT-500SSP1S1M6QEA" device="" package3d_urn="urn:adsk.eagle:package:12971316/3"/>
 <part name="U4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="BMI088" device="" package3d_urn="urn:adsk.eagle:package:12971315/4"/>
 <part name="GND26" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
@@ -3366,12 +3377,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>
 <part name="IC3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ10501" device="" package3d_urn="urn:adsk.eagle:package:12971324/2"/>
 <part name="U$10" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="JST-XH-3" device="" package3d_urn="urn:adsk.eagle:package:13005914/2"/>
-<part name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IE2-1024-ENCODER" device="" package3d_urn="urn:adsk.eagle:package:12971314/2"/>
-<part name="MOTOR_RIGHT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IE2-1024-ENCODER" device="" package3d_urn="urn:adsk.eagle:package:12971314/2"/>
-<part name="TP_2V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
-<part name="TP_3.3V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
-<part name="TP_5V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
-<part name="TP_12V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5"/>
+<part name="MOTOR_LEFT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IE2-1024-ENCODER" device="" package3d_urn="urn:adsk.eagle:package:12971314/3"/>
+<part name="MOTOR_RIGHT" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="IE2-1024-ENCODER" device="" package3d_urn="urn:adsk.eagle:package:12971314/3"/>
+<part name="TP_2V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="TP_3.3V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="TP_5V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="TP_12V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="TEST-POINT" device="3X5" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
 <part name="FP2" library="CASE-RCL" deviceset="WE-CBF_0805" device="" package3d_urn="urn:adsk.eagle:package:5332310/3" value="10u"/>
 </parts>
 <sheets>

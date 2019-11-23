@@ -49,3 +49,6 @@ software\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 software\main_1.o: ../Inc/battery.h
 software\main_1.o: ../Inc/motor.h
 software\main_1.o: ../Inc/oled.h
+software\main_1.o: ../Inc/control.h
+software\main_1.o: ../Inc/ssd1306.h
+software\main_1.o: ../Inc/ssd1306_fonts.h

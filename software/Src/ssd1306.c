@@ -180,6 +180,25 @@ void ssd1306_DrawPixel(uint8_t x, uint8_t y, SSD1306_COLOR color) {
     }
 }
 
+void ssd1306_DrawBitmap(const unsigned char * pBitmap){
+	ssd1306_Fill(Black);
+	for(int i = 0; i < 1024; i++){
+			// Extract each byte
+			unsigned char byte = pBitmap[i];
+				
+			for(int k = 0; k < 8; k++){
+				unsigned char pixel = (byte >> k) & 0x01;
+				unsigned int x = (i*8 + k) % 128;
+				unsigned int y = (i*8+k)/128;
+				ssd1306_DrawPixel(x, y, pixel);
+					//printf("x%dy%dv%d ", (i*8 + k) % 128 , (i*8+k)/128, pixel);
+			}//for - k
+	}//for - i
+	ssd1306_UpdateScreen();
+
+return;  
+}
+
 // Draw 1 char to the screen buffer
 // ch         => char om weg te schrijven
 // Font     => Font waarmee we gaan schrijven

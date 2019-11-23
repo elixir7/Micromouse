@@ -24,6 +24,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "motor.h"
+#include "control.h"
 #include "oled.h"
 /* USER CODE END Includes */
 
@@ -56,6 +57,7 @@
 /* USER CODE BEGIN 0 */
 unsigned long press_time;
 uint32_t checking = 0;
+uint8_t running = 0;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -189,6 +191,7 @@ void SysTick_Handler(void)
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
+	//speedProfile();
 
   /* USER CODE END SysTick_IRQn 1 */
 }
@@ -210,28 +213,27 @@ void EXTI2_IRQHandler(void)
   /* USER CODE END EXTI2_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_2);
   /* USER CODE BEGIN EXTI2_IRQn 1 */
-	
+
+	// Debounce button check
 	if(!checking){
 		checking = 1;
 		press_time = HAL_GetTick();
 	}else{
-		if(HAL_GetTick() - press_time > 250){
-			menu_index = (menu_index + 1) % 3;
+		if(HAL_GetTick() - press_time > 100){
+			if(!running){
+				running = 1;
+				//SET_PWM_L(50);
+				//SET_PWM_R(50);
+			}else{
+				running = 0;
+				//SET_PWM_L(0);
+				//SET_PWM_R(0);
+			}
+			
+			oled_button_press();
 			checking = 0;
 		} 
 	}
-	
-	
-	
-	/*
-	if(TIM4->CCR3 == 0 || TIM4->CCR4 == 0){
-		SET_PWM_L(50);
-		SET_PWM_R(50);
-	}else{
-		SET_PWM_L(0);
-		SET_PWM_R(0);
-	}
-	*/
 
   /* USER CODE END EXTI2_IRQn 1 */
 }

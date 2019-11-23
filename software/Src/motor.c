@@ -2,6 +2,9 @@
 #include "main.h"
 #include "tim.h"
 
+/**
+	*	@brief Initialize motor periphirals
+*/
 void motors_init(void){
 	// Start encoders
 	HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
@@ -17,6 +20,14 @@ void motors_init(void){
 	HAL_GPIO_WritePin(MOTOR_L_IN2_GPIO_Port, MOTOR_L_IN2_Pin, GPIO_PIN_RESET);
 }
 
+
+/**
+	* @brief Limits the speed to the maximum values allowed
+	*
+	* @param (int speed) The speed about to be checked and capped 
+	* @return A capped speed
+	* @retval int in range [-255, 255]
+*/
 int limit_speed(int speed){
 	if(speed > 255){
 		speed = 255;
@@ -26,6 +37,17 @@ int limit_speed(int speed){
 	return speed;
 }
 
+
+/**
+	* @brief Set the speed of the left motor
+	*
+	*	The speed is controlled by varying the duty cycle or the switching mosfets in the TB6612FNG motor driver.
+	* A value of -255/255 will cause the duty cycle to be maxed out meaning full speed in backward/forward.
+	* A value of 0 means it will stop.
+	*
+	* @param (int speed) The desired speed
+	*
+*/
 void SET_PWM_L(int speed){
 	int ok_speed = limit_speed(speed);
 	
@@ -42,6 +64,16 @@ void SET_PWM_L(int speed){
 	TIM4->CCR3 = ok_speed;
 }
 
+/**
+	* @brief Set the speed of the right motor
+	*
+	*	The speed is controlled by varying the duty cycle or the switching mosfets in the TB6612FNG motor driver.
+	* A value of -255/255 will cause the duty cycle to be maxed out meaning full speed in backward/forward.
+	* A value of 0 means it will stop.
+	*
+	* @param (int speed) The desired speed
+	*
+*/
 void SET_PWM_R(int speed){
 	int ok_speed = limit_speed(speed);
 	
@@ -58,6 +90,9 @@ void SET_PWM_R(int speed){
 	TIM4->CCR4 = ok_speed;
 }
 
+/**
+	* @brief Stop both motors by reducing speed to zero
+*/
 void motors_stop(void){
 	SET_PWM_L(0);
 	SET_PWM_R(0);
