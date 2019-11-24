@@ -192,12 +192,9 @@ void ssd1306_DrawBitmap(const unsigned char * pBitmap){
 				unsigned char pixel = (byte >> (7-k)) & 0x01;
 				unsigned int x = (i*8 + k) % 128;
 				unsigned int y = (i*8 + k)/128;
-				ssd1306_DrawPixel(x, y, pixel);
+				ssd1306_DrawPixel(x, y, (SSD1306_COLOR) pixel);
 			}//for - k
 	}//for - i
-	ssd1306_UpdateScreen();
-
-return;  
 }
 
 // Draw 1 char to the screen buffer

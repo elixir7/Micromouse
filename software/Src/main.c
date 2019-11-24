@@ -134,6 +134,7 @@ int main(void)
   MX_TIM4_Init();
   MX_TIM5_Init();
   MX_USART1_UART_Init();
+  MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
 	
 	// USART UART is causing core to lock up.......
@@ -155,7 +156,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		oled_menu();
+		oled_update();
 		//curSpeedX = 100;
 		HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
 		//HAL_Delay(2000);

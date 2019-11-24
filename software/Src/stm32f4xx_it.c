@@ -62,6 +62,7 @@ uint8_t running = 0;
 
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_adc1;
+extern TIM_HandleTypeDef htim14;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -214,28 +215,35 @@ void EXTI2_IRQHandler(void)
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_2);
   /* USER CODE BEGIN EXTI2_IRQn 1 */
 
-	// Debounce button check
+	// Button was pressed or bounced => start timer to check
 	if(!checking){
+		HAL_TIM_Base_Start_IT(&htim14);
 		checking = 1;
-		press_time = HAL_GetTick();
-	}else{
-		if(HAL_GetTick() - press_time > 50){
-			if(!running){
-				//running = 1; // Comment out to not run control on button press.
-				//SET_PWM_L(50);
-				//SET_PWM_R(50);
-			}else{
-				running = 0;
-				//SET_PWM_L(0);
-				//SET_PWM_R(0);
-			}
-			
-			oled_button_press();
-			checking = 0;
-		} 
 	}
 
   /* USER CODE END EXTI2_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM8 trigger and commutation interrupts and TIM14 global interrupt.
+  */
+void TIM8_TRG_COM_TIM14_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM8_TRG_COM_TIM14_IRQn 0 */
+
+  /* USER CODE END TIM8_TRG_COM_TIM14_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim14);
+  /* USER CODE BEGIN TIM8_TRG_COM_TIM14_IRQn 1 */
+	
+	// If button is still pressed after 50ms there was a real press, not just a debounce.
+	// Clock freq / prescaler / period = 16MHz / 16k / 50 = 20Hz = 0.05s = 50ms
+	if(HAL_GPIO_ReadPin(BUTTON_SELECT_GPIO_Port, BUTTON_SELECT_Pin) == GPIO_PIN_RESET){
+		checking = 0;
+		HAL_TIM_Base_Stop_IT(&htim14);
+		oled_button_press();
+	}
+	
+  /* USER CODE END TIM8_TRG_COM_TIM14_IRQn 1 */
 }
 
 /**
