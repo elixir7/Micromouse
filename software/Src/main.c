@@ -138,7 +138,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	
 	// USART UART is causing core to lock up.......
-	printf("---------- Starting JERRY -----------\r\n");
+	
 	
 	oled_init();
 	motors_init();
@@ -146,6 +146,8 @@ int main(void)
 	
 	moveSpeed = speedToCounts(300*2);
 	turnSpeed = 30;
+
+	printf("---------- Starting JERRY -----------\r\n");
 	
   /* USER CODE END 2 */
 
@@ -157,11 +159,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		oled_update();
+		HAL_Delay(50);
+		printf("Running\r\n");
 		//curSpeedX = 100;
-		HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
-		//HAL_Delay(2000);
-		
-		HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
 	  
   }
   /* USER CODE END 3 */

@@ -43,19 +43,22 @@ struct menu * prev_submenu = NULL;
 menu_t main_menu;
 
 menu_t sub_menu_1;
+menu_item_t menu_item_back_main;
+
 menu_item_t menu_item_11;
 menu_item_t menu_item_12;
 menu_item_t menu_item_13;
 
+
 menu_t sub_menu_2;
 menu_item_t menu_item_21;
 menu_item_t menu_item_22;
-menu_item_t menu_item_23;
+
 
 menu_t sub_menu_3;
 menu_item_t menu_item_31;
 menu_item_t menu_item_32;
-menu_item_t menu_item_33;
+
 
 /**
 	* @brief Initialize the oled screen and a welcome screen. 
@@ -70,49 +73,55 @@ void oled_init(void){
 	// Show main menu
 	active_screen = MENU;
 	
-	// Setup all menus
+	// Main Menu
 	strcpy(main_menu.name, "Main menu");
 	main_menu.head_item = NULL; 	// main menu has no items, only sub menus
 	main_menu.pNext  = &sub_menu_1; // Start of submenus
+	
+	// Back to main menu item
+	strcpy(menu_item_back_main.name, "Back");
+	menu_item_back_main.pNext = NULL;
+	menu_item_back_main.function = go_back_main;
 	
 	// Sub menu 1 + items
 	strcpy(sub_menu_1.name, "General");
 	sub_menu_1.pNext = &sub_menu_2;
 	sub_menu_1.head_item = &menu_item_11;
+	
 	strcpy(menu_item_11.name, "Peripheral info");
 	menu_item_11.pNext = &menu_item_12;
 	menu_item_11.function = oled_show_info;
+	
 	strcpy(menu_item_12.name, "CASE Logo");
 	menu_item_12.pNext = &menu_item_13;
-	menu_item_12.function = oled_show_image;
-	strcpy(menu_item_13.name, "Back");
-	menu_item_13.pNext = NULL;
-	menu_item_13.function = go_back_main;
+	menu_item_12.function = oled_show_case;
+	
+	strcpy(menu_item_13.name, "Nyx & Iris");
+	menu_item_13.pNext = &menu_item_back_main;
+	menu_item_13.function = oled_show_cats;
 	
 	// Sub menu 2 + items
 	strcpy(sub_menu_2.name, "Submenu 2");
 	sub_menu_2.pNext = &sub_menu_3;
 	sub_menu_2.head_item = &menu_item_21;
+	
 	strcpy(menu_item_21.name, "Item 21");
 	menu_item_21.pNext = &menu_item_22;
+	
 	strcpy(menu_item_22.name, "Item 22");
-	menu_item_22.pNext = &menu_item_23;
-	strcpy(menu_item_23.name, "Back");
-	menu_item_23.pNext = NULL;
-	menu_item_23.function = go_back_main;
+	menu_item_22.pNext = &menu_item_back_main;
+
 
 	// Sub menu 3 + items
 	strcpy(sub_menu_3.name, "Submenu 3");
 	sub_menu_3.pNext = NULL;
 	sub_menu_3.head_item = &menu_item_31;
+	
 	strcpy(menu_item_31.name, "Item 31");
 	menu_item_31.pNext = &menu_item_32;
-	strcpy(menu_item_32.name, "Item 32");
-	menu_item_32.pNext = &menu_item_33;
-	strcpy(menu_item_33.name, "Back");
-	menu_item_33.pNext = NULL;
-	menu_item_33.function = go_back_main;
 	
+	strcpy(menu_item_32.name, "Item 32");
+	menu_item_32.pNext = &menu_item_back_main;
 }
 
 
@@ -339,9 +348,13 @@ void oled_button_press(void){
 
 
 // Menu item funcions
-void oled_show_image(void){
+void oled_show_case(void){
 	active_screen = IMAGE;
 	curr_image = case_head_bmp;
+}
+void oled_show_cats(void){
+	active_screen = IMAGE;
+	curr_image = cats_bmp;
 }
 void oled_show_info(void){
 	active_screen = INFO;

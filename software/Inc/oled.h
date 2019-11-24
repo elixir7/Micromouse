@@ -21,7 +21,8 @@ void go_back_main(void);
 uint8_t nr_items(void);
 
 // Menu item functions
-void oled_show_image(void);
+void oled_show_case(void);
+void oled_show_cats(void);
 void oled_show_info(void);
 
 #endif
