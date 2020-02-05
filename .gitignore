@@ -1,2 +1,9 @@
+# Ignore compiled files folder
+software/MDK-ARM/software/*
 
+# MAC
 .DS_Store
+
+# Ignore compiled files
+*.o
+*.crf
